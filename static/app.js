@@ -22,9 +22,9 @@ let gReady=false;
 function initG(){if(gReady||!CID||!window.google||!google.accounts)return;gReady=true;
   google.accounts.id.initialize({client_id:CID,callback:onCred,auto_select:false,cancel_on_tap_outside:true});
   const gb=$('#gbtn');if(gb)google.accounts.id.renderButton(gb,{theme:'outline',size:'large',shape:'pill',text:'continue_with'});
-  if(!user()&&!gb&&!sessionStorage.getItem('pr-prompted')){sessionStorage.setItem('pr-prompted',1);google.accounts.id.prompt()}}
+  }
 window.addEventListener('load',initG);const gi=setInterval(()=>{initG();if(gReady)clearInterval(gi)},400);setTimeout(()=>clearInterval(gi),8000);
-function needSignIn(msg){if(user()||!CID)return false;
+function needSignIn(msg){return false;
   const m=document.createElement('div');m.className='modal';m.innerHTML=`<div><h3 style="margin:0 0 6px;font-size:22px">${msg||'Sign in to continue'}</h3><p style="color:var(--mute);margin:0">Free with Google. No password, no card.</p><div id="gbtn2" style="display:grid;place-items:center;margin:18px 0"></div><button class="btn ghost sm" id="mclose">Not now</button></div>`;
   document.body.appendChild(m);m.onclick=e=>{if(e.target===m||e.target.id==='mclose')m.remove()};
   if(window.google&&gReady)google.accounts.id.renderButton($('#gbtn2'),{theme:'outline',size:'large',shape:'pill',text:'continue_with'});else{sessionStorage.setItem('pr-back',location.href);location.href='/signin/'}
@@ -128,7 +128,7 @@ if(go)go.onclick=()=>{const v=id=>$(id).value.trim();let extra=[];
 
 /* ---------- comments ---------- */
 const cf=$('#cform');
-if(cf){const id=cf.dataset.id,cl=$('#clist');const u=user();if(u)$('#cwho').textContent='Commenting as '+u.name;
+if(cf){const id=cf.dataset.id,cl=$('#clist');const u=user();if(u){$('#cwho').textContent='Commenting as '+u.name;const cn=$('#cname');if(cn)cn.hidden=true}
   const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const ago=t=>{const s=(Date.now()-t)/1000;return s<60?'just now':s<3600?Math.floor(s/60)+'m ago':s<86400?Math.floor(s/3600)+'h ago':Math.floor(s/86400)+'d ago'};
   const draw=l=>{cl.innerHTML=l.length?l.slice().reverse().map(c=>`<div class="c">${c.p?`<img src="${esc(c.p)}" alt="">`:`<span class="ini">${esc((c.n||'G')[0])}</span>`}<div><b>${esc(c.n)}</b><small>${ago(c.ts)}</small><p>${esc(c.t)}</p></div></div>`).join(''):'<p style="color:var(--mute);margin:0">No comments yet. Be the first to share what you made.</p>';
@@ -136,7 +136,7 @@ if(cf){const id=cf.dataset.id,cl=$('#clist');const u=user();if(u)$('#cwho').text
   fetch('/api/comments?id='+encodeURIComponent(id)).then(r=>r.ok?r.json():[]).then(draw).catch(()=>draw([]));
   cf.onsubmit=async e=>{e.preventDefault();if(needSignIn('Sign in to comment'))return;const ta=cf.querySelector('textarea');const t=ta.value.trim();if(t.length<2)return;
     const btn=cf.querySelector('button');btn.disabled=true;
-    const r=await fetch('/api/comments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,text:t,name:(user()||{}).name,credential:sessionStorage.getItem('pr-cred')})}).catch(()=>null);
+    const r=await fetch('/api/comments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,text:t,name:(user()||{}).name||($('#cname')||{}).value,credential:sessionStorage.getItem('pr-cred')})}).catch(()=>null);
     btn.disabled=false;if(r&&r.ok){ta.value='';draw(await r.json());toast('Comment posted')}else toast('Could not post. Try again.')};
 }
 
@@ -151,7 +151,7 @@ $$('[data-copysec]').forEach(b=>b.onclick=async()=>{if(needSignIn('Sign in to co
   const txt=b.dataset.only==='prompt'?x.prompt:`Add this "${x.name}" section to my site.\n\n${x.prompt}\n\nReference implementation (adapt to my stack and brand):\n\n${x.html}`;
   await navigator.clipboard.writeText(txt);const c=LS.get('pr-copied',[]).filter(i=>i!==x.id);c.unshift(x.id);LS.set('pr-copied',c.slice(0,30));
   const t=b.textContent;b.textContent='Copied ✓';setTimeout(()=>b.textContent=t,1400)});
-const code=$('#code');if(code&&!user()&&CID){code.classList.add('locked');code.onclick=()=>needSignIn('Sign in to see the code')}
+
 $$('[data-cat]').forEach(b=>b.onclick=()=>{$$('[data-cat]').forEach(x=>x.classList.toggle('on',x===b));$$('#sgrid .sec').forEach(c=>c.hidden=!!b.dataset.cat&&c.dataset.cat!==b.dataset.cat)});
 
 /* ---------- library ---------- */
@@ -194,3 +194,6 @@ document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA/.test(d
 list.addEventListener('click',e=>{const c=e.target.closest('[data-clone]');if(c){navigator.clipboard.writeText('git clone https://github.com/'+c.dataset.clone+'.git');c.textContent='Copied ✓';setTimeout(()=>c.textContent='Copy clone',1300)}
   const w=e.target.closest('[data-watch]');if(w){let l=LS.get('pr-watch',[]);const n=w.dataset.watch;l=l.includes(n)?l.filter(x=>x!==n):[...l,n];LS.set('pr-watch',l);draw()}});
 load()})();
+
+/* creators search */
+const pq=document.getElementById('pq');if(pq)pq.oninput=()=>{const q=pq.value.trim().toLowerCase();document.querySelectorAll('#people .person').forEach(p=>p.hidden=!!q&&!p.dataset.n.includes(q))};
