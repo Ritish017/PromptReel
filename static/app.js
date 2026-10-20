@@ -50,7 +50,7 @@ document.addEventListener('click',async ev=>{
   const sv=ev.target.closest('[data-like]');
   if(sv){ev.preventDefault();const id=sv.dataset.like;let s=saved();s=s.includes(id)?s.filter(x=>x!==id):[...s,id];LS.set(K(),s);syncSaves();toast(s.includes(id)?'Saved to your Library':'Removed from Library');if(window.__apply)window.__apply();return}
   const cp=ev.target.closest('[data-copyp]');
-  if(cp){ev.preventDefault();const d=await ENT();const x=d.find(y=>y.id===cp.dataset.copyp);if(!x)return;await navigator.clipboard.writeText(x.prompt_text||x.skill||'');const h=cp.innerHTML;cp.textContent='Copied ✓';setTimeout(()=>cp.innerHTML=h,1300);return}
+  if(cp){ev.preventDefault();ev.stopPropagation();const h=cp.innerHTML;const d=await ENT();const x=d.find(y=>y.id===cp.dataset.copyp);if(!x)return;const t=x.prompt_text||x.skill||'';try{await navigator.clipboard.writeText(t)}catch(_){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}cp.textContent='Copied ✓';cp.classList.add('done');toast('Prompt copied. Paste it into Claude or your agent.');setTimeout(()=>{cp.innerHTML=h;cp.classList.remove('done')},1500);return}
 });
 function syncSaves(){const s=saved();$$('[data-like]').forEach(b=>b.classList.toggle('on',s.includes(b.dataset.like)))}
 syncSaves();

@@ -154,3 +154,8 @@ html.snapy{scroll-snap-type:y proximity}
 .creator{display:flex;gap:20px;align-items:center}.creator .av{width:84px;height:84px;border-radius:50%;object-fit:cover}.creator h1{margin:0 0 4px}.creator p{margin:0 0 10px}
 .homefaq{margin:10px 0 50px}.homefaq details{border-top:1px solid var(--line);padding:14px 0}.homefaq summary{font-weight:600;cursor:pointer}.homefaq p{color:var(--mute);margin:8px 0 0}
 .phero .answer{max-width:760px}
+/* v5 fixes */
+#grid .card[hidden],.person[hidden],[hidden]{display:none!important}
+.ovcopy.done{opacity:1;transform:none;background:#0071e3;color:#fff}
+.hero{padding:36px 0 22px;gap:32px}.hero h1{font-size:clamp(34px,3.8vw,54px);margin-bottom:10px}.hero p.lead{font-size:17px;margin-bottom:16px}
+.hero .stats{margin-top:14px}.spot .in{aspect-ratio:16/8}
