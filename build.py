@@ -43,7 +43,7 @@ ICON_COPY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-wid
 def head(title, desc, path, img=None, ld=None, active=""):
     img = img or DOMAIN + "/og.svg"
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ([SITE_LD] + (ld or [])))
-    nav = [("/", "Gallery"), ("/sections/", 'Sections <i class="free">Free</i>'), ("/skills/", "Skills"), ("/library/", "Library"), ("/pricing/", "Pricing"), ("/submit/", "Submit")]
+    nav = [("/", "Gallery"), ("/sections/", 'Sections <i class="free">Free</i>'), ("/skills/", "Skills"), ("/repos/", 'Repos <i class="free">Live</i>'), ("/library/", "Library"), ("/pricing/", "Pricing"), ("/submit/", "Submit")]
     navh = "".join(f'<a href="{u}"{" class=on" if u == active else ""}>{t}</a>' for u, t in nav)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer"><title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{DOMAIN}{path}">
@@ -77,10 +77,9 @@ def card(x):
     v = f'<video muted loop playsinline preload="none" data-src="{e(x["video_preview"])}"></video>' if x.get("video_preview") else ""
     dur = f'<span class="dur">{fmt_dur(x.get("duration"))}</span>' if x.get("duration") else ""
     txt = (x['title'] + ' ' + x['handle'] + ' ' + x.get('model', '') + ' ' + ' '.join(x['tags']) + ' ' + (x.get('prompt_text') or '')[:400]).lower()
-    return f"""<article class="card" data-id="{x['id']}" data-type="{x['type']}" data-tags="{e('|'.join(x['tags']))}" data-likes="{x['likes']}" data-plat="{e('|'.join(x['platforms']))}" data-added="{e(x.get('added') or x.get('posted_date',''))}" data-text="{e(txt)}" data-ar="{x.get('ar','')}" data-m="{1 if x.get('image_url') else 0}">
-<a href="/p/{x['id']}/" class="media" aria-label="{e(x['title'])}">{poster(x)}{v}<span class="kind {'skill' if x['type']=='skill' else ''}">{'Skill' if x['type']=='skill' else 'Prompt'}</span>{dur}</a>
-<div class="cmeta"><img class="av" loading="lazy" src="{avatar(x)}" alt=""><div class="t"><h3><a href="/p/{x['id']}/">{e(x['title'])}</a></h3><div class="h">@{e(x['handle'])} · {e(x.get('model',''))}</div></div></div>
-<div class="acts"><button class="act up" data-vote="1" data-vid="{x['id']}" aria-label="Like">{ICON_UP}<span>0</span></button><button class="act down" data-vote="-1" data-vid="{x['id']}" aria-label="Dislike">{ICON_DOWN}<span>0</span></button><a class="act cm" href="/p/{x['id']}/#comments" aria-label="Comments">{ICON_C}<span>0</span></a><button class="act save" data-like="{x['id']}" aria-label="Save">{ICON_H}</button>{f'<button class="act r" data-copyp="{x["id"]}">{ICON_COPY} Copy</button>' if x.get('prompt_text') or x.get('skill') else ''}</div></article>"""
+    return f"""<article class="card" data-id="{x['id']}" data-type="{x['type']}" data-tags="{e('|'.join(x['tags']))}" data-likes="{x['likes']}" data-plat="{e('|'.join(x['platforms']))}" data-added="{e(x.get('added') or x.get('posted_date',''))}" data-text="{e(txt)}" data-ar="{x.get('ar','')}" data-m="{1 if x.get('image_url') else 0}" data-sk="{1 if x['type']=='skill' else 0}">
+<a href="/p/{x['id']}/" class="media" aria-label="{e(x['title'])}">{poster(x)}{v}<span class="kind {'skill' if x['type']=='skill' else ''}">{'Skill' if x['type']=='skill' else 'Prompt'}</span>{dur}{f'<button class="ovcopy" data-copyp="{x["id"]}">{ICON_COPY} Copy {"skill" if x["type"]=="skill" else "prompt"}</button>' if x.get('prompt_text') or x.get('skill') else ''}</a>
+<div class="cmeta"><img class="av" loading="lazy" src="{avatar(x)}" alt=""><div class="t"><h3><a href="/p/{x['id']}/">{e(x['title'])}</a></h3><div class="h">@{e(x['handle'])} · {e(x.get('model',''))}</div></div><div class="acts"><button class="act up" data-vote="1" data-vid="{x['id']}" aria-label="Like">{ICON_UP}<span>0</span></button><button class="act down" data-vote="-1" data-vid="{x['id']}" aria-label="Dislike">{ICON_DOWN}<span>0</span></button><a class="act cm" href="/p/{x['id']}/#comments" aria-label="Comments">{ICON_C}<span>0</span></a><button class="act save" data-like="{x['id']}" aria-label="Save">{ICON_H}</button></div></div></article>"""
 
 SPONSOR_CARD = """<a class="card sponsor" href="/sponsor/" data-sponsor><small>Featured card · Available</small><h3>Your brand here</h3><p>Show a video made with your product to people making motion with AI.</p><span class="btn sm" style="align-self:flex-start">See options →</span></a>"""
 
@@ -89,11 +88,18 @@ def toolbar(d):
     chips = "".join(f'<button class="chip" data-ftag="{e(t)}">{e(t)}<small>{counts[t]}</small></button>' for t in TAGS if counts[t])
     pc = {p: sum(p in x["platforms"] for x in d) for p,_ in PLAT}
     plats = "".join(f'<button class="chip" data-fplat="{e(p)}">{e(p)}<small>{pc[p]}</small></button>' for p,_ in PLAT if pc[p])
-    return f"""<div class="toolbar" id="toolbar"><div class="trow"><div class="search"><input id="q" type="search" placeholder="Search titles, creators, prompts…" aria-label="Search"><kbd>/</kbd></div>
-<button class="chip on" data-ftype="all">All</button><button class="chip" data-ftype="prompt">Prompts</button><button class="chip" data-ftype="skill">Skills</button><button class="chip" data-fsaved="1">♡ Saved</button>
+    return f"""<div class="toolbar" id="toolbar"><div class="trow"><div class="search"><input id="q" type="search" placeholder="Search videos, creators, prompts…" aria-label="Search"><kbd>/</kbd></div>
+<div class="seg"><button class="on" data-ftype="all">All</button><button data-ftype="prompt">Prompts</button><button data-ftype="skill">Skills</button></div>
+<button class="chip" id="ftoggle" aria-expanded="false">Filters<b id="fcount" hidden></b></button><button class="chip" data-fsaved="1">♡ Saved</button><button class="chip" id="clear" hidden>Clear ✕</button>
 <span class="spacer"></span><span class="count" id="count"></span><select class="sort" id="sort" aria-label="Sort"><option value="new">Recently added</option><option value="popular">Popular on X</option><option value="liked">Most liked here</option><option value="discussed">Most discussed</option><option value="random">Shuffle</option></select>
-<button class="chip" id="pause">❚❚ Pause previews</button></div>
-<div class="trow scroll"><span class="lbl">Topic</span>{chips}</div><div class="trow scroll"><span class="lbl">Made with</span>{plats}<span class="lbl" style="margin-left:12px">Shape</span><button class="chip" data-far="wide">Landscape</button><button class="chip" data-far="tall">Vertical</button><button class="chip" data-far="sq">Square</button><button class="chip" id="clear" hidden>Clear filters ✕</button></div></div>"""
+<button class="chip icon" id="pause" title="Pause previews">❚❚</button></div>
+<div class="fpanel" id="fpanel" hidden><div class="frow"><span class="lbl">Topic</span>{chips}</div><div class="frow"><span class="lbl">Made with</span>{plats}</div><div class="frow"><span class="lbl">Shape</span><button class="chip" data-far="wide">Landscape</button><button class="chip" data-far="tall">Vertical</button><button class="chip" data-far="sq">Square</button></div></div></div>
+<template id="promos">
+<a class="card promo sponsor" href="/sponsor/"><small>Sponsored · Available</small><h3>Your brand here</h3><p>Show a video made with your product to people making motion with AI.</p><span class="btn sm">See options →</span></a>
+<a class="card promo p2" href="/submit/"><small>Creators</small><h3>Made something with AI?</h3><p>Submit your video and prompt. We credit and link you to thousands of makers.</p><span class="btn sm">Submit yours →</span></a>
+<a class="card promo p3" href="/repos/"><small>Live</small><h3>What GitHub is starring today</h3><p>The repos gaining the most stars right now, refreshed hourly.</p><span class="btn sm">See trending →</span></a>
+<a class="card promo p4" href="/sections/"><small>Free</small><h3>16 animated website sections</h3><p>Copy straight into Claude Code, Cursor or v0.</p><span class="btn sm">Browse sections →</span></a>
+</template>"""
 
 def write(path, s):
     s = s.replace("{VER}", VER)
@@ -109,6 +115,26 @@ def why(x):
     if not out: out.append("It describes the result, not the steps, and lets the model choose the motion.")
     return out[:3]
 
+def repos_page():
+    import subprocess
+    items=[]
+    try:
+        out=subprocess.run(["node","-e","import('./api_src/api/repos.js').then(m=>m.default({query:{view:'daily'}},{setHeader(){},status(){return{json:j=>console.log(JSON.stringify(j.items))}}}))"],capture_output=True,text=True,timeout=40,cwd=ROOT).stdout
+        items=json.loads(out.strip().splitlines()[-1])
+    except Exception as ex: print("repos prerender failed", ex)
+    rows="".join(f"""<li class="repo"><span class="rk">{i+1}</span><img class="ow" loading="lazy" src="https://github.com/{e(x['name'].split('/')[0])}.png?size=64" alt=""><div class="rb"><a class="rn" href="https://github.com/{e(x['name'])}" target="_blank" rel="noopener">{e(x['name'])}</a><p>{e(x['desc'])}</p><div class="rm"><span>{e(x['lang'])}</span><span>★ {x['stars']:,}</span></div></div><div class="rg"><b>+{x['gain']:,}</b><small>stars today</small></div></li>""" for i,x in enumerate(items))
+    ld=[{"@context":"https://schema.org","@type":"ItemList","name":"GitHub repos gaining the most stars today","itemListElement":[{"@type":"ListItem","position":i+1,"url":"https://github.com/"+x["name"],"name":x["name"]} for i,x in enumerate(items)]},
+        {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which GitHub repos gained the most stars today?","acceptedAnswer":{"@type":"Answer","text":(", ".join(f"{x['name']} (+{x['gain']:,})" for x in items[:5]) or "See the live list")+". PromptReel refreshes this list from GitHub Trending every hour."}},{"@type":"Question","name":"What are the most starred GitHub repositories of all time?","acceptedAnswer":{"@type":"Answer","text":"Open the All-time top tab on PromptReel Repos for the 100 most starred repositories, filterable by language and topic."}}]}]
+    top3=", ".join(x["name"] for x in items[:3])
+    pg=head(f"GitHub Trending Today: Repos Gaining the Most Stars | {SITE}", f"Live GitHub trending: the repos gaining the most stars today, this week and this month, plus the all-time top 100 and brand-new AI repos taking off. Today: {top3}.", "/repos/", ld=ld, active="/repos/")
+    pg+=f"""<main class="wrap"><section class="phero"><h1>What GitHub is <span>starring right now</span></h1><p>The repos gaining the most stars today, this week and this month, the all-time top 100, and brand-new AI projects taking off. Refreshed every hour.</p></section>
+<div class="toolbar" id="rtool"><div class="trow"><div class="search"><input id="rq" type="search" placeholder="Filter repos by name, description, language…" aria-label="Filter repos"><kbd>/</kbd></div>
+<button class="chip on" data-view="daily">🔥 Today</button><button class="chip" data-view="weekly">This week</button><button class="chip" data-view="monthly">This month</button><button class="chip" data-view="top">🏆 All-time top 100</button><button class="chip" data-view="rising">🚀 New & rising</button><button class="chip" data-view="watch">☆ Watchlist</button>
+<span class="spacer"></span><span class="count" id="rcount"></span><select class="sort" id="rlang" aria-label="Language"><option value="">Any language</option><option>python</option><option>typescript</option><option>javascript</option><option>rust</option><option>go</option><option>java</option><option>c++</option><option>swift</option><option>kotlin</option><option>jupyter-notebook</option></select></div>
+<div class="trow scroll" id="rtopics" hidden><span class="lbl">Topic</span><button class="chip on" data-topic="">All</button><button class="chip" data-topic="agents">AI agents</button><button class="chip" data-topic="claude">Claude</button><button class="chip" data-topic="mcp">MCP</button><button class="chip" data-topic="llm">LLMs</button><button class="chip" data-topic="video">Video generation</button><button class="chip" data-topic="motion">Motion & Remotion</button><button class="chip" data-topic="devtools">Dev tools</button></div></div>
+<ol class="repos" id="rlist">{rows}</ol><p class="hint" id="rupd" style="text-align:center;padding-bottom:60px">Data from GitHub Trending and the GitHub API. Star counts belong to each project.</p></main>{FOOT}"""
+    write("/repos/", pg)
+
 def build():
     d = load()
     shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT)
@@ -117,13 +143,12 @@ def build():
     json.dump([{k: x.get(k) for k in ("id","title","handle","model","image_url","type","prompt_text","skill","video_preview")} for x in d], open(os.path.join(OUT, "entries.json"), "w"))
     creators = len({x["handle"].lower() for x in d}); skills = sum(x["type"] == "skill" for x in d)
     cards = [card(x) for x in d]
-    if len(cards) > 5: cards.insert(5, SPONSOR_CARD)
     ld_home = [{"@context":"https://schema.org","@type":"CollectionPage","name":"AI motion videos with their prompts","url":DOMAIN+"/","mainEntity":{"@type":"ItemList","numberOfItems":len(d),"itemListElement":[{"@type":"ListItem","position":i+1,"url":f"{DOMAIN}/p/{x['id']}/","name":x["title"]} for i,x in enumerate(d[:60])]}}]
     home = head(f"{SITE}: AI motion videos and the exact prompts behind them", f"{len(d)} motion videos made with Claude, GPT, Gemini, Remotion and HyperFrames, each with the exact prompt or agent skill that made it. Copy it, customize it, ship it.", "/", ld=ld_home, active="/")
     home += f"""<main class="wrap"><section class="hero"><div><h1>Motion videos made by AI. <span>With the prompts behind them.</span></h1>
 <p class="lead">{len(d)} videos from {creators} creators, each with the exact prompt or agent skill that made it. Copy it, make it yours, ship tonight.</p>
 <form class="sub" id="subform"><input type="email" required placeholder="Your email" aria-label="Email"><button class="btn">Subscribe</button></form><div class="hint">New videos by email, plus a weekly recap. No spam.</div>
-<a class="newlink" href="/sections/">New: 16 free website sections for Claude, Cursor and v0 →</a>
+<a class="newlink" href="/repos/">New: live GitHub trending, today's biggest star gainers →</a>
 <div class="stats"><div><b>{len(d)}</b>videos</div><div><b>{creators}</b>creators</div><div><b>{skills}</b>skills</div><div><b>Daily</b>new from X</div></div></div>
 <aside class="spot"><a href="/sponsor/"><div class="in"><div><span class="pill">Available</span><h3 style="margin-top:14px">Your product here</h3><p>Your image, name and link at the top of the homepage.</p></div></div></a><div class="ft"><div><b>Top sponsor spot</b><br><small>Plus the top spot in the weekly email</small></div><a class="btn sm" href="/sponsor/">See options ↗</a></div></aside></section>
 {toolbar(d)}<div class="grid" id="grid">{''.join(cards)}</div><div class="empty" id="empty" hidden>Nothing matches. <button class="btn ghost sm" onclick="document.getElementById('clear').click()">Clear filters</button></div></main>{FOOT}"""
@@ -192,6 +217,7 @@ def build():
 <div class="panel"><h2>Featured card</h2><p style="color:var(--mute)">A video made with your product inside the gallery grid for a week, labelled Sponsored.</p></div>
 <div class="panel"><h2>Book a week</h2><p style="color:var(--mute)">Ads never appear on creators' own video pages. Every week ends with a views and clicks report.</p><a class="btn" href="mailto:kurmaritish017@gmail.com?subject=Sponsoring%20PromptReel">Email to book</a></div></main>{FOOT}"""
     write("/sponsor/", pg)
+    repos_page()
     extra_pages(d)
     # llms.txt
     llm = [f"# {SITE}", "", f"> {SITE} ({DOMAIN}) is a free gallery of {len(d)} motion videos made with AI (mostly Claude Opus 5.5, also GPT, Gemini, Remotion, HyperFrames), each paired with the exact prompt or agent skill that produced it, credited and linked to the original creator's post.", "",
@@ -200,7 +226,7 @@ def build():
     write("/llms.txt", "\n".join(llm) + "\n")
     write("/llms-full.txt", "\n".join(llm[:3]) + "\n\n## All videos\n" + "\n".join(f"- [{x['title']}]({DOMAIN}/p/{x['id']}/): {x.get('model','AI')} {x['type']} by @{x['handle']}" for x in d) + "\n")
     today = datetime.date.today().isoformat()
-    urls = ["/", "/sections/", "/skills/", "/pricing/", "/help/", "/privacy/", "/terms/", "/submit/", "/sponsor/"] + [f"/sections/{x['id']}/" for x in SECTIONS] + [f"/p/{x['id']}/" for x in d] + [f"/tags/{slugify(t)}/" for t in TAGS if any(t in x["tags"] for x in d)]
+    urls = ["/", "/repos/", "/sections/", "/skills/", "/pricing/", "/help/", "/privacy/", "/terms/", "/submit/", "/sponsor/"] + [f"/sections/{x['id']}/" for x in SECTIONS] + [f"/p/{x['id']}/" for x in d] + [f"/tags/{slugify(t)}/" for t in TAGS if any(t in x["tags"] for x in d)]
     vid = {f"/p/{x['id']}/": x for x in d if x.get("video_full")}
     def u(p):
         x = vid.get(p); extra = ""

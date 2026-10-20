@@ -62,7 +62,7 @@ const io=('IntersectionObserver' in window)?new IntersectionObserver(es=>es.forE
   if(en.isIntersecting&&!paused){if(!v.src&&v.dataset.src){v.src=v.dataset.src}const p=v.play();p&&p.catch(()=>{})}else{v.pause()}}),{rootMargin:'120px 0px',threshold:.35}):null;
 $$('.media video').forEach(v=>{v.addEventListener('playing',()=>v.classList.add('on'));v.addEventListener('error',()=>v.remove());io&&io.observe(v)});
 const pb=$('#pause');
-function setPause(p){paused=p;LS.set('pr-paused',p);if(pb){pb.textContent=p?'▶ Play previews':'❚❚ Pause previews';pb.classList.toggle('on',p)}
+function setPause(p){paused=p;LS.set('pr-paused',p);if(pb){pb.textContent=p?'▶':'❚❚';pb.title=p?'Play previews':'Pause previews';pb.classList.toggle('on',p)}
   $$('.media video').forEach(v=>{if(p)v.pause();else{const r=v.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0&&!v.closest('[hidden]')){if(!v.src)v.src=v.dataset.src;v.play().catch(()=>{})}}})}
 if(pb){pb.onclick=()=>setPause(!paused);setPause(paused)}
 document.addEventListener('visibilitychange',()=>{if(document.hidden)$$('video').forEach(v=>v.pause())});
@@ -73,7 +73,7 @@ if(grid&&q){
   const st={type:'all',tags:new Set(),plat:'',ar:'',saved:false,q:'',sort:'new'};
   const P=new URLSearchParams(location.search);
   if(P.get('q')){st.q=P.get('q').toLowerCase();q.value=P.get('q')}if(P.get('tag'))st.tags.add(P.get('tag'));if(P.get('type'))st.type=P.get('type');if(P.get('sort'))st.sort=P.get('sort');if(P.get('plat'))st.plat=P.get('plat');
-  const cards=[...grid.querySelectorAll('.card[data-id]')],sp=grid.querySelector('[data-sponsor]');
+  const cards=[...grid.querySelectorAll('.card[data-id]')];const tpl=document.getElementById('promos');const PROMOS=tpl?[...tpl.content.children]:[];
   const seed=Math.random();const rnd=id=>{let h=0;for(const c of id+seed)h=(h*31+c.charCodeAt(0))|0;return h};
   function apply(){
     const sv=saved();let shown=0;
@@ -84,10 +84,12 @@ if(grid&&q){
       const ok=(st.type==='all'||c.dataset.type===st.type)&&[...st.tags].every(t=>tags.includes(t))&&(!st.plat||c.dataset.plat.split('|').includes(st.plat))&&(!st.ar||c.dataset.ar===st.ar)&&(!st.saved||sv.includes(c.dataset.id))&&(!st.q||st.q.split(/\s+/).every(w=>c.dataset.text.includes(w)));
       c.hidden=!ok;if(ok)shown++;frag.appendChild(c)});
     grid.appendChild(frag);
-    if(sp){const filtered=st.tags.size||st.q||st.plat||st.ar||st.saved||st.type!=='all';sp.hidden=!!filtered;const vis=list.filter(c=>!c.hidden);if(!filtered&&vis[4])vis[4].after(sp)}
+    grid.querySelectorAll('.promo').forEach(p=>p.remove());
+    const vis=list.filter(c=>!c.hidden);let k=0,out=[];vis.forEach(c=>{out.push(c);if(out.length%8===7&&PROMOS.length){const p=PROMOS[k++%PROMOS.length].cloneNode(true);out.push(p);c.after(p)}});
+    const cols=getComputedStyle(grid).gridTemplateColumns.split(' ').length||4;out.forEach((c,i)=>c.classList.toggle('snap',i%(cols*2)===0));
     $('#empty').hidden=shown>0;$('#count').textContent=shown+' of '+cards.length;
     const any=st.tags.size||st.q||st.plat||st.ar||st.saved||st.type!=='all';$('#clear').hidden=!any;
-    $$('[data-ftype]').forEach(b=>b.classList.toggle('on',b.dataset.ftype===st.type));
+    $$('[data-ftype]').forEach(b=>b.classList.toggle('on',b.dataset.ftype===st.type));const fc=st.tags.size+(st.plat?1:0)+(st.ar?1:0);const fb=$('#fcount');fb.hidden=!fc;fb.textContent=fc;
     $$('[data-ftag]').forEach(b=>b.classList.toggle('on',st.tags.has(b.dataset.ftag)));
     $$('[data-fplat]').forEach(b=>b.classList.toggle('on',b.dataset.fplat===st.plat));
     $$('[data-far]').forEach(b=>b.classList.toggle('on',b.dataset.far===st.ar));
@@ -98,6 +100,9 @@ if(grid&&q){
     if(!paused)setTimeout(()=>setPause(false),50);
   }
   window.__apply=apply;
+  const ft=$('#ftoggle'),fp=$('#fpanel');ft.onclick=()=>{fp.hidden=!fp.hidden;ft.setAttribute('aria-expanded',!fp.hidden);ft.classList.toggle('on',!fp.hidden);setTB()};
+  const tbEl=$('#toolbar');function setTB(){document.documentElement.style.setProperty('--tb',tbEl.offsetHeight+'px');document.documentElement.style.setProperty('--hdr',document.querySelector('header').offsetHeight+'px')}
+  setTB();addEventListener('resize',setTB);document.documentElement.classList.add('snapy');
   $$('[data-ftype]').forEach(b=>b.onclick=()=>{st.type=b.dataset.ftype;apply()});
   $$('[data-ftag]').forEach(b=>b.onclick=()=>{const t=b.dataset.ftag;st.tags.has(t)?st.tags.delete(t):st.tags.add(t);apply()});
   $$('[data-fplat]').forEach(b=>b.onclick=()=>{st.plat=st.plat===b.dataset.fplat?'':b.dataset.fplat;apply()});
@@ -165,3 +170,27 @@ const sg=$('#s-go');
 if(sg)sg.onclick=()=>{const body=`Post: ${$('#s-url').value}\nModel: ${$('#s-model').value}\n\nPrompt / skill:\n${$('#s-prompt').value}`;
   location.href='mailto:kurmaritish017@gmail.com?subject='+encodeURIComponent('PromptReel submission')+'&body='+encodeURIComponent(body)};
 })();
+/* ---------- repos ---------- */
+(function(){const list=document.getElementById('rlist');if(!list)return;
+const $$=s=>[...document.querySelectorAll(s)];const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
+const st={view:'daily',topic:'',lang:'',q:''};let data=[];const cache={};
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>n>=1e3?(n/1e3).toFixed(n>=1e4?0:1)+'k':String(n);
+const unit={daily:'stars today',weekly:'stars this week',monthly:'stars this month'};
+function draw(){const w=LS.get('pr-watch',[]);let items=st.view==='watch'?w.map(n=>(Object.values(cache).flat().find(x=>x.name===n))||{name:n,desc:'',lang:'',stars:0}):data;
+  if(st.q)items=items.filter(x=>(x.name+' '+x.desc+' '+x.lang+' '+(x.topics||[]).join(' ')).toLowerCase().includes(st.q));
+  const max=Math.max(1,...items.map(x=>x.gain||0));
+  list.innerHTML=items.length?items.map((x,i)=>{const own=x.name.split('/')[0];const right=x.gain?`<div class="rg"><b>+${x.gain.toLocaleString()}</b><small>${unit[st.view]||'stars'}</small><div class="rbar" style="width:${Math.max(12,Math.round(x.gain/max*90))}px"></div></div>`:st.view==='rising'&&x.created?`<div class="rg"><b>★ ${fmt(x.stars)}</b><small>${Math.max(1,Math.round((Date.now()-new Date(x.created))/864e5))} days old</small></div>`:`<div class="rg"><b style="color:var(--text)">★ ${fmt(x.stars)}</b><small>${fmt(x.forks||0)} forks</small></div>`;
+    return `<li class="repo"><span class="rk">${i+1}</span><img class="ow" loading="lazy" src="https://github.com/${esc(own)}.png?size=64" alt=""><div class="rb"><a class="rn" href="https://github.com/${esc(x.name)}" target="_blank" rel="noopener">${esc(x.name)}</a><p>${esc(x.desc)}</p><div class="rm">${x.lang?`<span>${esc(x.lang)}</span>`:''}<span>★ ${x.stars.toLocaleString()}</span>${(x.topics||[]).slice(0,3).map(t=>`<span class="tp">${esc(t)}</span>`).join('')}<button data-clone="${esc(x.name)}">Copy clone</button><a class="ra" target="_blank" rel="noopener" href="https://claude.ai/new?q=${encodeURIComponent('Explain what github.com/'+x.name+' does, who it is for, and how to get started with it in 5 steps.')}">Ask Claude ↗</a><button data-watch="${esc(x.name)}" class="${w.includes(x.name)?'on':''}">${w.includes(x.name)?'★ Watching':'☆ Watch'}</button></div></div>${right}</li>`}).join(''):`<p class="empty">${st.view==='watch'?'Tap ☆ Watch on any repo to track it here.':'Nothing matches.'}</p>`;
+  document.getElementById('rcount').textContent=items.length+' repos'}
+async function load(){if(st.view==='watch'){draw();return}const k=JSON.stringify([st.view,st.topic,st.lang]);
+  if(!cache[k]){list.style.opacity=.5;try{const r=await fetch(`/api/repos?view=${st.view}&topic=${st.topic}&lang=${encodeURIComponent(st.lang)}`);cache[k]=(await r.json()).items||[]}catch{cache[k]=[]}list.style.opacity=1}
+  data=cache[k];draw()}
+$$('[data-view]').forEach(b=>b.onclick=()=>{st.view=b.dataset.view;$$('[data-view]').forEach(x=>x.classList.toggle('on',x===b));document.getElementById('rtopics').hidden=!['top','rising'].includes(st.view);load()});
+$$('[data-topic]').forEach(b=>b.onclick=()=>{st.topic=b.dataset.topic;$$('[data-topic]').forEach(x=>x.classList.toggle('on',x===b));load()});
+document.getElementById('rlang').onchange=e=>{st.lang=e.target.value;load()};
+document.getElementById('rq').oninput=e=>{st.q=e.target.value.trim().toLowerCase();draw()};
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();document.getElementById('rq').focus()}});
+list.addEventListener('click',e=>{const c=e.target.closest('[data-clone]');if(c){navigator.clipboard.writeText('git clone https://github.com/'+c.dataset.clone+'.git');c.textContent='Copied ✓';setTimeout(()=>c.textContent='Copy clone',1300)}
+  const w=e.target.closest('[data-watch]');if(w){let l=LS.get('pr-watch',[]);const n=w.dataset.watch;l=l.includes(n)?l.filter(x=>x!==n):[...l,n];LS.set('pr-watch',l);draw()}});
+load()})();
