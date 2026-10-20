@@ -161,3 +161,7 @@ html.snapy{scroll-snap-type:y proximity}
 .hero .stats{margin-top:14px}.spot .in{aspect-ratio:16/8}
 .logo{display:inline-flex;align-items:center;gap:9px}.logo i{display:none}.logo img{border-radius:8px;box-shadow:0 4px 12px -4px rgba(124,92,255,.5)}
 .logo .lr{background:linear-gradient(90deg,#0A84FF,#7C5CFF 55%,#FF4D6D);-webkit-background-clip:text;background-clip:text;color:transparent;margin-left:-9px}
+.prices.four{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));padding-bottom:0}.prices.four .panel{padding:24px}.prices.four .price{font-size:38px}
+.place{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:12px 0}.place>div{background:var(--soft,#f5f5f7);border-radius:16px;padding:14px 16px}.place p{margin:6px 0 0;color:var(--mute);font-size:14px}
+.foot-sub{max-width:460px;margin:0 auto 18px}
+.nudge{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:60;background:#fff;border:1px solid rgba(0,0,0,.1);box-shadow:0 12px 40px rgba(0,0,0,.18);border-radius:20px;padding:16px 18px;width:min(440px,calc(100% - 24px))}.nudge b{display:block;margin-bottom:4px}.nudge p{margin:0 0 10px;color:var(--mute);font-size:14px}.nudge .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:20px;cursor:pointer;color:var(--mute)}

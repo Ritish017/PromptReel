@@ -20,7 +20,7 @@ const myVotes=()=>LS.get('pr-votes',{});
 /* ---------- Google sign-in ---------- */
 const auth=$('#auth'),CID=auth&&auth.dataset.client;
 function parseJwt(t){return JSON.parse(decodeURIComponent(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')).split('').map(c=>'%'+('00'+c.charCodeAt(0).toString(16)).slice(-2)).join('')))}
-function onCred(r){const p=parseJwt(r.credential);const old=saved();LS.set('pr-user',{email:p.email,name:p.name,picture:p.picture});sessionStorage.setItem('pr-cred',r.credential);
+function onCred(r){const p=parseJwt(r.credential);const old=saved();LS.set('pr-user',{email:p.email,name:p.name,picture:p.picture});sessionStorage.setItem('pr-cred',r.credential);fetch('/api/users',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({credential:r.credential})}).catch(()=>{});track('login',{method:'google'});
   LS.set(K(),[...new Set([...(LS.get(K(),[])),...old])]);
   const back=sessionStorage.getItem('pr-back');sessionStorage.removeItem('pr-back');toast('Signed in as '+p.name);setTimeout(()=>{if(back)location.href=back;else location.reload()},600)}
 function renderAuth(){const u=user();if(!auth||!u)return;
@@ -150,9 +150,14 @@ if(cf){const id=cf.dataset.id,cl=$('#clist');const u=user();if(u){$('#cwho').tex
 }
 
 /* ---------- subscribe ---------- */
-const sf=$('#subform');
-if(sf)sf.onsubmit=async e=>{e.preventDefault();const i=sf.querySelector('input');const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:i.value})}).catch(()=>null);
-  if(r&&r.ok){track('subscribe');sf.innerHTML='<div class="btn" style="cursor:default">✓ You\'re subscribed</div>'}else toast('Check the email and try again')};
+async function subscribe(email,source){const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,source})}).catch(()=>null);
+  if(r&&r.ok){track('subscribe',{source});localStorage.setItem('pr-sub','1');return true}toast('Check the email and try again');return false}
+function wireSub(f,source){f.onsubmit=async e=>{e.preventDefault();const i=f.querySelector('input');if(await subscribe(i.value,source)){f.innerHTML='<div class="btn" style="cursor:default">✓ You\'re subscribed. See you Monday.</div>';const n=f.closest('.nudge');if(n)setTimeout(()=>n.remove(),1800)}}}
+$$('.subform').forEach(f=>wireSub(f,f.classList.contains('foot-sub')?'footer':location.pathname==='/newsletter/'?'newsletter':'home'));
+function nudge(){if(localStorage.getItem('pr-sub')||sessionStorage.getItem('pr-nudged'))return;sessionStorage.setItem('pr-nudged','1');
+  const n=document.createElement('div');n.className='nudge';n.innerHTML='<button class="x" aria-label="Close">×</button><b>Copied. Want 5 more like this every Monday?</b><p>New AI videos with the exact prompt, plus trending repos. Free, one-click unsubscribe.</p><form class="sub subform"><input type="email" required placeholder="Your email" aria-label="Email"><button class="btn sm">Subscribe</button></form>';
+  document.body.appendChild(n);n.querySelector('.x').onclick=()=>n.remove();wireSub(n.querySelector('form'),'after-copy');track('nudge_shown')}
+document.addEventListener('click',e=>{const a=e.target.closest('[data-copyp],[data-copy],[data-copysec]');if(a)setTimeout(nudge,1200)});
 
 /* ---------- sections ---------- */
 let SEC=null;const secs=()=>SEC||(SEC=fetch('/sections.json').then(r=>r.json()));
