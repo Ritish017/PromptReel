@@ -1,0 +1,275 @@
+[
+ {
+  "id": "skill-openmontage",
+  "handle": "calesthio",
+  "display_name": "calesthio",
+  "post_url": "https://github.com/calesthio/OpenMontage",
+  "repo": "https://github.com/calesthio/OpenMontage",
+  "posted_date": "2026-03-29",
+  "added": "2026-10-16",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Openmontage skill",
+  "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+  "skill": "npx skills add calesthio/OpenMontage",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "likes": 70255,
+  "image_url": "https://opengraph.githubassets.com/1/calesthio/OpenMontage",
+  "source": "github"
+ },
+ {
+  "id": "skill-video-shotcraft",
+  "handle": "Vincentwei1021",
+  "display_name": "Vincentwei1021",
+  "post_url": "https://github.com/Vincentwei1021/video-shotcraft",
+  "repo": "https://github.com/Vincentwei1021/video-shotcraft",
+  "posted_date": "2026-07-19",
+  "added": "2026-10-17",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Video Shotcraft skill",
+  "summary": "AI video skill for Claude Code & Codex \u2014 cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template",
+  "skill": "npx skills add Vincentwei1021/video-shotcraft",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "likes": 12658,
+  "image_url": "https://opengraph.githubassets.com/1/Vincentwei1021/video-shotcraft",
+  "source": "github"
+ },
+ {
+  "id": "skill-anything2explainer",
+  "handle": "Vincentwei1021",
+  "display_name": "Vincentwei1021",
+  "post_url": "https://github.com/Vincentwei1021/anything2explainer",
+  "repo": "https://github.com/Vincentwei1021/anything2explainer",
+  "posted_date": "2026-09-08",
+  "added": "2026-09-18",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Anything2Explainer skill",
+  "summary": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+  "skill": "npx skills add Vincentwei1021/anything2explainer",
+  "tags": [
+   "Diagrams",
+   "Kinetic type"
+  ],
+  "likes": 2642,
+  "image_url": "https://opengraph.githubassets.com/1/Vincentwei1021/anything2explainer",
+  "source": "github"
+ },
+ {
+  "id": "skill-video-talkcraft",
+  "handle": "Vincentwei1021",
+  "display_name": "Vincentwei1021",
+  "post_url": "https://github.com/Vincentwei1021/video-talkcraft",
+  "repo": "https://github.com/Vincentwei1021/video-talkcraft",
+  "posted_date": "2026-08-22",
+  "added": "2026-10-12",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Video Talkcraft skill",
+  "summary": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos \u2014 word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering.",
+  "skill": "npx skills add Vincentwei1021/video-talkcraft",
+  "tags": [
+   "Diagrams",
+   "Kinetic type"
+  ],
+  "likes": 1670,
+  "image_url": "https://opengraph.githubassets.com/1/Vincentwei1021/video-talkcraft",
+  "source": "github"
+ },
+ {
+  "id": "skill-motionmaxxing",
+  "handle": "Tejashmakwana",
+  "display_name": "Tejashmakwana",
+  "post_url": "https://github.com/Tejashmakwana/motionmaxxing",
+  "repo": "https://github.com/Tejashmakwana/motionmaxxing",
+  "posted_date": "2026-10-06",
+  "added": "2026-10-06",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Motionmaxxing skill",
+  "summary": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+  "skill": "npx skills add Tejashmakwana/motionmaxxing",
+  "tags": [
+   "Shapes",
+   "Kinetic type"
+  ],
+  "likes": 928,
+  "image_url": "https://opengraph.githubassets.com/1/Tejashmakwana/motionmaxxing",
+  "source": "github"
+ },
+ {
+  "id": "skill-motion-skills",
+  "handle": "iart-ai",
+  "display_name": "iart-ai",
+  "post_url": "https://github.com/iart-ai/motion-skills",
+  "repo": "https://github.com/iart-ai/motion-skills",
+  "posted_date": "2026-06-22",
+  "added": "2026-10-14",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Motion Skills skill",
+  "summary": "50 open-source skills that teach your AI coding agent to make motion graphics, animation & video \u2014 kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 14 installable packs. By iart.ai, the AI motion agent.",
+  "skill": "npx skills add iart-ai/motion-skills",
+  "tags": [
+   "Kinetic type",
+   "Charts",
+   "3D"
+  ],
+  "likes": 916,
+  "image_url": "https://opengraph.githubassets.com/1/iart-ai/motion-skills",
+  "source": "github"
+ },
+ {
+  "id": "skill-bang-motion",
+  "handle": "bangtutorial",
+  "display_name": "bangtutorial",
+  "post_url": "https://github.com/bangtutorial/bang-motion",
+  "repo": "https://github.com/bangtutorial/bang-motion",
+  "posted_date": "2026-09-05",
+  "added": "2026-09-15",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Bang Motion skill",
+  "summary": "Agent skill for browser motion graphics \u2014 openers, promos, bumpers, kinetic typography, and five explainer styles that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor.",
+  "skill": "npx skills add bangtutorial/bang-motion",
+  "tags": [
+   "Kinetic type",
+   "Shapes"
+  ],
+  "likes": 667,
+  "image_url": "https://opengraph.githubassets.com/1/bangtutorial/bang-motion",
+  "source": "github"
+ },
+ {
+  "id": "skill-claude-remotion-skill",
+  "handle": "haidrrrry",
+  "display_name": "haidrrrry",
+  "post_url": "https://github.com/haidrrrry/claude-remotion-skill",
+  "repo": "https://github.com/haidrrrry/claude-remotion-skill",
+  "posted_date": "2026-06-13",
+  "added": "2026-08-12",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Claude Remotion Skill skill",
+  "summary": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design \u2014 from one prompt.",
+  "skill": "npx skills add haidrrrry/claude-remotion-skill",
+  "tags": [
+   "Product UI",
+   "Music"
+  ],
+  "likes": 551,
+  "image_url": "https://opengraph.githubassets.com/1/haidrrrry/claude-remotion-skill",
+  "source": "github"
+ },
+ {
+  "id": "skill-lemo-opuscar",
+  "handle": "lemomo-ai",
+  "display_name": "lemomo-ai",
+  "post_url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+  "posted_date": "2026-09-26",
+  "added": "2026-10-19",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Lemo Opuscar skill",
+  "summary": "Claude Code skill for short films with no video model: 51 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98 and the new Evidence Films). By Lemomo. \u00b7 Opus5.5 x 51 \u79cd\u5f71\u7247\u98ce\u683c\uff1a\u98ce\u683c\u63d0\u793a\u8bcd + \u7eaf\u4ee3\u7801\u6837\u7247 + \u5bfc\u6f14\u4e0e\u6280\u672f\u6307\u5357\uff08\u65b0\u589e\u300c\u5b9e\u8bc1\u5f71\u50cf\u300d\uff09",
+  "skill": "npx skills add lemomo-ai/lemo-opuscar",
+  "tags": [
+   "Characters",
+   "Photos"
+  ],
+  "likes": 4332,
+  "image_url": "https://opengraph.githubassets.com/1/lemomo-ai/lemo-opuscar",
+  "source": "github"
+ },
+ {
+  "id": "skill-motion-graphics-skills",
+  "handle": "charlie947",
+  "display_name": "charlie947",
+  "post_url": "https://github.com/charlie947/motion-graphics-skills",
+  "repo": "https://github.com/charlie947/motion-graphics-skills",
+  "posted_date": "2026-09-26",
+  "added": "2026-10-11",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Motion Graphics Skills skill",
+  "summary": "13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator.",
+  "skill": "npx skills add charlie947/motion-graphics-skills",
+  "tags": [
+   "Product UI",
+   "Kinetic type"
+  ],
+  "likes": 351,
+  "image_url": "https://opengraph.githubassets.com/1/charlie947/motion-graphics-skills",
+  "source": "github"
+ },
+ {
+  "id": "skill-vox-ai-motion-graphics-generator",
+  "handle": "Anil-matcha",
+  "display_name": "Anil-matcha",
+  "post_url": "https://github.com/Anil-matcha/vox-ai-motion-graphics-generator",
+  "repo": "https://github.com/Anil-matcha/vox-ai-motion-graphics-generator",
+  "posted_date": "2023-11-07",
+  "added": "2026-09-02",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Vox Ai Motion Graphics Generator skill",
+  "summary": "\ud83c\udfac Turn any topic into a finished Vox-style paper-collage explainer / motion graphics video \u2014 script, collage keyframes, animation, voice-over, music & captions, all automated. An agent skill for Claude Code, Codex & other coding agents.",
+  "skill": "npx skills add Anil-matcha/vox-ai-motion-graphics-generator",
+  "tags": [
+   "Diagrams",
+   "Photos"
+  ],
+  "likes": 276,
+  "image_url": "https://opengraph.githubassets.com/1/Anil-matcha/vox-ai-motion-graphics-generator",
+  "source": "github"
+ },
+ {
+  "id": "skill-opus-video-skills",
+  "handle": "tuzhechen2005",
+  "display_name": "tuzhechen2005",
+  "post_url": "https://github.com/tuzhechen2005/opus-video-skills",
+  "repo": "https://github.com/tuzhechen2005/opus-video-skills",
+  "posted_date": "2026-09-26",
+  "added": "2026-09-27",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Opus Video Skills skill",
+  "summary": "Video-making skills for Claude Opus 5.5 in Claude Code \u2014 every frame and note generated in code, one skill per style: hand-painted animation, kinetic-typography reels | \u7528 Claude Opus 5.5 \u4ee5\u4ee3\u7801\u5236\u4f5c\u89c6\u9891\u7684\u6280\u80fd\u5408\u96c6",
+  "skill": "npx skills add tuzhechen2005/opus-video-skills",
+  "tags": [
+   "Characters",
+   "Kinetic type"
+  ],
+  "likes": 268,
+  "image_url": "https://opengraph.githubassets.com/1/tuzhechen2005/opus-video-skills",
+  "source": "github"
+ },
+ {
+  "id": "skill-vox-explainer-skill",
+  "handle": "CK42BB",
+  "display_name": "CK42BB",
+  "post_url": "https://github.com/CK42BB/vox-explainer-skill",
+  "repo": "https://github.com/CK42BB/vox-explainer-skill",
+  "posted_date": "2026-07-11",
+  "added": "2026-07-11",
+  "model": "Claude Code / Codex",
+  "type": "skill",
+  "title": "Vox Explainer Skill skill",
+  "summary": "A Claude Code skill that turns one topic prompt into a finished Vox-style explainer video. Script, keyframes, animation, voiceover, music, and local assembly \u2014 end to end.",
+  "skill": "npx skills add CK42BB/vox-explainer-skill",
+  "tags": [
+   "Diagrams"
+  ],
+  "likes": 121,
+  "image_url": "https://opengraph.githubassets.com/1/CK42BB/vox-explainer-skill",
+  "source": "github"
+ }
+]

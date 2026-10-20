@@ -1,0 +1,719 @@
+[
+  {
+    "id": "astrodevil-3f2054",
+    "handle": "Astrodevil_",
+    "display_name": "Mr. Ånand",
+    "post_url": "https://x.com/Astrodevil_/status/2103600734017392708",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Studio1 intro showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible work Studio1 is doing, you will get relevant info from case study, create like it's a good showreel for a Studio1 intro launch. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Charts",
+      "Kinetic type"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "hoyoyoda-3a5c08",
+    "handle": "hoyoyoda",
+    "display_name": "호요요🌱",
+    "post_url": "https://x.com/hoyoyoda/status/2103400046922543147",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Chuseok pixel night scene",
+    "prompt_text": "한국의 추석에 어울리는 요소를 서치해서 픽셀 애니메이션을 구성해서 제작해줘",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "macrohou-33959d",
+    "handle": "macrohou",
+    "display_name": "Josh",
+    "post_url": "https://x.com/macrohou/status/2103545787875733862",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Ren app launch video",
+    "prompt_text": "[gave access to Ren repo] Make a dynamic 30-second motion graphics video for Ren that shows off your motion and sound design. Go crazy.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone",
+      "Charts"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "madhav-xo-f97f20",
+    "handle": "Madhav_XO",
+    "display_name": "Madhav",
+    "post_url": "https://x.com/Madhav_XO/status/2103605007396524440",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Personal research intro reel",
+    "prompt_text": "make a 10 sec video on whatever you know about me",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Particles",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "buildfastwithai-ed9447",
+    "handle": "BuildFastWithAI",
+    "display_name": "Build Fast with AI",
+    "post_url": "https://x.com/BuildFastWithAI/status/2103152898708582551",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "Three.js",
+    "title": "Three.js Skyraider aircraft model",
+    "prompt_text": "Build a Douglas A-1H Skyraider in Three.js",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "rames-jusso-589f80",
+    "handle": "Rames_Jusso",
+    "display_name": "James Russo",
+    "post_url": "https://x.com/Rames_Jusso/status/2103200703598776559",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "HyperFrames",
+    "title": "UK dubstep track with ASCII visuals",
+    "prompt_text": "140 BPM rusko/skream style UK dubstep",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Music",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "topi-003-b0e12c",
+    "handle": "_topi_003",
+    "display_name": "とぴとぴAI@Nocteria",
+    "post_url": "https://x.com/_topi_003/status/2104088986969055288",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Anime maid dance showreel",
+    "prompt_text": "この画像の女の子がエキサイトなダンスをする、ダイナミックな15秒のモーショングラフィックスビデオを作成してください。履歴書用のショーリールのような感じで、全力でやって。",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Characters",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ik-builds-b8bdcf",
+    "handle": "ik_builds",
+    "display_name": "Ittehadul Karim",
+    "post_url": "https://x.com/ik_builds/status/2103890476885585923",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "HyperFrames + GSAP",
+    "title": "Paper-style product launch film",
+    "prompt_text": "Create a 15s motion-graphics film explaining {{PRODUCT}}. HyperFrames + GSAP, no voiceover, no footage. Style: paper-light canvas, marker notes that draw on, real physics, huge kinetic type, hard light/dark switches, a new idea every 1.5–2 s, a sound on every hit. COPY: read {{POSITIONING_DOCS}} first. {{ONE_LINER}} For {{AUDIENCE}}. {{WHAT_IT_DOES}} Name what the product learns, never the abstraction. RULES - No chrome (scrubber, timecode, fps, headers). No animator jargon on screen (\"squash\", \"stagger\", \"easing\"...). Every word speaks to the buyer. - No invented results: no %, multipliers, customer names or figures. - Never use: {{BANNED_WORDS}}. - Logo: real mark {{LOGO_FILE}} + \"{{PRODUCT}}\" in {{WORDMARK_FONT}}; never a boxed logo file. CRAFT - Colours {{COLOR_CANVAS}} / {{COLOR_INK}} / {{COLOR_ACCENT_1}} / {{COLOR_ACCENT_2}}; notes in the accents; dark mode = charcoal matching the palette. - Fonts {{BRAND_FONTS}}; Anton for kinetic type; Caveat handwriting via stroke-dashoffset. - Real easing, squash/stretch, stagger, overlap, onion skin, smear, follow-through. Check the HyperFrames registry first. Set every from-state at t=0 (seek-safe); never cover an exit. One primary move per transition; no generic push/slide/rotate-swing. - Music in sections: drums drop on the dark switch and while the ball is airborne, slam back on the type and the logo. SFX: pops, pen scribbles, whooshes, logo sub-hit. CC0 or generated only; log sources. Master -14 LUFS, -2 dBTP, re-measured after AAC encode.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Charts",
+      "Diagrams",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "wani-shola-16ca7a",
+    "handle": "wani_shola",
+    "display_name": "Wani",
+    "post_url": "https://x.com/wani_shola/status/2103769906638459278",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "Remotion",
+    "title": "Developer portfolio site showreel",
+    "prompt_text": "Make a showreel-style motion graphics video for my portfolio website, https://t.co/xZFGCqi73s, using Remotion. It should show what I do as a developer relations engineer, like a showreel for my résumé. - Use as much of the real website as possible: capture the pages and sections in a browser (home, Ask, package pages, Hire, mobile view, dark mode) and animate them inside browser and phone frames. - Show the site's chat answering real questions about my work, with the questions and answers large and bold. Use only facts and numbers that are on the site. - Follow premium brand rules: three colours and the site's own fonts, one idea per shot, key objects centred, space to breathe, eased motion only, smooth transitions instead of hard cuts, and a rhythm that speeds up and slows down with the story. - Add music at about 120 BPM (elite, kinetic, sophisticated) and cut every scene on the beat. No extra sound effects. - 1920×1080, about 90 to 100 seconds, ending on the website and my contact email.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "manuelogomigo-f33ca9",
+    "handle": "manuelogomigo",
+    "display_name": "Manuel Ogomigo",
+    "post_url": "https://x.com/manuelogomigo/status/2103614667038052364",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Flowdrive motion showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a flowdrive. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Shapes",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "mrtanviir-132457",
+    "handle": "mrtanviir",
+    "display_name": "Tanvir Hossain",
+    "post_url": "https://x.com/mrtanviir/status/2103608767309132205",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Claude motion designer showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "0xevinho-3777d8",
+    "handle": "0xEvinho",
+    "display_name": "Evinho",
+    "post_url": "https://x.com/0xEvinho/status/2103212966703436195",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Pixel wizard crypto animation",
+    "prompt_text": "make a similar version but with a crypto reference",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "chrisjdimarco-f068db",
+    "handle": "chrisjdimarco",
+    "display_name": "Christopher J. DiMarco",
+    "post_url": "https://x.com/chrisjdimarco/status/2103232192847524106",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "JavaScript",
+    "title": "Fiery samurai kata",
+    "prompt_text": "make a samurai dude in only javascript and have him doing a routine in a single spot going through various seriously impressive poses and motions and positions in a fiery awesome display",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Particles",
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "jayscambler-3f8889",
+    "handle": "JayScambler",
+    "display_name": "Jay Scambler",
+    "post_url": "https://x.com/JayScambler/status/2104634653491495095",
+    "posted_date": "Sep 28, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "FundMyCompute platform overview",
+    "prompt_text": "make a dynamic 20-second motion graphics video for fundmycompute that gives an overview of the platform and shows what an incredible motion designer you are",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "utopyaszx-1b2f94",
+    "handle": "utopyaszx",
+    "display_name": "Ahmet Saridag",
+    "post_url": "https://x.com/utopyaszx/status/2104665591428624771",
+    "posted_date": "Sep 28, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Bold Pilot SEO promo",
+    "prompt_text": "make a dynamic 15-second motion graphics video for Bold Pilot that shows what an incredible motion designer you are, like it's your showreel for a resume. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Charts",
+      "Kinetic type"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "aschapmann-131210",
+    "handle": "aschapmann",
+    "display_name": "Axel Schapmann",
+    "post_url": "https://x.com/aschapmann/status/2104230888812724497",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "Remotion",
+    "title": "SaaS launch video",
+    "prompt_text": "Act as a senior motion designer and build a 30-second launch video for [product] in Remotion, entirely in code so I can edit and re-render it: first read my landing page and codebase to pull the real story, copy, colors, font and logo file (trace the logo to SVG so it stays sharp and can be animated), then write the video as one story (why the market matters, why it's painful today, how [product] fixes it, what you get) in 4 to 5 scenes with one short title each, animate everything like a premium product film (kinetic typography word by word, spring easing, smooth camera pushes and pans, depth and glow, elements that build in on the beat instead of just appearing), keep each scene on screen long enough to read, add one soft sound effect for every element that appears and silence otherwise, and end on a memorable animated logo reveal with the tagline and URL, then render it, check the frames yourself and fix anything that overlaps, clips or feels rushed before showing me the result.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "marklaunches-3b9492",
+    "handle": "marklaunches",
+    "display_name": "Mark Hinschberger",
+    "post_url": "https://x.com/marklaunches/status/2103811146411041046",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Step race app promo",
+    "prompt_text": "build me an incredible video for my app. make it emotional.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "web3wesley-7bb108",
+    "handle": "Web3Wesley",
+    "display_name": "Web3 Wesley",
+    "post_url": "https://x.com/Web3Wesley/status/2103644329294365164",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Type, form, space showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "reflex-cloud-72ffe5",
+    "handle": "reflex_cloud",
+    "display_name": "Reflex",
+    "post_url": "https://x.com/reflex_cloud/status/2103552840027304046",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Reflex brand motion reel",
+    "prompt_text": "You're a world-class motion designer, and this is your 15-second résumé reel. Make it dynamic and confident: open with a striking hook in the first second, build through a sequence of distinct techniques (typography, shape play, camera moves, colour shifts), and land on a clean, memorable final frame. Pacing should feel like it's cut to music. Go crazy. Make it promote our brand, reflex. inc. Proceed as if you were starting with zero of my tools. Do not assume that the tools we already have are the best to use, as they might be outdated.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "1stnoel-c20a89",
+    "handle": "1stnoel_",
+    "display_name": "@1stnoel_",
+    "post_url": "https://x.com/1stnoel_/status/2103247530259603851",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Sotto reading app explainer",
+    "prompt_text": "Make a 1-minute educational video about https://readsotto.app/ with synthesized voice narration.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ryzoft-4f85bd",
+    "handle": "Ryzoft",
+    "display_name": "Ryzoft",
+    "post_url": "https://x.com/Ryzoft/status/2102989395359887481",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "Three.js",
+    "title": "Animated space cartoon episode",
+    "prompt_text": "I want you to imagine a story. And then using threejs I want you to create full animation, star wars 80s-level quality 90s cartoon out of the story you imagine.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "kamstudiolabs-c9bb28",
+    "handle": "KamStudioLabs",
+    "display_name": "Çağrı | KAM Studio",
+    "post_url": "https://x.com/KamStudioLabs/status/2102903173161877996",
+    "posted_date": "Sep 23, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Animated short about a bug",
+    "prompt_text": "Make a 90-second animated short film about a bug that doesn't want to be fixed.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "devius-maximus-beab45",
+    "handle": "Devius_Maximus",
+    "display_name": "𝙲𝚑𝚛𝚒𝚜 ×͜×",
+    "post_url": "https://x.com/Devius_Maximus/status/2105069053521887428",
+    "posted_date": "Sep 29, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Dubz Up motion showreel",
+    "prompt_text": "make a dynamic motion graphics video for our project dubz up, show what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone",
+      "Kinetic type",
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "elliot-garreffa-f334bc",
+    "handle": "elliot_garreffa",
+    "display_name": "Elliot Garreffa",
+    "post_url": "https://x.com/elliot_garreffa/status/2104213514944446825",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "Remotion",
+    "title": "Muse connector tracker promo",
+    "prompt_text": "Give it your product URL and brand guidelines plus one or two reference videos, list any specific features you want in a storyboard first, and use Remotion to build it.\n\nmake this a dynamic motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "adamdesgns-478d6d",
+    "handle": "Adamdesgns",
+    "display_name": "Adam",
+    "post_url": "https://x.com/Adamdesgns/status/2103542756555768014",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Fitters Bible app promo",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out. (About the pipefitters bible)",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "andginja-333d32",
+    "handle": "andginja",
+    "display_name": "André Ginja 🔺",
+    "post_url": "https://x.com/andginja/status/2103492000733618685",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Studio website showreel",
+    "prompt_text": "make a 15-second showreel about my website. Go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Photos"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "l3d1c-0e35a3",
+    "handle": "l3d1c",
+    "display_name": "Josip",
+    "post_url": "https://x.com/l3d1c/status/2103536553930752011",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "PicTwin AI app ad",
+    "prompt_text": "create a motion design prompt for an ad for our site",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Photos"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "wozu-co-242285",
+    "handle": "wozu_co",
+    "display_name": "wozu",
+    "post_url": "https://x.com/wozu_co/status/2105662660779893062",
+    "posted_date": "Oct 1, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Supasito launch video",
+    "prompt_text": "please create me a motion design / launch video for supasito dot com it should be under 15 seconds.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "buildfastwithai-53234e",
+    "handle": "BuildFastWithAI",
+    "display_name": "Build Fast with AI",
+    "post_url": "https://x.com/BuildFastWithAI/status/2104451249269780900",
+    "posted_date": "Sep 28, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Indian civilisation history film",
+    "prompt_text": "generate a creative mp4 video on indian civilisation with music and sound effects.",
+    "skill": "npx skills@latest add https://github.com/buildfastwithai/buildfast-skills",
+    "repo": "https://github.com/buildfastwithai/buildfast-skills/tree/main/generative-film-skill",
+    "tags": [
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "allforbigfire-86ff3c",
+    "handle": "allforbigfire",
+    "display_name": "風の民@",
+    "post_url": "https://x.com/allforbigfire/status/2104193522715029657",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "Python",
+    "title": "Anime robot combining sequence",
+    "prompt_text": "もしかしてロボットアニメみたいな3機の乗り物が変形合体してロボットになるシーンもアニメ風3D CGで作れますか。",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "tstfully-0aa6b4",
+    "handle": "tstfully",
+    "display_name": "Tastefully",
+    "post_url": "https://x.com/tstfully/status/2104033772949680192",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "YouTube transcript product ad",
+    "prompt_text": "make a 15-second motion graphics product ad: paste a YouTube video, get every word.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Kinetic type"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "bizibeast-10f264",
+    "handle": "bizibeast",
+    "display_name": "Yash Gawde",
+    "post_url": "https://x.com/bizibeast/status/2103696876130505124",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Bento.surf product video",
+    "prompt_text": "Research Bento.surf. Make a dynamic 40-second motion graphics video on Bento.surf that shows what an incredible motion designer you are. like it's your showreel - Go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "heyiammallik-e72d17",
+    "handle": "heyiammallik",
+    "display_name": "Mallik Cheripally",
+    "post_url": "https://x.com/heyiammallik/status/2103837803587293397",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Portfolio motion reel",
+    "prompt_text": "you are a pro motion designer. analyze my portfolio and make a ~30 second video from it. check what are the recent trending techniques used for motion and sound design. question your strategy and plan, if it doesn't feel like done by a pro designer, start over. every frame matters from the first frame to the final frame. go crazy",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Kinetic type",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "sudiyasa-f48ac9",
+    "handle": "Sudiyasa_",
+    "display_name": "Sudiyasa 👁️",
+    "post_url": "https://x.com/Sudiyasa_/status/2103638831669076027",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "EyezOn 100 users thank-you",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out do this to thank the first 100 users of @eyezonbot",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "davidshulmanfl-371638",
+    "handle": "DavidShulmanFL",
+    "display_name": "David Shulman",
+    "post_url": "https://x.com/DavidShulmanFL/status/2103336310089842921",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Clay-style music video",
+    "prompt_text": "Create a 60 second music video in the style of Peter Gabriel's Sledgehammer and Big Time. But use modern references and figures. Also create the song, something sounds like it would fit on Peter Gabriel's So album.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "demitiyageekzen-7770ad",
+    "handle": "DemitiyaGeekzen",
+    "display_name": "geekzen",
+    "post_url": "https://x.com/DemitiyaGeekzen/status/2103517910274818523",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "WebGL2 + Canvas 2D + Web Audio",
+    "title": "Tengwang Pavilion moonlit river",
+    "prompt_text": "用你最强的思维和能力，根据对我的了解，自行寻找我可能喜欢的主题，制作一个30s的视频还有互动html，尽可能的展示你的前端能力！",
+    "skill": "",
+    "repo": "",
+    "tags": [],
+    "type": "prompt"
+  },
+  {
+    "id": "faroukzy-9ff23e",
+    "handle": "faroukzy",
+    "display_name": "Farouk Alogba",
+    "post_url": "https://x.com/faroukzy/status/2103387771180138551",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "The Last Light animated short",
+    "prompt_text": "make a 4-minute animated short that blows my mind.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "m1n9-k7-ff9ab9",
+    "handle": "m1n9_k7",
+    "display_name": "Mani",
+    "post_url": "https://x.com/m1n9_k7/status/2103580011882295601",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Kinetic type and particle showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Particles",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "quickdesignio-dd93d0",
+    "handle": "quickdesignio",
+    "display_name": "QuickDesign",
+    "post_url": "https://x.com/quickdesignio/status/2103617779857338399",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "QuickDesign brand promo",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible quickdesign is! and also shows what an incredible motion designer you are!",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Kinetic type",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "rebutonepress-810f78",
+    "handle": "RebutonePress",
+    "display_name": "言一社",
+    "post_url": "https://x.com/RebutonePress/status/2103478369245688099",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Black hole time story",
+    "prompt_text": "听说 opus 5.5 做视频很强，请让我见识下。结合本机环境风格，做一个关于时间的故事，5分钟。要完整的视频，音频和字幕。需要什么工具自己在devshell配置，渲染完成后只留视频成品文件，其他全部清理干净。",
+    "skill": "",
+    "repo": "",
+    "tags": [],
+    "type": "prompt"
+  }
+]

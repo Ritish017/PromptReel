@@ -1,0 +1,114 @@
+[
+ {
+  "handle": "leonabboud",
+  "post_url": "https://x.com/leonabboud/status/2103576084499358051",
+  "posted_date": "Sep 26, 2026",
+  "model": "Claude Code (Opus 5.5) \u2014 reply clarifies",
+  "title": "Opus 5.5 motion designer showreel",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. go all out.",
+  "tags": [
+   "Kinetic type",
+   "Shapes"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "ajith_io",
+  "post_url": "https://x.com/ajith_io/status/2103449416325890146",
+  "posted_date": "Sep 25, 2026 (5:09 PM)",
+  "model": "Claude Opus 5.5 (page title: \"Made with ",
+  "title": "15-sec motion designer showreel",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. go all out.",
+  "tags": [
+   "Kinetic type",
+   "Shapes"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "ajith_io",
+  "post_url": "https://x.com/ajith_io/status/2103469807375208546",
+  "posted_date": "Sep 25, 2026 (6:30 PM)",
+  "model": "Claude Opus 5.5",
+  "title": "40-sec Distilbook product explainer",
+  "prompt_text": "Research Distilbook.Make a dynamic 40-second motion graphics video on Distilbook that shows what an incredible motion designer you are. like it's your showreel - Go all out.",
+  "tags": [
+   "Product UI",
+   "Kinetic type"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "Pashoke1",
+  "post_url": "https://x.com/Pashoke1/status/2112532209986949242",
+  "posted_date": "6:41 PM \u00b7 Oct 20, 2026",
+  "model": "Claude (Remotion + librosa mentioned; th",
+  "title": "Beat-sync Claude video with librosa",
+  "prompt_text": "Here's my track: ./audio/track.mp3. Detect the BPM and every beat with librosa. Find the biggest drop. Move every scene cut onto a beat. Land the drop on the product reveal. Punch the frame 1% on each kick.",
+  "tags": [
+   "Music",
+   "Kinetic type",
+   "Product UI"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "songzisong0103",
+  "post_url": "https://x.com/songzisong0103/status/2112374528764747913",
+  "posted_date": "8:15 AM \u00b7 Oct 20, 2026",
+  "model": "Claude Opus 5.5 and GPT 6 Astra (both)",
+  "title": "Opus 5.5 vs GPT 6 Astra 15s test",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. go all out.",
+  "tags": [
+   "Kinetic type",
+   "Shapes"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "nickfthedev",
+  "post_url": "https://x.com/nickfthedev/status/2112091083211489743",
+  "posted_date": "1:28 PM \u00b7 Oct 19, 2026",
+  "model": "Claude (no version stated)",
+  "title": "Wimi Safari-windows product video",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are. Highlight the features of wimi. use different safari windows for this with apple lanidng pages for iphone",
+  "tags": [
+   "Product UI",
+   "Phone",
+   "Kinetic type"
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "0xFizzu",
+  "post_url": "https://x.com/0xFizzu/status/2111849517335064751",
+  "posted_date": "9:28 PM \u00b7 Oct 18, 2026",
+  "model": "Claude Opus 5.5 (creator says \"I asked O",
+  "title": "Untitled",
+  "prompt_text": "I asked Opus 5.5 to make a dynamic 15-second motion graphics video that shows what an incredible motion designer it is.",
+  "tags": [
+   ""
+  ],
+  "skill": "",
+  "type": "prompt"
+ },
+ {
+  "handle": "genrikAI",
+  "post_url": "https://x.com/genrikAI/status/2111504399314940233",
+  "posted_date": "10:37 PM \u00b7 Oct 17, 2026",
+  "model": "",
+  "title": "Untitled",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. go all out.",
+  "tags": [
+   ""
+  ],
+  "skill": "",
+  "type": "prompt"
+ }
+]

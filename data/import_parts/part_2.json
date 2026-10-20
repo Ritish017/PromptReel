@@ -1,0 +1,726 @@
+[
+  {
+    "id": "tequilafunks-97f6c9",
+    "handle": "tequilafunks",
+    "display_name": "Tequila Funk",
+    "post_url": "https://x.com/tequilafunks/status/2103528644828127728",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "Remotion",
+    "title": "Claude motion design reel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Particles",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "sudo-kiran-49176d",
+    "handle": "sudo_kiran",
+    "display_name": "Kiran",
+    "post_url": "https://x.com/sudo_kiran/status/2103463886372696074",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Claude motion design showreel",
+    "prompt_text": "Go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "lukasersil-0ed38e",
+    "handle": "lukasersil",
+    "display_name": "Lukáš Eršil",
+    "post_url": "https://x.com/lukasersil/status/2103742861971726495",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Motion techniques showreel",
+    "prompt_text": "Create a bold, dynamic 15-second motion graphics showreel that feels like the ultimate portfolio piece of an exceptionally talented motion designer. Showcase a wide range of advanced techniques: kinetic typography, smooth transitions, 2D and 3D animation, abstract geometry, fluid simulations, particles, distortion, creative masking, compositing, lighting, depth, and seamless camera movement. Keep the pacing fast, confident, and visually surprising, with every shot transitioning naturally into the next. Make it feel meticulously art-directed rather than like a random collection of effects. Push the creativity, polish, timing, and visual impact as far as possible. This should feel like the opening reel that gets a motion designer hired.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "nft-chen-5f8bb0",
+    "handle": "NFT_Chen",
+    "display_name": "SuSu_酥酥👅",
+    "post_url": "https://x.com/NFT_Chen/status/2103882415299350878",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "Three.js",
+    "title": "Porco Rosso sunset dogfight",
+    "prompt_text": "用 web3D 复刻宫崎骏《红猪》日落海面上的经典空战：白绿红涂装战斗机、紫色积云、海面反光、吉卜力运镜，画面写 just breathe.",
+    "skill": "",
+    "repo": "",
+    "tags": [],
+    "type": "prompt"
+  },
+  {
+    "id": "axtonliu-0b861d",
+    "handle": "AxtonLiu",
+    "display_name": "Axton",
+    "post_url": "https://x.com/AxtonLiu/status/2103119648271290566",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Pelican riding a bicycle",
+    "prompt_text": "每次一个新的模型出来呢，大家都让它去画 “鹈鹕骑自行车” 来判断这个模型的空间能力，基本上都是用 HTML、SVG 来画动画。当我实在看得都有审美疲劳了，我希望你能画一个最复杂、最精细、最精美的 “鹈鹕骑自行车”的动画视频，你可以用任何的技术，不用着急，画一天都可以。",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "gizakdag-cf4ae6",
+    "handle": "gizakdag",
+    "display_name": "Gizem Akdag",
+    "post_url": "https://x.com/gizakdag/status/2103566030916239768",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Overthinking motion study",
+    "prompt_text": "Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it’s your showreel exploring the concept of “Overthinking,” inspired by the attached graphics.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "mandelduck-95fd08",
+    "handle": "MandelDuck",
+    "display_name": "Christian Moss",
+    "post_url": "https://x.com/MandelDuck/status/2103802923465768972",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Starry Night cat-spotting game",
+    "prompt_text": "can you make a 3d game where you walk around and spot cats inside of a van gogh painting? we can start with stary night and its town",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Characters"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "gorden-sun-041f56",
+    "handle": "Gorden_Sun",
+    "display_name": "Gorden Sun",
+    "post_url": "https://x.com/Gorden_Sun/status/2105302007896797351",
+    "posted_date": "Sep 30, 2026",
+    "model": "Opus 5.5",
+    "stack": "Three.js",
+    "title": "Beat-synced bouncing 3D ball",
+    "prompt_text": "卡点的3D球体下坠的动画视频：对标专业的Blender做的效果，音乐是多首经典的纯音乐，场景按音乐切换，3D球体下坠时在3D场景的物件中弹跳，按音乐的节奏点亮物件。带一些幽默的元素。\n使用three.js制作，不要使用Blender制作",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ajith-io-4c248f",
+    "handle": "ajith_io",
+    "display_name": "Ajith",
+    "post_url": "https://x.com/ajith_io/status/2103800569584562538",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Distilbook promo showreel",
+    "prompt_text": "Make a dynamic 40-second motion graphics video on Distilbook that shows what an incredible motion designer you are, like it's your showreel - go all out. Use the Oppenheimer theme music as inspiration, but compose it yourself.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "polydao-7a572b",
+    "handle": "polydao",
+    "display_name": "Mr. Buzzoni",
+    "post_url": "https://x.com/polydao/status/2103783134206566862",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Jev engineering showreel",
+    "prompt_text": "Make a dynamic [24]-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a resume. Go all out.\n\nOnly about [TOPIC]. Style: [BRAND COLORS], sound synced to the cuts.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Kinetic type",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ajith-io-ea7f2d",
+    "handle": "ajith_io",
+    "display_name": "Ajith",
+    "post_url": "https://x.com/ajith_io/status/2103541149709615243",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Distilbook motion showreel",
+    "prompt_text": "Take reference from the given video (download it) and use the same visual style.\nand Research about Distilbook. Make a dynamic 30-second motion graphics video on Distilbook that shows what an incredible motion designer you are. like it's your showreel - Go all out.\nOne thing to keep in mind: it should be cool as fck.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Shapes",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ayushunleashed-ece3e3",
+    "handle": "ayushunleashed",
+    "display_name": "Ayush Yadav",
+    "post_url": "https://x.com/ayushunleashed/status/2103794962257084755",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Claude motion design showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Particles",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "chatgptastra-0d95c7",
+    "handle": "ChatGptAstra",
+    "display_name": "摸鱼巨匠🔨",
+    "post_url": "https://x.com/ChatGptAstra/status/2103834787647807540",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Motion principles showreel",
+    "prompt_text": "以动态设计师的高级审美，制作一段动态的15秒动态图形视频",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Diagrams",
+      "Kinetic type",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ultimaxbt-2ddf1e",
+    "handle": "ultimaxbt",
+    "display_name": "ultima",
+    "post_url": "https://x.com/ultimaxbt/status/2108210884799549714",
+    "posted_date": "Oct 8, 2026",
+    "model": "Opus 5.5",
+    "stack": "HTML",
+    "title": "Food craving launch film",
+    "prompt_text": "<inputs>\nAsk me for: my product, the exact request a user types into it, 6 to 8 photos for the result cards, a royalty-free song around 130 BPM with a clear drop (Mixkit, free for commercial use), and my brand mark for the end card. If I skip anything, use the defaults: the food-ordering story below, food photos from Pexels (fire noodles, birria tacos, hot chicken, buffalo wings, smash burger, spicy ramen), and Mixkit \"Cat Walk\".\n</inputs>\n\n<direction>\nA 15-second product launch film, 1920x1080 at 60fps. 2D only, one continuous take. No fades, blurs or cuts: each scene grows from the last. Text rises from a mask line, buttons expand into pages, and color floods from one object before shrinking into another. Give the camera one eased move per scene, and never zoom in and out consecutively.\n\nLook: warm white canvas (#f5f5f2), black UI (#0e0e10), lime accent (#cdf24f), orange (#ff6a2a), and a blue send button (#2f6bff). Add an Apple Intelligence-style iridescent glow around the input: a blurred conic gradient rotating through pink, orange, lime, cyan and violet. Use real food photography on dark cards, Geist for UI and a serif for the product name on the end card.\n\nBanned: crossfades, blur-ins, 3D, particles, camera moves that reverse direction, holds longer than 1s, anything that feels like a template.\n</direction>\n\n<structure>\n130 BPM, 32 beats (14.8s). Start the song 12 beats before its drop.\n\nBeats 0-6, ask: push slowly into the glowing composer, about 3x zoom. Type the request over three fixed lines with a natural keystroke rhythm:\n\"I'm really hungry, I don't know\nwhat I want but something\nspicy, crispy and filling\"\n\nBeat 6, send: press the send button. A lime ripple spreads from it and transforms the message into a chat bubble. Pull back once to reveal the phone around it (428x900 screen, 11px black bezel, 9:41 status bar).\n\nBeats 6-12, think: the send button grows into an orange wok, a half-disc with a thin handle. It tosses 6 colorful ingredients on beats 8, 9, 10 and 11 beneath the shimmering text \"Finding something for you…\".\n\nBeat 12, the drop: a lime circle expands from the wok to fill the frame in about 0.35s. Dark food cards (330x440, radius 28, photo on top, name, one-line description, price and rating) burst in from the center. Slide the strip across three cards and land on \"Fire Noodles\", which lifts with a \"Best match\" pill.\n\nBeats 16-21, chat: the lime contracts back into the user's bubble, carrying its words as the chosen card flies into its slot. \"Found it. Fire Noodles from Wok & Fire, smoky, spicy and seriously filling.\" rises in, followed by \"Want me to order it for you?\" Then show two pills: \"Order now\" in black and \"More options\" outlined. The cursor clicks Order now → spinner → \"✓ Ordered\".\n\nBeats 21-32, outro: the black button expands into the page, staying pill-shaped as it reaches the edges while the camera pushes into it. Its label grows to headline size, then slides away. Bring in \"You were craving noodles.\" and \"Now it's on the way.\" word by word (92px, white on black). A courier dot follows a route to a pin. The pin becomes the brand mark, and the wordmark wipes out from behind it, with \"made with\" above and the product name below.\n</structure>\n\n<build>\n1. One HTML file, 1920x1080. Compute every style from time inside seek(t): no CSS transitions, timers or state carried between frames.\n2. Use one camera transform on a container, keyed by [time, zoom, x, y] with eased segments and zoom interpolated in log space.\n3. Use closed-form step-response springs for every pop and settle.\n4. Make every handoff a shared element: the lime flood carries a copy of the bubble's words, and the button carries its label into the page.\n5. Sound: use a downloaded Mixkit SFX for each event - typing, send pop, each toss, drop impact, card swoosh, click, success tone, page-fill whoosh and mark sparkle. Place each by its measured peak and loudnorm to -14 LUFS.\n6. Render with Playwright at 60fps using 8 subframes per frame, blended with ffmpeg tmix. Review every fast moment frame by frame and scan the full video for single-frame pops.\n</build>\n\n<gotchas>\nFour subframes leave ghost copies on fast moves, so render 8 and slow the move down. The flood must reach the farthest corner and take about 0.35s, or it looks like a flash. Set z-index on every layer so the cards don't float above the flood. Keep the typed request on fixed lines so the camera never has to follow a wrapping cursor. Declare every variable before the first seek() call.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the beat map and 4 stills (ask, drop, chat, outro) before writing the full film.\n</start>",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Kinetic type",
+      "Photos",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "monokern-ade5b6",
+    "handle": "monokern",
+    "display_name": "monokern",
+    "post_url": "https://x.com/monokern/status/2103563538828832979",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Psychedelic hypnotic eye showreel",
+    "prompt_text": "make a dynamic 20-second motion graphics video that shows what an incredible motion designer you are, psychedelic and hypnotic. make it feel like a showreel piece. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Shapes"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "kloss-xyz-15182a",
+    "handle": "kloss_xyz",
+    "display_name": "klöss",
+    "post_url": "https://x.com/kloss_xyz/status/2103664956482941143",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "Python + ffmpeg",
+    "title": "Chaotic Claude POV video",
+    "prompt_text": "Use Python to generate a 9:16 chaotic brain rot video with excellent motion + sound design and render it using ffmpeg. Put your own personal spin on it so it’s aligned with Anthropic’s new launch. Also fully express what it’s like to be a very creative LLM used by me every day from your POV to give it some extra personality.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "0xnfrith-5be616",
+    "handle": "0xnfrith",
+    "display_name": "nick frith",
+    "post_url": "https://x.com/0xnfrith/status/2103358957050068999",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Celld job ownership explainer",
+    "prompt_text": "make me an animation to explain why celld earns its place.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "math-files-39c9d0",
+    "handle": "Math_files",
+    "display_name": "Math Files",
+    "post_url": "https://x.com/Math_files/status/2104486181853610052",
+    "posted_date": "Sep 28, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Mathematics motion showreel",
+    "prompt_text": "make a dynamic 20-second motion graphics video related to mathematics that shows what an incredible motion designer with mathematics skills you are, like it's your showreel for a résumé. go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Charts",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "hanifproduktif-54bdee",
+    "handle": "hanifproduktif",
+    "display_name": "Hanif | AI For Productivity",
+    "post_url": "https://x.com/hanifproduktif/status/2103404901451829311",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Motion designer showreel",
+    "prompt_text": "You are applying as a motion designer in my agency. Make 15s video to showcase your skills and capabilities. Send me a showreel",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "nikolajankovic-ce4ff4",
+    "handle": "_nikolajankovic",
+    "display_name": "nikola_j (🛟,🛟)",
+    "post_url": "https://x.com/_nikolajankovic/status/2102867033100616097",
+    "posted_date": "Sep 23, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "DeFi Saver stop-motion explainer",
+    "prompt_text": "make a hand-drawn stop-motion animation;\nstory: you're defi saver and explaining yourself in 1st person",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Charts",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ddryo-loos-300829",
+    "handle": "ddryo_loos",
+    "display_name": "了@Lism",
+    "post_url": "https://x.com/ddryo_loos/status/2105824736072925621",
+    "posted_date": "Oct 2, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Lism CSS 1.0 release video",
+    "prompt_text": "Lism CSS ver.1.0 をリリースする時にSNSに動画を投稿したい。あなたがどれほど素晴らしいモーションデザイナーかを示す、シンプルかつダイナミックさもある15秒のモーショングラフィックスビデオを作成してください。",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "eyishazyer-af035b",
+    "handle": "eyishazyer",
+    "display_name": "Eyisha Zyer",
+    "post_url": "https://x.com/eyishazyer/status/2103816865852129686",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Motion designer showreel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Charts",
+      "Kinetic type",
+      "Shapes",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "blue-clarity-ef56d0",
+    "handle": "blue_clarity",
+    "display_name": "Blue 🐈‍⬛ ArcX Farmooor",
+    "post_url": "https://x.com/blue_clarity/status/2103564589065449603",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Particle sphere motion reel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "roundtablespace-d3a1be",
+    "handle": "RoundtableSpace",
+    "display_name": "0xMarioNawfal",
+    "post_url": "https://x.com/RoundtableSpace/status/2104424611010232366",
+    "posted_date": "Sep 28, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Easing and morphing showreel",
+    "prompt_text": "make a 15-second motion graphics showreel that proves what an incredible motion designer you are, go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "1littlecoder-9fef89",
+    "handle": "1littlecoder",
+    "display_name": "1LittleCoder💻",
+    "post_url": "https://x.com/1littlecoder/status/2103587706999914649",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Claude self-intro motion graphic",
+    "prompt_text": "make a dynamic 10-second motion graphics video that shows who are you as Opus 5.5 - be as creative and dynamic as possible. Avoid the frames and texts on the corners which are typical ai made giveaways!",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "sayan-shanky-f850d8",
+    "handle": "Sayan_shanky",
+    "display_name": "Sayan Gupta",
+    "post_url": "https://x.com/Sayan_shanky/status/2103736579449868515",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "HTML",
+    "title": "AI data centre 3D tour",
+    "prompt_text": "show me what goes on inside an AI data centre.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "yunn260414-60d996",
+    "handle": "Yunn260414",
+    "display_name": "Yunn",
+    "post_url": "https://x.com/Yunn260414/status/2104044910769016888",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "JavaScript",
+    "title": "What is Git explainer",
+    "prompt_text": "帮我用js制作一个视频，主题是：什么是Git\n要深入浅出，让一个计算机0基础的人也能看得懂，然后要介绍一些常用指令的意思等等\n要有声音的，然后是中文讲的\n你可以用任何工具或者安装工具，可以联网检索",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Diagrams",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "brainextends-e19ac3",
+    "handle": "brainextends",
+    "display_name": "Brain",
+    "post_url": "https://x.com/brainextends/status/2103801834930606193",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Spotify product film",
+    "prompt_text": "Create a complete, polished Spotify-themed motion graphics video from the following brief. This prompt is self-contained: no reference video or supplied assets are required.\n\n<deliverables> An 18-second MP4 at 1920×1080 and true 60 fps, with music and subtle sound effects Complete editable source Build, render, inspect, and refine the animation before delivering it Do not stop at a storyboard, still images, or an implementation plan </deliverables>\n<art_direction>\nA premium music-product film presented inside a large, nearly black rounded rectangular stage\nThe stage occupies roughly 80% of the canvas width and 75% of its height, centered horizontally and slightly below the vertical center\nOutside the stage, use a soft atmospheric green background: luminous emerald near the upper-left corner, deeper forest green toward the sides, fading to near-black at the bottom\nInside the stage:\nNear-black background\nWhite primary typography\nMuted gray secondary text\nSpotify green # 1ED760 for emphasis and controls\nOne clean sans-serif font, such as Geist or Inter\nConsistent icon strokes and restrained shadows\nKeep compositions compact and centered, with substantial negative space\nText should feel like music-product advertising, not oversized presentation headings\nDo not add an outer caption, creator watermark, decorative footer, or progress counter\n</art_direction>\n\n<artwork> Create original square album artwork for a fictional track called “Glass Tides” by “AURA”\nThe hero cover is an abstract macro image of flowing pearlescent liquid silk and molten glass\nUse pastel lavender, powder cyan, blush pink, champagne gold, and subtle mint\nInclude broad three-dimensional folds, realistic reflective highlights, delicate striations, and a prominent sweeping S-shaped fold\nFill the square edge to edge\nNo text, logo, or border on this hero artwork\nUse this same artwork consistently throughout the film\n\nCreate additional designed playlist sleeves:\n“Late Nights” in mustard yellow\n“Good Energy” in pink\n“Deep Focus” in blue\n“Daily Mix 1”, “Daily Mix 2”, and “Daily Mix 3” in complementary colors\n\nThese should look like finished graphic-design covers, with bold typography and simple geometric motifs\n</artwork>\n\n<timeline> 0.0–0.6 seconds: A green Spotify icon grows smoothly into the center of the dark stage Give it a confident arrival with minimal overshoot\n0.6–1.5 seconds:\nThe icon transitions into a small Spotify identity above two centered lines:\n“Discover”\n“new music”\nThe first line is white; the second is green\nReveal them with short masked vertical movements\n1.5–2.4 seconds:\nA stylized Spotify desktop interface rises into view\nShow a slim sidebar, “Made for you”, three album cards, and small supporting rows\nUse a subtle perspective tilt during the entrance, settling toward a frontal view\n2.4–3.2 seconds:\nMove closer to the three featured covers\nShow “New for you” above them\nKeep the artwork crisp, with short album titles beneath\nA narrow rounded player bar now anchors the bottom of the stage\n3.2–4.0 seconds:\nThe featured cards withdraw into a compact “Fresh finds” list\nReveal four song rows with a slight stagger\nEach row contains a thumbnail, short track title, artist, and a small menu icon\n4.0–4.9 seconds:\nTransition into a horizontal strip of colorful playlist covers\nHeading: “Every mood”\nSupporting line: “Find what moves you”\nThe strip slides smoothly sideways, with edge cards partially cropped by the stage\n4.9–5.8 seconds:\nA compact search field appears\nType “Glass Tides”\nReveal one selected result beneath it, with the iridescent artwork, “AURA”, and a green play icon\n\n5.8–6.6 seconds:\nThe selected artwork expands into a large centered cover\nReveal “Glass Tides” underneath, followed by “AURA” in green\nKeep the player bar visible\n6.6–7.5 seconds:\nThe same cover slides left\nTrack information appears on the right:\n“Glass Tides”\n“AURA”\n“A new frequency”\nAdd a rounded green Play button\nCoordinate the cover movement and text reveals\n7.5–8.3 seconds:\nA brief brand-color transformation fills the inner stage with green\nThe artwork contracts into a smaller centered tile\nPlace a small dark Spotify identity underneath\nThe player briefly recedes\n8.3–9.8 seconds:\nReturn to the dark stage\nThe same artwork expands dramatically toward the camera, becoming oversized and cropped by the rounded stage\nRestore the player at the bottom\nUse controlled motion blur during the fastest part of the zoom\n\n9.8–11.2 seconds:\nThe artwork clears into a centered typographic statement:\n“Find your”\n“rhythm”\nUse white for the first line and green for the second\nThe player remains visible and stable beneath it\n11.2–12.5 seconds:\nShow “Made for your every day”\nThree playlist sleeves enter with gentle perspective and small opposing tilts\nThey spread into six smaller sleeves across the stage\nSupporting line: “Your sound, always evolving”\n\n12.5–14.0 seconds:\nThe playlist layout transitions into four floating album covers\nInclude the iridescent hero artwork\nUse restrained rotation, perspective, depth ordering, and overlap\nKeep their movement coordinated rather than randomly floating\n14.0–15.2 seconds:\nThe covers converge toward the center and fold around a green Spotify icon\nThe artwork withdraws as the icon becomes the focal point\nFade the player away\nThe Spotify icon must emerge from the same central position as the converging covers\n15.2–18.0 seconds:\nThe icon moves slightly left and settles beside a large white “Spotify” wordmark\nKeep the icon and letters separated throughout the movement\nReveal:\n“Discover new music”\n“every day”\nThe first line is white; the second is green\nHold the finished composition cleanly through the end\n</timeline>\n<persistent_player>\nFor most of the middle sequence, keep one narrow rounded player bar near the bottom of the inner stage\nInclude:\nSmall hero-art thumbnail\n“Glass Tides” and “AURA”\nPlay and skip controls\nA thin progress track\nA small volume icon\nSubdued dark translucent styling with a fine border\nThis recurring player connects the changing shots\nIt must remain visually secondary to the artwork\n</persistent_player>\n\n<motion_quality>\nMatch the energy of a tightly edited premium product film\nMost visual ideas last approximately one second, but transitions remain smooth\nUse continuous acceleration and deceleration\nFavor critically damped springs or carefully tuned smooth easing\nNo repeated bouncing or large elastic overshoots\nPreserve the hero artwork’s identity and position relationships through search, album detail, brand tile, and zoom\nUse match-position transitions, coordinated scaling, masked reveals, and perspective\nOutgoing titles must disappear before incoming titles occupy the same space\nAvoid overlapping text, sudden camera resets, long blank intervals, and arbitrary full-frame crossfades\nClip every oversized cover and camera move cleanly to the rounded stage\nNo particles, shockwave rings, lens flares, camera shake, or unrelated stock footage\n</motion_quality>\n\n<audio> Create or select commercially usable electronic music around 120 BPM Use a clean pulse, warm bass, restrained melodic elements, and subtle transition accents Align important entrances, selections, zooms, and the logo reveal with musical events Keep effects quieter than the music No voiceover Do not use copyrighted commercial tracks without permission </audio>\n<implementation_and_validation>\nBuild a deterministic animation driven by absolute time through an async window. seek(t) function\nEvery transform, opacity, mask, and UI state must be reproducible when seeking frames in any order\nDo not depend on live timers, accumulated physics, or CSS transition state during export\n\nRender true 60 fps with spatial antialiasing\nUse 3–5 temporal subframe samples per output frame for restrained motion blur\nKeep stationary text and artwork sharp\nInspect contact sheets and moving playback\nCheck the fast heading changes, artwork handoffs, zoom, cover convergence, and final wordmark spacing\nVerify evenly spaced frame timestamps and the full 18-second duration\nFix visual defects before delivering the final MP4 and editable source\n</implementation_and_validation>",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "pankajkumar-dev-0bee87",
+    "handle": "pankajkumar_dev",
+    "display_name": "Pankaj Kumar",
+    "post_url": "https://x.com/pankajkumar_dev/status/2103502614134718609",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Poster breaking its frame",
+    "prompt_text": "create a motion design video of a poster breaking out of its own frame.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "sudo-kiran-b055de",
+    "handle": "sudo_kiran",
+    "display_name": "Kiran",
+    "post_url": "https://x.com/sudo_kiran/status/2104846546768670892",
+    "posted_date": "Sep 29, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "DistilBook motion explainer",
+    "prompt_text": "make a dynamic 30-seconds motion graphic video about the distilbook like a product explainer the video has to be very incredible (product url)",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "raphaelaubryy-4b137e",
+    "handle": "RaphaelAubryy",
+    "display_name": "Raphael aubry",
+    "post_url": "https://x.com/RaphaelAubryy/status/2103416909857190360",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Motion designer résumé reel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Shapes",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "jake11moran-a269c4",
+    "handle": "jake11moran",
+    "display_name": "Jake Moran",
+    "post_url": "https://x.com/jake11moran/status/2103247490237825416",
+    "posted_date": "Sep 24, 2026",
+    "model": "Opus 5.5",
+    "stack": "HyperFrames",
+    "title": "Animated agent session story",
+    "prompt_text": "",
+    "skill": "npx skills add heygen-com/hyperframes-community-skills --skill session-story",
+    "repo": "https://github.com/heygen-com/hyperframes-community-skills/tree/master/skills/session-story",
+    "tags": [
+      "Characters"
+    ],
+    "type": "skill"
+  },
+  {
+    "id": "arjunsh1607-93005d",
+    "handle": "arjunsh1607",
+    "display_name": "Arjun Sharma",
+    "post_url": "https://x.com/arjunsh1607/status/2104295133432922126",
+    "posted_date": "Sep 27, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Pixelup Labs studio showreel",
+    "prompt_text": "create a 15 sec motion graphics showreel for @pixeluplabs, be extremely detail oriented and go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Photos"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "codestackr-c071bf",
+    "handle": "codeSTACKr",
+    "display_name": "Jesse Hall",
+    "post_url": "https://x.com/codeSTACKr/status/2103656229717328129",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Claude motion reel",
+    "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a resume. go all out",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Shapes"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "hqmank-7c61f1",
+    "handle": "hqmank",
+    "display_name": "Kai",
+    "post_url": "https://x.com/hqmank/status/2103831140033241156",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Browser automation skill launch",
+    "prompt_text": "Make a dynamic 20-second motion graphics launch video for my open-source project jev-browser-skill ('Give a site. Write a goal. Jev clicks.'), like it's the hero video on its GitHub README. Go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Music",
+      "Code"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "ratheejaisal-1f4538",
+    "handle": "RatheeJaisal",
+    "display_name": "Jaisal 👋",
+    "post_url": "https://x.com/RatheeJaisal/status/2103774864742154698",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "founder.page launch video",
+    "prompt_text": "build me a beautiful launch video 20 seconds or under that shows all our key features, make it fast paced and fit our brand",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Charts"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "tankazunori0914-0fc886",
+    "handle": "tankazunori0914",
+    "display_name": "kazu@生成AI×教育",
+    "post_url": "https://x.com/tankazunori0914/status/2105917770907156748",
+    "posted_date": "Oct 2, 2026",
+    "model": "Opus 5.5",
+    "stack": "HyperFrames",
+    "title": "What day is it",
+    "prompt_text": "今日何曜日だっけ？BGM付きの30秒のかっこいいモーショングラフィックスで教えて（全力を出してください）",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Kinetic type",
+      "Music"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "prasad-pilla-2c0cba",
+    "handle": "prasad_pilla",
+    "display_name": "Prasad Pilla",
+    "post_url": "https://x.com/prasad_pilla/status/2103728953785496049",
+    "posted_date": "Sep 26, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "Alan agent platform promo",
+    "prompt_text": "make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, for @tryAlanAI. go all out.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Diagrams"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "dale-vaz-cc612a",
+    "handle": "dale_vaz",
+    "display_name": "Dale Vaz",
+    "post_url": "https://x.com/dale_vaz/status/2103290592679879074",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "JavaScript",
+    "title": "Sahi trading terminal reveal",
+    "prompt_text": "create a self contained aesthetically pleasing, breathtaking animation of the Sahi Trading Terminal. it should start with a single dot on a black screen and then have multiple windows show up on the screen such as Charts, Positons , Option Chain, Watchlist. And zoom into and out at multiple scales. Finally the camera zooms out to make the desktop look like a point in space. And then it zooms back in to reveal a mobile screen in landscape mode with a chart in one half and an option chain in another. The video ends in Sjngle Screen Trading on SAHI\nuse javascript for it. be detailed and accurate. it should be visually stunning",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Product UI",
+      "Phone",
+      "Charts",
+      "Particles"
+    ],
+    "type": "prompt"
+  },
+  {
+    "id": "sarut0bisasuke-cefa43",
+    "handle": "Sarut0biSasuke",
+    "display_name": "Sarutobi Sasuke🥷",
+    "post_url": "https://x.com/Sarut0biSasuke/status/2103418429248069973",
+    "posted_date": "Sep 25, 2026",
+    "model": "Opus 5.5",
+    "stack": "",
+    "title": "White Russian recipe animation",
+    "prompt_text": "Render a recipe motion graphic animation using JavaScript or HTML (whatever you think will produce the best result) to show the full recipe for a White Russian from start to finish, empty glass to completed cocktail. Explainer video style, showing the ingredients and measurements as they go into the glass. It should be a 30s video.",
+    "skill": "",
+    "repo": "",
+    "tags": [
+      "Diagrams"
+    ],
+    "type": "prompt"
+  }
+]
