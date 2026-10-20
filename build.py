@@ -4,6 +4,7 @@ import json, os, re, shutil, html, hashlib, datetime, urllib.parse, time
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "PromptReel"
 GCID = os.environ.get("PR_GOOGLE_CLIENT_ID", open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","google_client_id.txt")).read().strip() if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","google_client_id.txt")) else "")
+GA_ID = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","ga_id.txt")).read().strip() if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","ga_id.txt")) else ""
 DOMAIN = os.environ.get("PR_DOMAIN", "https://promptreels.vercel.app")
 OUT = os.path.join(ROOT, "public")
 PLAT = [("Claude",["claude","opus"]),("GPT",["gpt","codex","chatgpt"]),("Gemini",["gemini"]),("Remotion",["remotion"]),("HyperFrames",["hyperframes"]),("Three.js",["three.js","threejs","webgl"]),("HTML + Playwright",["playwright"]),("Blender",["blender"])]
@@ -12,7 +13,7 @@ e = html.escape
 VER = str(int(time.time()))
 KEYF = "9f3c2a7b4e1d4c8a9b0e5f6a7c8d9e0f"
 ME = {"name":"Ritish Kurma","x":"KurmaRitish","email":"kurmaritish017@gmail.com"}
-SITE_LD = {"@context":"https://schema.org","@type":"WebSite","name":"PromptReel","url":"https://promptreels.vercel.app/","publisher":{"@type":"Organization","name":"Rynavo","url":"https://rynavo-site.vercel.app","founder":{"@type":"Person","name":"Ritish Kurma","sameAs":["https://x.com/KurmaRitish"]},"email":"kurmaritish017@gmail.com","sameAs":["https://x.com/KurmaRitish","https://github.com/Ritish017"]},"potentialAction":{"@type":"SearchAction","target":"https://promptreels.vercel.app/?q={query}","query-input":"required name=query"}}
+SITE_LD = {"@context":"https://schema.org","@type":"WebSite","name":"PromptReel","url":"https://promptreels.vercel.app/","publisher":{"@type":"Organization","name":"Rynavo","url":"https://rynavo-site.vercel.app","logo":"https://promptreels.vercel.app/brand/mark-512.png","founder":{"@type":"Person","name":"Ritish Kurma","sameAs":["https://x.com/KurmaRitish"]},"email":"kurmaritish017@gmail.com","sameAs":["https://x.com/KurmaRitish","https://github.com/Ritish017"]},"potentialAction":{"@type":"SearchAction","target":"https://promptreels.vercel.app/?q={query}","query-input":"required name=query"}}
 
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -42,7 +43,7 @@ ICON_H='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=
 ICON_COPY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
 
 def head(title, desc, path, img=None, ld=None, active=""):
-    img = img or DOMAIN + "/og.svg"
+    img = img or DOMAIN + "/brand/mark-512.png"
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ([SITE_LD] + (ld or [])))
     nav = [("/", "Gallery"), ("/sections/", 'Sections <i class="free">Free</i>'), ("/skills/", "Skills"), ("/prompts/", "Prompts"), ("/creators/", "Creators"), ("/repos/", 'Repos <i class="free">Live</i>'), ("/library/", "Library"), ("/pricing/", "Pricing"), ("/submit/", "Submit")]
     navh = "".join(f'<a href="{u}"{" class=on" if u == active else ""}>{t}</a>' for u, t in nav)
@@ -51,9 +52,9 @@ def head(title, desc, path, img=None, ld=None, active=""):
 <meta property="og:type" content="website"><meta property="og:site_name" content="{SITE}"><meta property="og:url" content="{DOMAIN}{path}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:image" content="{e(img)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}"><meta name="twitter:image" content="{e(img)}">
 <meta name="theme-color" content="#fbfbfd"><link rel="stylesheet" href="/style.css?v={VER}"><link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
-<link rel="preconnect" href="https://video.twimg.com"><link rel="preconnect" href="https://pbs.twimg.com">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2228%22 fill=%22%230071e3%22/><path d=%22M38 30l34 20-34 20z%22 fill=%22white%22/></svg>">{lds}</head><body>
-<header><a class="logo" href="/"><i></i>PromptReel</a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="PromptReel on X">𝕏</a><div id="auth" data-client="{GCID}"><a class="btn ghost sm" href="/signin/">Sign in</a></div></header>"""
+{f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA_ID}");</script>' if GA_ID else ''}<link rel="preconnect" href="https://video.twimg.com"><link rel="preconnect" href="https://pbs.twimg.com">
+<link rel="icon" href="/brand/mark.svg" type="image/svg+xml"><link rel="icon" href="/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">{lds}</head><body>
+<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="PromptReel on X">𝕏</a><div id="auth" data-client="{GCID}"><a class="btn ghost sm" href="/signin/">Sign in</a></div></header>"""
 
 FOOT = """<footer>Videos, prompts and skills belong to their creators, credited and linked on every entry. PromptReel collects public posts; creators can claim or remove their work any time via <a href="/submit/">Submit</a>.<br>Made by Ritish Kurma (Rynavo) · <a href="https://x.com/KurmaRitish" target="_blank" rel="noopener">𝕏 @KurmaRitish</a> · <a href="mailto:kurmaritish017@gmail.com">kurmaritish017@gmail.com</a> · <a href="https://github.com/Ritish017/PromptReel" target="_blank" rel="noopener">GitHub</a><br><a href="/prompts/">AI video prompts</a> · <a href="/creators/">Creators</a> · <a href="/help/">Help</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/llms.txt">llms.txt</a></footer>
 <script src="https://accounts.google.com/gsi/client" async></script><script src="/app.js?v=""" + "{VER}" + """"></script></body></html>"""
@@ -206,7 +207,8 @@ def build():
     d = load()
     shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT)
     for f in os.listdir(os.path.join(ROOT, "static")):
-        shutil.copy(os.path.join(ROOT, "static", f), OUT)
+        src = os.path.join(ROOT, "static", f)
+        (shutil.copytree(src, os.path.join(OUT, f)) if os.path.isdir(src) else shutil.copy(src, OUT))
     json.dump([{k: x.get(k) for k in ("id","title","handle","model","image_url","type","prompt_text","skill","video_preview")} for x in d], open(os.path.join(OUT, "entries.json"), "w"))
     creators = len({x["handle"].lower() for x in d}); skills = sum(x["type"] == "skill" for x in d)
     cards = [card(x) for x in d]
@@ -282,6 +284,7 @@ def build():
     write("/submit/", pg)
     pg = head(f"Sponsor · {SITE}", "Put your product in front of people making motion videos with AI.", "/sponsor/")
     pg += f"""<main class="wrap" style="max-width:860px"><section class="phero"><h1>Reach people <span>making video with AI</span></h1><p>Founders, designers and developers come here to make launch videos, product demos and kinetic type, and they're choosing tools to do it.</p></section>
+<div class="panel"><h2>Verified traffic</h2><p style="color:var(--mute)">Every visit, video play, prompt copy and sponsor click is measured with Google Analytics 4. Sponsors get read-only access to the live dashboard before they book, and a weekly report after: views, unique visitors, clicks and click-through rate on their spot.</p><p style="color:var(--mute)">Audience: founders, designers, developers and marketers making launch videos and product demos with Claude, ChatGPT, Gemini, Remotion and HyperFrames.</p></div>
 <div class="panel"><h2>Top spot</h2><p style="color:var(--mute)">Your image, name, one-line pitch and link at the top of the homepage for a week, labelled Sponsored, plus the top spot in the weekly email.</p></div>
 <div class="panel"><h2>Featured card</h2><p style="color:var(--mute)">A video made with your product inside the gallery grid for a week, labelled Sponsored.</p></div>
 <div class="panel"><h2>Book a week</h2><p style="color:var(--mute)">Ads never appear on creators' own video pages. Every week ends with a views and clicks report.</p><a class="btn" href="mailto:kurmaritish017@gmail.com?subject=Sponsoring%20PromptReel">Email to book</a></div></main>{FOOT}"""

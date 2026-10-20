@@ -1,3 +1,12 @@
+const track=(n,p)=>{try{window.gtag&&gtag('event',n,p||{})}catch(_){}};
+document.addEventListener('click',ev=>{const a=ev.target.closest('a,button');if(!a)return;
+ if(a.closest('.sponsor,.spot'))track('sponsor_click',{slot:a.closest('.spot')?'top':'grid'});
+ else if(a.matches('.promo'))track('promo_click',{to:a.getAttribute('href')});
+ else if(a.dataset.copyp||a.dataset.copy)track('copy_prompt',{id:a.dataset.copyp||location.pathname});
+ else if(a.dataset.copysec)track('copy_section',{id:a.dataset.copysec});
+ else if(a.dataset.vote)track('vote',{id:a.dataset.vid,v:a.dataset.vote});
+ else if(a.dataset.like)track('save',{id:a.dataset.like});
+ else if(a.href&&a.host&&a.host!==location.host)track('outbound',{to:a.host,url:a.href});},true);
 (function(){
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
@@ -143,7 +152,7 @@ if(cf){const id=cf.dataset.id,cl=$('#clist');const u=user();if(u){$('#cwho').tex
 /* ---------- subscribe ---------- */
 const sf=$('#subform');
 if(sf)sf.onsubmit=async e=>{e.preventDefault();const i=sf.querySelector('input');const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:i.value})}).catch(()=>null);
-  if(r&&r.ok){sf.innerHTML='<div class="btn" style="cursor:default">✓ You\'re subscribed</div>'}else toast('Check the email and try again')};
+  if(r&&r.ok){track('subscribe');sf.innerHTML='<div class="btn" style="cursor:default">✓ You\'re subscribed</div>'}else toast('Check the email and try again')};
 
 /* ---------- sections ---------- */
 let SEC=null;const secs=()=>SEC||(SEC=fetch('/sections.json').then(r=>r.json()));
