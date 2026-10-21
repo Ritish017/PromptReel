@@ -153,7 +153,7 @@ const lib=$('#saved');
 if(lib){const u=user();if(u)$('#lib-who').textContent='Signed in as '+u.email+'. Saved videos and sections sync to your account. Recently copied history stays on this device.';
   let tab='videos';const draw=async()=>{const s=saved();let n=0;const ss=$('#saved-sec');
     if(tab==='videos'){const d=await ENT();const list=d.filter(x=>s.includes(x.id));n=list.length;lib.hidden=false;ss.hidden=true;
-      lib.className='grid';lib.innerHTML=list.map(x=>`<article class="card"><a class="media" href="/p/${x.id}/">${x.image_url?`<img src="${x.image_url}" alt="">`:''}</a><div class="cmeta"><div class="t"><h3><a href="/p/${x.id}/">${htmlSafe(x.title)}</a></h3><div class="h">@${htmlSafe(x.handle)} · ${htmlSafe(x.model)}</div></div></div></article>`).join('')}
+      lib.className='grid';lib.innerHTML=list.map(x=>`<article class="card"><a class="media" href="/p/${x.id}/">${x.image_url?`<img src="${htmlSafe(x.image_url)}" alt="">`:''}</a><div class="cmeta"><div class="t"><h3><a href="/p/${x.id}/">${htmlSafe(x.title)}</a></h3><div class="h">@${htmlSafe(x.handle)} · ${htmlSafe(x.model)}</div></div></div></article>`).join('')}
     else{const all=await secs();const ids=tab==='sections'?s.filter(i=>i.startsWith('sec:')).map(i=>i.slice(4)):LS.get('pr-copied',[]);const list=ids.map(i=>all.find(x=>x.id===i)).filter(Boolean);n=list.length;lib.hidden=true;ss.hidden=false;
       ss.innerHTML=list.map(x=>`<a class="card" href="/sections/${x.id}/"><div class="sthumb"><iframe sandbox="allow-scripts" srcdoc="${x.html.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}"></iframe></div><div class="cmeta"><div class="t"><h3>${x.name}</h3><div class="h">${x.cat}</div></div></div></a>`).join('')}
     $('#empty').hidden=n>0};

@@ -21,9 +21,30 @@ export async function handler(req:Request){
  if(secret&&secret.length<=200){const result=await sb.rpc('pr_validate_job_secret',{candidate:secret});authorized=!result.error&&result.data===true;}
  if(!authorized){const token=req.headers.get('authorization')?.replace(/^Bearer /,'');if(token){const {data}=await sb.auth.getUser(token);authorized=data.user?.email==='kurmaritish017@gmail.com'&&!!data.user?.email_confirmed_at&&!data.user?.is_anonymous;}}
  if(!authorized)return Response.json({error:'Unauthorized'},{status:401});
- const raw=await req.text();if(raw.length>1024)return Response.json({error:'Request too large'},{status:413});
+ const raw=await req.text();if(raw.length>524288)return Response.json({error:'Request too large'},{status:413});
  let body;try{body=JSON.parse(raw)}catch{return Response.json({error:'Invalid JSON'},{status:400});}
- const kind=body.kind;if(!['snapshot','weekly'].includes(kind))return Response.json({error:'Invalid job'},{status:400});
+ const kind=body.kind;
+ if(kind==='legacy-copy'){
+  if(!Array.isArray(body.records)||body.records.length>100)return Response.json({error:'Invalid backup inventory'},{status:400});
+  let copied=0;const categories:Record<string,number>={};
+  for(const record of body.records){
+   if(typeof record.pathname!=='string'||typeof record.body!=='string'||record.body.length>20000)return Response.json({error:'Invalid legacy record'},{status:400});
+   const bytes=new TextEncoder().encode(record.body);
+   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(x=>x.toString(16).padStart(2,'0')).join('');
+   if(hash!==record.sha256)return Response.json({error:'Backup checksum mismatch'},{status:400});
+   const pathHash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(record.pathname)))).map(x=>x.toString(16).padStart(2,'0')).join('');
+   const key='legacy-public-blob/'+pathHash+'.json';
+   const saved=await sb.storage.from('promptreel-private').upload(key,JSON.stringify(record),{contentType:'application/json',upsert:false});
+   // Read back and verify every object, including objects from an interrupted prior run.
+   const read=await sb.storage.from('promptreel-private').download(key);
+   if(read.error||!read.data)return Response.json({error:'Private backup unavailable'},{status:503});
+   const actual=JSON.parse(await read.data.text());
+   if(actual.sha256!==hash||actual.body!==record.body||actual.pathname!==record.pathname)return Response.json({error:'Private backup verification failed'},{status:503});
+   copied++;const category=record.pathname.split('/')[0];categories[category]=(categories[category]||0)+1;
+  }
+  return Response.json({ok:true,copied,verified:copied,categories,publicObjectsDeleted:0});
+ }
+ if(!['snapshot','weekly'].includes(kind))return Response.json({error:'Invalid job'},{status:400});
  const now=new Date(),day=now.toISOString().slice(0,10),jobKey=kind+':'+day;
  try{
   const claimed=check(await sb.rpc('pr_claim_job',{job_name:jobKey}));

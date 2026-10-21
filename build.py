@@ -338,7 +338,7 @@ def extra_pages(d):
     cats = sorted({x["cat"] for x in SECTIONS})
     chips = '<button class="chip on" data-cat="">All</button>' + "".join(f'<button class="chip" data-cat="{e(c)}">{e(c)}</button>' for c in cats)
     pg = head(f"Free website sections for Claude, Cursor and v0 · {SITE}", f"{len(SECTIONS)} original animated website sections. Copy the build prompt and code straight into Claude Code, Cursor, v0, Lovable or Bolt.", "/sections/", active="/sections/")
-    pg += f"""<main class="wrap"><section class="phero"><h1>Sections, <span>free to copy.</span></h1><p>{len(SECTIONS)} original animated sections. One click copies the build prompt and the code, ready to paste into Claude Code, Cursor, v0, Lovable or Bolt. Free to copy. Sign in to sync saved sections across devices.</p>
+    pg += f"""<main class="wrap"><section class="phero"><h1>Sections, <span>free to copy.</span></h1><p>{len(SECTIONS)} original animated sections. One click copies the build prompt and the code, ready to paste into Claude Code, Cursor, v0, Lovable or Bolt. Free to copy. Sign in to sync saved sections across devices. Preview names, numbers, and testimonials are illustrative sample content.</p>
 <div class="row"><span class="tag">Claude Code</span><span class="tag">Cursor</span><span class="tag">v0</span><span class="tag">Lovable</span><span class="tag">Bolt</span><span class="tag">Plain HTML</span></div></section>
 <div class="toolbar"><div class="trow scroll">{chips}</div></div><div class="sgrid" id="sgrid">{''.join(sec_card(x) for x in SECTIONS)}</div></main>{FOOT}"""
     write("/sections/", pg)

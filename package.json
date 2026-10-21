@@ -10,7 +10,8 @@
     "node": "24.x"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.118.0"
+    "@supabase/supabase-js": "2.118.0",
+    "@vercel/blob": "2.8.2"
   },
   "devDependencies": {
     "esbuild": "0.28.2"

@@ -1,5 +1,5 @@
 // Render source content with DOM methods, never untrusted HTML.
-const safeUrl=value=>{try{const u=new URL(value,location.origin);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}};
+const safeUrl=value=>{if(value==='mailto:kurmaritish017@gmail.com')return value;try{const u=new URL(value,location.origin);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}};
 const node=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n};
 const link=(label,href)=>{const a=node('a',label);a.href=safeUrl(href);a.rel='noopener';return a};
 function showIssue(parent,issue){
