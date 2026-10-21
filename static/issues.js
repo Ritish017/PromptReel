@@ -22,6 +22,13 @@ window.addEventListener('pr-auth-ready',async()=>{
  const admin=document.querySelector('#editor-issues');
  if(admin){if(api.user?.email!=='kurmaritish017@gmail.com'){admin.textContent='Sign in with the owner account to view editorial drafts.';return}
  const {data,error}=await api.client.from('pr_issues').select('id,subject,status,created_at').order('created_at',{ascending:false}).limit(30);if(error){admin.textContent='Could not load drafts.';return}admin.replaceChildren();for(const issue of data){const card=node('article');card.className='panel';card.append(node('h2',issue.subject),node('p',issue.id+' · '+issue.status),link('Preview edition','/newsletter/issue/?id='+encodeURIComponent(issue.id)));
- const approve=node('button','Approve draft');approve.className='btn ghost';approve.onclick=async()=>{const {error}=await api.client.from('pr_issues').update({status:'approved'}).eq('id',issue.id);approve.textContent=error?'Could not approve':'Approved · sending remains off';};card.append(node('p'),approve);admin.append(card);}
+ if(issue.status==='draft'||issue.status==='approved'){
+ const next=issue.status==='draft'?'approved':'published';const action=node('button',next==='approved'?'Approve draft':'Publish web edition');action.className='btn ghost';
+ action.onclick=async()=>{action.disabled=true;const change={status:next};if(next==='published')change.published_at=new Date().toISOString();
+ const {data:updated,error}=await api.client.from('pr_issues').update(change).eq('id',issue.id).eq('status',issue.status).select('id');
+ if(error||updated?.length!==1){action.textContent='Could not update. Reload and try again.';action.disabled=false;return}
+ action.textContent=next==='published'?'Web edition published. No email sent.':'Approved. Reload to publish the web edition.';};card.append(node('p'),action);
+ }admin.append(card);}
+
  }
 });

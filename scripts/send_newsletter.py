@@ -43,11 +43,12 @@ def main():
         raise SystemExit('Issue must be explicitly approved. No email sent.')
     issue=rows[0]
     # Page through all active records, avoiding a silently truncated audience.
-    offset=0;sent=0;suppressed=0
+    after=None;sent=0;suppressed=0
     while True:
-        audience=db('pr_subscriptions?state=eq.active&select=user_id,email,unsubscribe_token&order=user_id&offset='+str(offset)+'&limit=100')
+        cursor=('&user_id=gt.'+after) if after else ''
+        audience=db('pr_subscriptions?state=eq.active&select=user_id,email,unsubscribe_token&order=user_id&limit=100'+cursor)
         if not audience:break
-        offset+=len(audience)
+        after=audience[-1]['user_id']
         for member in audience:
             uid=member['user_id'];where='issue_id=eq.'+issue_id+'&user_id=eq.'+uid
             delivery=db('pr_deliveries?'+where+'&select=status,updated_at')

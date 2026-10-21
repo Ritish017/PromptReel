@@ -12,8 +12,8 @@ const user=()=>{const u=window.PRAuth?.user;return u?{...u,name:u.user_metadata?
 const K=()=>'pr-saved'+(user()?':'+user().id:'');
 const saved=()=>LS.get(K(),null)||LS.get('pr-saved',[]);
 const toast=m=>{const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),1800)};
-let voter=LS.get('pr-voter',null);if(!voter){voter='v'+Math.random().toString(36).slice(2)+Date.now().toString(36);LS.set('pr-voter',voter)}
-const myVotes=()=>LS.get('pr-votes',{});
+const voteKey=()=>'pr-votes:'+(user()?.id||'guest');
+const myVotes=()=>user()?LS.get(voteKey(),{}):{};
 
 /* ---------- Supabase identity; never trust a browser profile ---------- */
 function needSignIn(){if(user())return false;sessionStorage.setItem('pr-back',location.pathname+location.search);location.assign('/signin/');return true;}
@@ -34,8 +34,8 @@ document.addEventListener('click',async ev=>{
   const b=ev.target.closest('[data-vote]');
   if(b){ev.preventDefault();await window.PRAuthReady;if(needSignIn())return;const id=b.dataset.vid,v=+b.dataset.vote,mv=myVotes(),prev=mv[id]||0,nv=prev===v?0:v;
     const s=STATS[id]=STATS[id]||{u:0,d:0,c:0};if(prev>0)s.u--;if(prev<0)s.d--;if(nv>0)s.u++;if(nv<0)s.d++;
-    if(nv)mv[id]=nv;else delete mv[id];LS.set('pr-votes',mv);paint();
-    api('/api/vote',{method:'POST',body:JSON.stringify({id,value:nv})}).then(j=>{STATS[id]={...STATS[id],...j};track('vote',{id,value:nv});paint()}).catch(e=>{if(prev)mv[id]=prev;else delete mv[id];LS.set('pr-votes',mv);fetch('/api/stats').then(r=>r.json()).then(j=>{STATS=j;paint()});toast(e.message)});
+    if(nv)mv[id]=nv;else delete mv[id];LS.set(voteKey(),mv);paint();
+    api('/api/vote',{method:'POST',body:JSON.stringify({id,value:nv})}).then(j=>{STATS[id]={...STATS[id],...j};track('vote',{id,value:nv});paint()}).catch(e=>{if(prev)mv[id]=prev;else delete mv[id];LS.set(voteKey(),mv);fetch('/api/stats').then(r=>r.json()).then(j=>{STATS=j;paint()});toast(e.message)});
     return}
   const sv=ev.target.closest('[data-like]');
   if(sv){ev.preventDefault();const id=sv.dataset.like;let s=saved();s=s.includes(id)?s.filter(x=>x!==id):[...s,id];LS.set(K(),s);window.PRAuth?.save(id,s.includes(id)).catch(e=>toast(e.message));track('save',{id,saved:s.includes(id)});syncSaves();toast(s.includes(id)?'Saved to your Library':'Removed from Library');if(window.__apply)window.__apply();return}

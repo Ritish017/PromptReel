@@ -32,6 +32,8 @@ window.PRAuthReady=(async()=>{
  if(api.user){
   const auth=document.querySelector('#auth');if(auth){const b=document.createElement('button');b.className='btn ghost sm';b.textContent='Sign out';b.addEventListener('click',()=>api.signOut());auth.replaceChildren(b);}
   try{await api.request('/api/users',{method:'POST',body:'{}'});}catch{status('Signed in. Profile sync is temporarily unavailable.');}
+  const {data:votes,error:votesError}=await client.from('pr_votes').select('entry_id,value').eq('user_id',api.user.id);
+  if(!votesError)localStorage.setItem('pr-votes:'+api.user.id,JSON.stringify(Object.fromEntries((votes||[]).map(v=>[v.entry_id,v.value]))));
   const name=api.user.user_metadata?.full_name||api.user.email;
   status('Signed in as '+name+'. Newsletter signup is optional.');
   const {data:marks,error:marksError}=await client.from('pr_bookmarks').select('entry_id').eq('user_id',api.user.id);
