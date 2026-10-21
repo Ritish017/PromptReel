@@ -1,0 +1,106 @@
+[
+ {
+  "handle": "francescoinweb3",
+  "post_url": "https://x.com/francescoinweb3/status/2112648679731392876",
+  "posted_date": "Oct 21, 2026",
+  "model": "Claude (agent skill) + Remotion + LottieFiles",
+  "title": "LottieFiles motion-design skill demo",
+  "prompt_text": "",
+  "skill": "npx skills add LottieFiles/motion-design-skill",
+  "repo": "https://github.com/LottieFiles/motion-design-skill",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "johnsavage_ai",
+  "post_url": "https://x.com/johnsavage_ai/status/2112148196877054316",
+  "posted_date": "Oct 19, 2026",
+  "model": "Claude Code + Codex",
+  "title": "Stop-motion paper-note animation",
+  "prompt_text": "You are my motion designer and sound designer. Build a 9.5 second vertical stop-motion \"paper note\" video end to end and render it to an MP4. Work in this folder. Do everything yourself: write the code, install what you need (Node, Puppeteer, ffmpeg, Python with numpy + scipy), render, look at the frames, fix problems, and give me the finished file.\n\nMY TEXT (lines 1-3 in capitals, exactly like this):\nLINE 1: [I MADE THIS]\nLINE 2: [WITH AI]\nLINE 3: [COMMENT \"PROMPT\"]\nSIDE NOTE: [it's free]\nSIGNATURE: [@YOURHANDLE]\nThe last word of line 3 is the punchline.\n\nFORMAT\n- 1080x1920 (9:16), 30 fps, 9.5 s = 285 frames. H.264 High yuv420p, CRF 18, +faststart. AAC 48 kHz stereo 320k, -14 LUFS, true peak -1.4 dBTP. Save it as out/paper_note.mp4.\n- Frame 0 is already interesting: a crumpled paper ball on a painting. No fade at the end: the last 3 frames are identical and show the finished note.\n- All text stays between 12 % and 78 % of the height (Instagram UI safe band).\n\nHOW TO BUILD IT\n- One HTML page with a canvas (three.js for the paper). It exposes window.V = { W: 1080, H: 1920, dur: 9.5, ready(), seek(t) }. Every visual state is a pure function of time t, so frames can render in any order. Seeded random only, never Math.random at render time.\n- A Node + Puppeteer script opens the page, calls seek(frame / 30) for every frame, screenshots it and pipes the frames to ffmpeg. Max 2 parallel workers.\n- The page exports its event list (time, type, x position of every letter, word, mark, doodle, tape, confetti burst). A Python script (numpy/scipy) synthesises the music and every sound effect from scratch from that list, so each sound lands on its visual frame. No downloaded samples needed.\n- One command (render.sh) runs everything: scene -> audio -> frames -> MP4.\n\nTWO CLOCKS (this is what makes it feel hand-made)\n- The world runs at 12 fps stop-motion: stop k = floor(t * 12). Paper pose, unfold state, background painting and doodle loops only change on a stop, which gives the 3:2 hold cadence at 30 fps.\n- The juice runs on a 24 fps sub-clock j = floor(t * 24): letter pops, ink drops, sparkles, punch-ins, mark draw-ons, confetti.\n- Tempo 90 BPM: 1 beat = 8 stops = 0.667 s. Letters land on 8th and 16th notes, the LAST letter of each word lands on a beat.\n\nBACKGROUND\n- Use the painted artworks in bg/ (portrait images, cover-crop to 1080x1920). If bg/ is empty, paint 8 procedural plates in code (swirls, starry skies, engravings).\n- Flip to a new plate on EVERY stop (12 times a second) in a shuffled order that never shows the same plate twice in a row. It never stops flipping, also not during the ending.\n- Darken each plate to about 40-50 % (its own gain, so all plates look equally dark) with a soft vignette, so the white paper pops.\n\nTHE PAPER\n- Off-white lined notebook paper (RGB about 244, 244, 240), grey-blue rules every 5.4 % of the sheet height (first rule at 9 %), a torn top edge, a torn spiral-perforation right edge and a fine fibre texture. Sheet width 0.55 of the frame, centred just above the middle.\n- It unfolds in 5 states during the first second: tight crumpled ball (about 0.23 of the frame wide, big flat facets, sharp creases, rules visible on the facets) -> half-open with a standing flap -> crumpled flat-ish -> wrinkled full sheet -> flat sheet. Build it as a real folded mesh (a subdivided plane folded around hinge lines that unfolds as c goes from 1 to 0), lit by a key and a fill light with soft self-shadow. Not a 2D image swap.\n- Two shadows under the sheet: a tight contact shadow and a wide soft ambient one.\n- On every stop the sheet boils a little (+-0.3 deg, +-1.6 px). Each time a word finishes, re-pose it like a new photo (+-1.6 deg, +-1 % shift). Single letters never re-pose it, so the text stays readable.\n- Faint hand-made detail: a pencil ghost sketch of every letter before it is inked, pencil baseline guides, an eraser smudge with crumbs, a broken coffee ring, an old fold crease, and two translucent tape strips with torn ends on the top corners (from tape/ if it has images) that slap on at 1.0 s and 1.17 s.\n- SIGNATURE: write [@YOURHANDLE] in marker along the bottom edge of the paper, visible from the first flat frame to the last, so it bulges with the paper and stays readable at the end.\n\nLETTERS\n- Blue paint-marker capitals (RGB about 44, 119, 159), drawn from hand-made skeleton strokes, not a font. Each letter gets its own small wobble, rotation, size and baseline jitter, streaky ink and a faint bleed. Wide tracking. The first word of line 3 is in red marker and smaller.\n- Letters appear ONE AT A TIME and pop on whole (never stroke by stroke), starting at 1.33 s. Pop on the sub-clock: frame -1 squash (1.16 x 0.60), frame 0 stretch-overshoot (1.10 x 1.24, +-4 deg), then 0.96, 1.015, rest. Anchor on the baseline. With each pop the paper dips 0.7 % and recovers, 3-5 ink droplets fly out (2 stay on the paper as dots) and 2 tiny sparkles appear.\n- Size order: lines 1 and 2 big, the first word of line 3 small, the PUNCHLINE the biggest thing on the page.\n\nWORD REWARDS (every finished word)\n- A burst of 14-16 small 4-point paper sparkles and dots (0.65 s), a camera punch-in of +2.8 % with a damped spring settle. The camera keeps +1.7 % of each punch-in, so it slowly creeps closer.\n- A mark draws on in a second colour: an orange underline under one key word of line 2, a two-pass yellow highlighter swipe (streaky, slightly wavy edges) on the punchline, a red hand-drawn circle around the punchline a beat later, then a thick magenta arrow pointing down to the comments with the handwritten side note [it's free] and a small heart.\n- From the first letter to the climax something new lands every 0.17-0.5 s.\n\nDOODLES\n- 6-10 colourful marker doodles around the text: sparkles, a star, a small robot head, a chat bubble, a heart. Use the PNGs in doodles/ if there are any, otherwise draw them with wobbly hand strokes. If doodles/, tape/ or confetti/ hold sheet images with several items on white, cut them out yourself (key out the white with soft edges, slice into single items).\n- Each doodle pops with a big overshoot (1.3 -> 0.9 -> 1.05), then lives on the 12 fps clock, locked to the beat: twinkle, heartbeat double pulse, wiggle, bob, blink. Doodles stay in the margins, never over the words.\n\nCLIMAX\n- 7.33-7.58 s: anticipation. The sheet squashes to 0.95 and trembles.\n- Then it grows toward the camera with an ease-in (power 2.2) that lands exactly on the bar downbeat at 8.000 s, with a lens bulge (barrel distortion: the top edge bows about 7 % of the sheet height, the sides 6-7 % of its width) and a +6 % overshoot spring. Final sheet about 0.75 of the frame width.\n- At 8.000 s: about 70 pieces of matte cut-paper confetti (rectangles, circles, triangles, strips; from confetti/ if it has images), 45 % bursting from behind the sheet and the rest from its edges outward, each with its own soft shadow, spin and flip shading on the 12 fps clock, drag and flutter. Plus a ring of 18 sparkles around the sheet. Nothing crosses the punchline.\n- 8.0-9.5 s: a lively hold (doodle loops, a twinkle on every beat, confetti drifting down). Freeze the last 3 frames.\n\nSOUND (original, synthesised, ear candy)\n- Music bed: soft, floaty, hypnotic and positive, 90 BPM, F major with a lydian colour. Chords: Bbmaj9#11 (0-1.33 s), Fmaj9 (to 4.0 s), Bbmaj9#11 (to 5.33 s), Gm9 (to 6.67 s), Bbmaj9#11 (to 7.33 s), Csus4add9 (to 8.0 s), Fmaj9 on the climax and the hold.\n- Layers: a warm detuned pad with a slowly opening low-pass, a kalimba-like pluck playing a 7-step rhythm against a 5-note pattern on 16ths, a soft mallet on dotted 8ths, a gentle sub, a shimmer of tiny bell grains, long soft reverb. No kick, clap or hi-hat. Dip 2.5-6 kHz so it is easy on the ears. The bed starts at a whisper and swells into the climax.\n- Sound effects, each on its exact frame and panned to its element's x position on screen:\n  - Frame 0: a crisp paper grab plus two soft pickup bells. Paper crinkle grains on every ball stop, paper swishes on the unfold, a paper flap when it lands, tape rip + slap.\n  - Each letter: a soft felt-marker tap plus a glassy pling one chord tone higher than the last (a rising combo ladder). Each word lands one rung higher than the word before.\n  - Each word reward: 2-3 bell notes (the first one = the last letter's note), a soft low \"thup\", tonal glitter. Duck the music 3 dB under it.\n  - Marker-stroke sounds timed to the underline, highlighter, circle and arrow draw-ons.\n  - Build (6.67-8.0 s): a riser that keeps climbing to F7, a reversed shimmer swell, a paper-flick roll (16ths, then 32nds) into the downbeat.\n  - 8.000 s: a soft sub thump, an F major bell strum from left to right, glitter, confetti flutter on both sides.\n- Every tonal note is a chord tone of the current chord AND in F major pentatonic (F G A C D), so nothing clashes. No typing sounds, nothing harsh, crunchy or cartoonish, never the same sound twice in a row.\n- Master to -14 LUFS integrated, true peak -1.4 dBTP.\n\nCHECK IT BEFORE YOU HAND IT OVER\n- Render stills at 0.05, 1.0, 3.3, 6.4, 7.6, 8.0 and 9.4 s and look at every one. Fix anything wrong: spelling, text outside the 12-78 % band, punchline not the biggest, anything covering the punchline, a ball that does not read as real crumpled paper, backgrounds too bright.\n- Check the MP4 with ffprobe (1080x1920, 30 fps, 285 frames) and ffmpeg ebur128 (-14 LUFS).\n- Then tell me the file path and how to change the text and re-render with one command.",
+  "tags": [
+   "Kinetic type",
+   "Shapes",
+   "Music"
+  ],
+  "type": "prompt",
+  "prompt_source": "https://files.johnsavageai.com/ai-pdf-workflows/ai-paper-note-animation-prompt-guide.pdf"
+ },
+ {
+  "handle": "LexnLin",
+  "post_url": "https://x.com/LexnLin/status/2112674349132194185",
+  "posted_date": "Oct 20, 2026",
+  "model": "Claude Opus 5.5",
+  "title": "TasteSkill v2.1 launch video",
+  "prompt_text": "",
+  "skill": "npx skills add Leonxlnx/taste-skill",
+  "repo": "https://github.com/Leonxlnx/taste-skill",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "JanusTiu",
+  "post_url": "https://x.com/JanusTiu/status/2112612167191003404",
+  "posted_date": "Oct 20, 2026",
+  "model": "Claude Code (Opus 5.5)",
+  "title": "7-style Claude motion video playbook",
+  "prompt_text": "STYLE 01 — One continuous line:\nAn 8-second vertical motion graphic drawn entirely with ONE continuous line that never breaks or lifts. IDEA: a single electric-blue line starts as a line graph, then peels off the chart and keeps drawing, turning into new shapes. The line is the only moving thing. It ends by writing \"motion\" in continuous script. 0-1.5s: off-white graph paper, faint grid. A dot appears bottom left and draws a jagged line graph left to right, values climbing. Axis ticks pop in as it passes. 1.5-3.0s: at the peak the line overshoots the chart, loops once, and the whole graph unravels into the same line pulling upward. 3.0-4.5s: the line draws a single-line portrait of a hand on a keyboard, one stroke, like a continuous-line illustration. 4.5-6.0s: the hand unravels and the line spirals into a play button shape, then a soundwave that pulses three times. 6.0-8.0s: the wave flattens and writes \"motion\" in one continuous script stroke, centred. A small mono caption \"ONE LINE. ONE PROMPT.\" fades up beneath. Hold. LOOK: off-white #F4F1EA, grid lines #DAD5CA at 1px, line in electric blue #2F5BFF at 6px with a round cap and a very slight ink wobble. A small glowing dot at the pen tip. No fills, no other colours, no shadows. MOTION: the pen tip moves at a steady drawing speed, accelerating only on long straight runs. Each new shape forms by the old one unravelling, never by cutting or fading. The camera drifts slowly to follow the pen tip. SOUND: light marimba and plucked bass around 110 BPM. A soft pen-scratch texture that follows the drawing speed, a tick on each axis mark, a bright pluck as each new shape completes. No narration.\n\nSTYLE 02 — The one-ball showreel:\nMake a dynamic 8-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out. IDEA: one small red ball (#FF3319) is in every shot. Each chapter is a different motion technique acting on it. At the end it becomes the full stop of the word \"MOTION\". 0-1.2s: off-black frame, white ground line. The ball drops and bounces three times with real squash and stretch, then scales up to flood the screen red. 1.2-2.6s: on red, \"MOTION\" slams in letter by letter in huge black heavy grotesque caps. A white line slices it, the halves slide apart and snap back. 2.6-4.0s: cream background. A rotating sphere of dots orbits the ball, flattens into a ring, a black circle swallows it. 4.0-5.2s: a grid of dots ripples out from the ball and flips into red, white and cobalt diamonds in waves. A cobalt circle wipes. 5.2-6.4s: segmented rings rush toward camera around the ball like a tunnel, then collapse to black. 6.4-8.0s: the ball bursts into shards that snap together into \"MOTION\" with the ball as its full stop. \"MADE WITH CLAUDE\" types on beneath in small mono caps. Hold. FRAME: thin overlay throughout: corner brackets, chapter counter \"01 / 05\" top right, running timecode bottom right, all inside the safe zone. LOOK: off-black #111116, cream #EFEBE4, red #FF3319, cobalt #2A42FF. Flat shapes only. Extra-bold geometric grotesque plus monospace labels. MOTION: snaps of 2-4 frames against short readable holds. Real weight on bounces. Hard cuts on the beat. SOUND: 128 BPM electronic beat, crisp hats, sub bass. Wooden thud on each bounce, clicks per letter, a blade slice, ticks on the grid flips, a riser into the tunnel, a beat of silence, then a shatter and deep bass hit on the wordmark. No narration.\n\nSTYLE 03 — ASCII terminal:\nAn 8-second vertical motion graphic where everything is rendered ONLY with monospace text characters, like a 3D demo running inside a terminal. IDEA: a 3D object made entirely of ASCII characters spins inside a terminal window. Brightness maps to characters: \" .:-=+*#%@\". It feels like Claude Code itself is drawing. TECH: render 3D geometry yourself, sample brightness into a character grid of about 90 columns, and draw each cell as a monospace glyph. No pixels outside the glyph grid. 0-1.0s: black terminal. A blinking cursor types \"$ claude render --motion\" character by character. 1.0-3.0s: an ASCII torus fades up from sparse dots to dense characters and spins in 3D. Lighting rotates so the characters ripple from \".\" to \"@\". 3.0-4.5s: the torus morphs into a rotating ASCII human head (simple low-poly bust), still spinning. 4.5-5.5s: glitch: rows of characters shift sideways, some cells flip to random symbols, then lock back. 5.5-7.0s: the head shatters into falling characters that pile up at the bottom, then fly up and arrange into a huge ASCII-art \"MOTION\". 7.0-8.0s: a status line types beneath: \"rendered 240 frames. 0 keyframes.\" Cursor blinks. Hold. LOOK: pure black #000000. Characters in phosphor green #33FF66 with a faint glow, brightest characters slightly whiter. Subtle CRT curvature, scanlines and flicker. One monospace font throughout. MOTION: smooth 3D rotation inside a rigid character grid. Typing is linear. Glitches are 2-3 frames. SOUND: dark minimal techno around 124 BPM. Mechanical keyboard clicks for typing, a CRT hum underneath, data chirps on the glitch, a cascade of tiny ticks as the characters fall, a deep hit when \"MOTION\" locks. No narration.\n\nBASE BLOCK (paste under every prompt):\nFORMAT: 1080x1920 vertical, 30fps, under 10 seconds. BUILD: one self-contained HTML file. Every frame is drawn on canvas as a pure function of time (seek(t)). No timers, no CSS transitions, seeded randomness only. Render to MP4 with Playwright + ffmpeg. SOUND: synthesize the music and every sound effect in code. Lock every hit to the visual beat. Mix to -14 LUFS and mux into the MP4. PROCESS: show me the storyboard first: a beat map with timestamps and 4 key stills as PNGs. Stop and wait for my approval before you build anything. After rendering, export a contact sheet (one frame per beat), review it yourself, fix anything weak, then show me the final. RULES: keep text out of the top 250px and bottom 400px (Reels UI). No crossfades, no generic gradients, no glow spam, nothing that looks like a template.\n\nStyles 04–07 and full tutorial: https://portfolio.janustiu.com/playbook/claude-motion-videos/",
+  "tags": [
+   "Kinetic type",
+   "Shapes",
+   "Code"
+  ],
+  "type": "prompt",
+  "prompt_source": "https://portfolio.janustiu.com/playbook/claude-motion-videos/"
+ },
+ {
+  "handle": "0xwhrrari",
+  "post_url": "https://x.com/0xwhrrari/status/2112166940081004693",
+  "posted_date": "Oct 19, 2026",
+  "model": "Claude Opus 5.5 (Blender 5 Python + Cycles)",
+  "title": "Clawd — No After Effects",
+  "prompt_text": "BRAND\nHERO: Clawd, the Claude Code mascot as one smooth toy: body 12x8x6 units, two side nubs, four short legs, two black eye slits, soft rounded bevels, no voxel grid, terracotta D97757\nAPP: a pixel-faithful After Effects-style workspace, dark theme: menu bar, toolbar (Home, Selection ... Rectangle, Pen, Type ... Puppet), Project, Composition, Info, Preview, Effects & Presets searched for \"glow\", and a Timeline with five layers and open Position and Scale rows. Real layout and labels, no logos\nRESULT: the comp Clawd builds: \"MADE WITH CLAUDE\", an orange spark, a pen swoosh, a glow, the subtitle OPUS 5.5\nSET: every panel is a floating slab over a dark warm studio; the UI glows like a screen\n\nFORMAT: Blender 5 Python, Cycles GPU, 1920x1080, 30 fps, 12.0 s at 120 BPM. Build the interface in HTML and screenshot it with puppeteer into a 3840x2160 texture; draw the comp and the timecode on a canvas, one PNG per frame. One timeline.py holds the layout in UI pixels and every event; the HTML, the Blender scene and the sound all read it.\n\nBEATS (seconds):\n0-1.5 Clawd is a flat clawd.png layer in the comp, selection handles around him; he knocks twice from inside\n1.5-2.0 peels off the screen as a flat card and pops into 3D; the viewer glass cracks, shards fly\n2.5-3.5 lands on Type, Rectangle and Pen: each press types the title, pops the spark, draws the swoosh\n4.5-5.5 flips across to Effects > Glow, a Glow chip pops up, he kicks it into the comp: glow on\n6.0-7.5 four hops along the Position row; each stamps a keyframe and the comp jumps to that pose\n8.0-9.6 hops on the playhead, it rewinds to 0, he surfs it to the end while the comp plays\n10-12 Preview > Play; every other panel powers down and falls away; Clawd waves next to the finished comp\n\nCAMERA: starts wide on the whole workspace, follows every hop at Clawd height with shallow focus, whips to each button, ends on the comp alone.\n\nLOOK: UI as emission under black glossy glass; keep the lights out of the UI reflections so nothing blows out; bloom, 0.5 shutter blur, AgX; the body must read D97757.\n\nCHECKS: render the UI texture and a comp contact sheet first, then 18 stills at half res before the full render.",
+  "tags": [
+   "Characters",
+   "Product UI",
+   "3D"
+  ],
+  "type": "prompt",
+  "prompt_source": "https://drive.google.com/file/d/1-VZJxR-VpR1rY4FyymcMDIq742fkQYLT/view"
+ },
+ {
+  "handle": "thegreatest_sv",
+  "post_url": "https://x.com/thegreatest_sv/status/2112609040962359354",
+  "posted_date": "Oct 20, 2026",
+  "model": "Claude Code + HyperFrames",
+  "title": "Claude Code + HyperFrames motion setup",
+  "prompt_text": "/hyperframes:hyperframes, describe a 10-second product intro, and it plans, animates and renders the MP4",
+  "skill": "claude plugin marketplace add heygen-com/hyperframes\nclaude plugin install hyperframes@hyperframes\nnpx skills add remotion-dev/skills\nnpx skills add github.com/greensock/gsap-skills\nnpx skills add LottieFiles/motion-design-skill",
+  "repo": "https://github.com/heygen-com/hyperframes",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "p_millerd",
+  "post_url": "https://x.com/p_millerd/status/2112719529449333201",
+  "posted_date": "Oct 21, 2026",
+  "model": "Claude Opus 5.5",
+  "title": "Decks product demo by morning",
+  "prompt_text": "we need a delightful product demo by morning",
+  "repo": "https://github.com/paulmil11/decks",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "type": "prompt"
+ }
+]
