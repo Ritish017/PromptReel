@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {identity,body} from '../lib/supabase.js';
+import subscribe from '../api/subscribe.js';
+import comments from '../api/comments.js';
+import vote from '../api/vote.js';
+import admin from '../api/admin.js';
+const response=()=>({code:200,status(n){this.code=n;return this},setHeader(){},json(value){this.value=value;return this},end(){}});
+test('anonymous identity is rejected',async()=>assert.rejects(()=>identity({headers:{}}),e=>e.status===401));
+test('forged access token is rejected by Supabase',async()=>assert.rejects(()=>identity({headers:{authorization:'Bearer forged-token'}}),e=>e.status===401));
+test('subscribe never accepts a browser supplied email without identity',async()=>{const res=response();await subscribe({method:'POST',headers:{},body:{email:'fixture@example.invalid',consent:true}},res);assert.equal(res.code,401)});
+test('comments cannot impersonate a supplied name',async()=>{const res=response();await comments({method:'POST',headers:{},body:{id:'fixture',name:'Impersonated',text:'Local test only'}},res);assert.equal(res.code,401)});
+test('votes require verified identity',async()=>{const res=response();await vote({method:'POST',headers:{},body:{id:'fixture',voter:'spoofed-voter',value:1}},res);assert.equal(res.code,401)});
+test('old admin URL keys no longer authorize exports',async()=>{const res=response();await admin({method:'GET',headers:{},url:'/api/admin?key=old-key',query:{key:'old-key'}},res);assert.equal(res.code,401)});
+test('request parser rejects malformed and oversized input',async()=>{await assert.rejects(()=>body({body:'{'}),e=>e.status===400);await assert.rejects(()=>body({body:'x'.repeat(17000)}),e=>e.status===413);});

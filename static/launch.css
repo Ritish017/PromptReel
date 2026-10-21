@@ -1,0 +1,21 @@
+/* Bounded section previews and accessible newsletter/product layouts. */
+.sgrid{grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));align-items:start}
+.sgrid>.card{min-width:0;max-width:100%}.sthumb{isolation:isolate;contain:layout paint;aspect-ratio:16/10;width:100%;max-height:300px}
+.sthumb iframe{position:absolute;inset:0;width:200%;height:200%;max-width:none;transform:scale(.5);transform-origin:top left;pointer-events:none}
+.device{width:100%;height:min(540px,65vh);max-height:540px;aspect-ratio:auto;contain:layout paint}
+.device iframe{display:block;width:100%;height:100%;max-width:100%}
+.signup-form{max-width:560px;margin:18px 0;text-align:left}.signup-row{display:flex;gap:10px}.signup-row input{min-width:0;flex:1;border:1px solid var(--line);border-radius:30px;padding:13px 18px;font:inherit;background:#fff}
+.consent{display:flex;gap:10px;align-items:flex-start;line-height:1.55;font-size:13px;color:var(--mute);margin:12px 0}.consent input{flex:0 0 17px;width:17px;height:17px;margin-top:3px;accent-color:#087069}.consent a{text-decoration:underline}
+.signup-status{font-size:13px;line-height:1.5}.signup-status:empty{display:none}
+footer .signup-form{margin:0 auto 22px}footer .signup-row{max-width:100%}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:700;color:#087069}
+.newsletter-page{max-width:1180px}.newsletter-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:64px;padding:72px 0;align-items:center}
+.newsletter-hero h1{font-size:clamp(36px,5.2vw,66px);line-height:1.04;letter-spacing:-.05em;margin:18px 0 24px}.newsletter-hero h1 span{color:#087069}.newsletter-hero>div>p{font-size:19px;line-height:1.6;color:var(--mute)}
+.issue-cover{padding:36px;border-radius:24px;background:#0b2340;color:#fff;box-shadow:0 24px 60px -35px #0b2340}.issue-cover>span{font-size:11px;letter-spacing:.18em;color:#8ddace}.issue-cover h2{font-size:37px;line-height:1.15;letter-spacing:-.035em;margin:28px 0}.issue-cover ol{padding-left:20px;color:#d8e3ef}.issue-cover li{padding:5px 0}.issue-cover a{display:inline-block;margin-top:18px;color:#8ddace}
+.newsletter-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:15px 0 60px}.newsletter-benefits article{padding-top:24px;border-top:1px solid var(--line)}.newsletter-benefits article>span{font-size:11px;color:#087069;letter-spacing:.1em}.newsletter-benefits h2{font-size:23px;line-height:1.2}.newsletter-benefits p{color:var(--mute);line-height:1.7}
+.auth-page{max-width:560px}.auth-page .panel{display:flex;flex-direction:column;gap:12px}.auth-page .panel label{margin:0}.auth-page .phero{padding-bottom:10px}.auth-page #signin-msg{font-size:14px;color:var(--mute)}
+.product-zone{margin:36px 0}.product-zone h2{font-size:28px;letter-spacing:-.03em}.product-zone>p{color:var(--mute)}.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:16px}.product-card{border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff;display:block}.product-card small{color:#687889;font-size:10px;letter-spacing:.14em}.product-card h3{font-size:21px;line-height:1.2}.product-card p{color:var(--mute);font-size:14px}.product-card>span{color:var(--acc);font-size:13px}
+.launch-note{background:#eef4f2;border-radius:24px;padding:32px}.launch-note h2{font-size:34px;line-height:1.12;letter-spacing:-.04em}.launch-note p{font-size:16px;color:var(--mute);line-height:1.7}
+:focus-visible{outline:3px solid #087069;outline-offset:4px}button:disabled{opacity:.55;cursor:wait}
+@media(max-width:820px){.newsletter-hero{grid-template-columns:1fr;gap:30px;padding-top:90px}.newsletter-benefits{grid-template-columns:1fr;gap:12px;margin-bottom:34px}.issue-cover{padding:28px}.device{height:50vh;max-height:420px}.auth-page .phero{padding-top:90px}}
+@media(max-width:440px){.signup-row{flex-direction:column}.signup-row button{align-self:flex-start}.newsletter-hero h1{font-size:39px}.issue-cover h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sthumb iframe{visibility:hidden}.sthumb:after{content:"Motion preview paused. Open Preview to view.";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:#52657b}}

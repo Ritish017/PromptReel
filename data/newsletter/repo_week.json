@@ -1,0 +1,134 @@
+{
+  "retrieved_at": "2026-10-21T19:56:03.789Z",
+  "source": "GitHub Trending weekly subset",
+  "items": [
+    {
+      "name": "morluto/rea",
+      "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "lang": "TypeScript",
+      "stars": 356582,
+      "forks": 89533,
+      "gain": 157631
+    },
+    {
+      "name": "debpalash/VoiceStudio",
+      "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "lang": "Python",
+      "stars": 80143,
+      "forks": 8834,
+      "gain": 17057
+    },
+    {
+      "name": "stablyai/orca",
+      "desc": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "lang": "TypeScript",
+      "stars": 101030,
+      "forks": 6390,
+      "gain": 8173
+    },
+    {
+      "name": "NationalSecurityAgency/ghidra",
+      "desc": "Ghidra is a software reverse engineering (SRE) framework",
+      "lang": "Java",
+      "stars": 92571,
+      "forks": 10369,
+      "gain": 6184
+    },
+    {
+      "name": "heygen-com/hyperframes",
+      "desc": "Write HTML. Render video. Built for agents.",
+      "lang": "TypeScript",
+      "stars": 69100,
+      "forks": 6257,
+      "gain": 5994
+    },
+    {
+      "name": "anomalyco/opencode",
+      "desc": "The open source coding agent.",
+      "lang": "TypeScript",
+      "stars": 219593,
+      "forks": 29293,
+      "gain": 5792
+    },
+    {
+      "name": "anthropics/claude-plugins-official",
+      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "lang": "Python",
+      "stars": 43593,
+      "forks": 4601,
+      "gain": 5650
+    },
+    {
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "lang": "Python",
+      "stars": 53551,
+      "forks": 4728,
+      "gain": 4549
+    },
+    {
+      "name": "HKUDS/CLI-Anything",
+      "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "lang": "Python",
+      "stars": 55891,
+      "forks": 5043,
+      "gain": 3587
+    },
+    {
+      "name": "mksglu/context-mode",
+      "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "lang": "TypeScript",
+      "stars": 31623,
+      "forks": 2178,
+      "gain": 3556
+    },
+    {
+      "name": "ruvnet/ruflo",
+      "desc": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "lang": "TypeScript",
+      "stars": 78168,
+      "forks": 9192,
+      "gain": 3143
+    },
+    {
+      "name": "akitaonrails/ai-memory",
+      "desc": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "lang": "Rust",
+      "stars": 12231,
+      "forks": 866,
+      "gain": 2640
+    },
+    {
+      "name": "earthtojake/text-to-cad",
+      "desc": "Give your agent CAD superpowers.",
+      "lang": "Python",
+      "stars": 22239,
+      "forks": 2175,
+      "gain": 2069
+    },
+    {
+      "name": "cursor/plugins",
+      "desc": "Cursor plugin specification and official plugins",
+      "lang": "TypeScript",
+      "stars": 13374,
+      "forks": 1330,
+      "gain": 2040
+    },
+    {
+      "name": "android/skills",
+      "desc": "",
+      "lang": "Kotlin",
+      "stars": 9138,
+      "forks": 589,
+      "gain": 1255
+    },
+    {
+      "name": "wshobson/agents",
+      "desc": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "lang": "Python",
+      "stars": 41453,
+      "forks": 4403,
+      "gain": 665
+    }
+  ]
+}

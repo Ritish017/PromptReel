@@ -1,0 +1,102 @@
+{
+  "retrieved_at": "2026-10-21T19:56:02.258Z",
+  "source": "GitHub Trending daily subset",
+  "items": [
+    {
+      "name": "DietrichGebert/ponytail",
+      "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "lang": "JavaScript",
+      "stars": 171310,
+      "forks": 9323,
+      "gain": 2051
+    },
+    {
+      "name": "cloudflare/security-audit-skill",
+      "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "lang": "JavaScript",
+      "stars": 35702,
+      "forks": 2239,
+      "gain": 1997
+    },
+    {
+      "name": "stablyai/orca",
+      "desc": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "lang": "TypeScript",
+      "stars": 101030,
+      "forks": 6390,
+      "gain": 1543
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "lang": "Python",
+      "stars": 131413,
+      "forks": 12616,
+      "gain": 1434
+    },
+    {
+      "name": "Comfy-Org/ComfyUI",
+      "desc": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "lang": "Python",
+      "stars": 141402,
+      "forks": 16719,
+      "gain": 914
+    },
+    {
+      "name": "shiyu-coder/Kronos",
+      "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "lang": "Python",
+      "stars": 42740,
+      "forks": 7062,
+      "gain": 570
+    },
+    {
+      "name": "supabase/supabase",
+      "desc": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "lang": "TypeScript",
+      "stars": 112869,
+      "forks": 16889,
+      "gain": 509
+    },
+    {
+      "name": "headroomlabs-ai/headroom",
+      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "lang": "Python",
+      "stars": 77172,
+      "forks": 5986,
+      "gain": 477
+    },
+    {
+      "name": "vllm-project/vllm",
+      "desc": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "lang": "Python",
+      "stars": 94801,
+      "forks": 23733,
+      "gain": 439
+    },
+    {
+      "name": "strelov1/freehire",
+      "desc": "freehire — the open-source search engine for job seekers",
+      "lang": "Go",
+      "stars": 2277,
+      "forks": 240,
+      "gain": 396
+    },
+    {
+      "name": "akitaonrails/ai-memory",
+      "desc": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "lang": "Rust",
+      "stars": 12231,
+      "forks": 866,
+      "gain": 303
+    },
+    {
+      "name": "twentyhq/twenty",
+      "desc": "The open alternative to Salesforce, designed for AI.",
+      "lang": "TypeScript",
+      "stars": 59037,
+      "forks": 9656,
+      "gain": 105
+    }
+  ]
+}
