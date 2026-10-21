@@ -155,7 +155,7 @@ HOME_FAQ = [
  ("What is PromptReel?","PromptReel is a free gallery of motion videos made by AI, each shown with a shared prompt or agent skill that made it, so you can copy it and make your own. Built by Ritish Kurma (x.com/KurmaRitish)."),
  ("Where can I find good AI video prompts?","PromptReel has hundreds of real AI video prompts for Claude, ChatGPT, Gemini, Remotion and HyperFrames, each next to the video it made. Filter by topic, model or shape and copy with one click."),
  ("Can Claude make videos?","Yes. Claude can write code (HTML, React with Remotion, Three.js or HyperFrames) that renders into a motion video. Every Claude example on PromptReel includes the prompt used."),
- ("Do I need to sign in?","No. Watching, filtering, copying prompts and skills, copying sections, liking and commenting all work without an account."),
+ ("Do I need to sign in?","No. Watching, filtering, copying prompts and skills, copying sections, and copying sections work without an account. Sign in to vote, comment, and sync saves."),
  ("How do I get my video featured?","Submit the X post and prompt on the Submit page, or message @KurmaRitish on X. Creators are always credited and can remove their work any time."),
 ]
 KW = [
@@ -225,7 +225,6 @@ def build():
         (shutil.copytree(src, os.path.join(OUT, f)) if os.path.isdir(src) else shutil.copy(src, OUT))
     json.dump([{k: x.get(k) for k in ("id","title","handle","model","image_url","type","prompt_text","skill","video_preview")} for x in d], open(os.path.join(OUT, "entries.json"), "w"))
     config = json.load(open(os.path.join(ROOT,"data","supabase_public.json"), encoding="utf-8"))
-    config["googleEnabled"] = os.environ.get("PR_GOOGLE_AUTH_ENABLED") == "true"
     config["emailEnabled"] = os.environ.get("PR_EMAIL_AUTH_ENABLED") == "true"
     json.dump(config, open(os.path.join(OUT,"auth-config.json"),"w",encoding="utf-8"))
     from newsletter.render import build_sample
@@ -238,7 +237,7 @@ def build():
     home = head(f"AI Video Prompts: {len(d)} Motion Videos With the Exact Prompt | {SITE}", f"{len(d)} motion videos made with Claude, GPT, Gemini, Remotion and HyperFrames, each with a shared prompt or agent skill that made it. Copy it, customize it, ship it.", "/", ld=ld_home, active="/")
     home += f"""<main class="wrap"><section class="hero"><div><h1>Motion videos made by AI. <span>With the prompts behind them.</span></h1>
 <p class="lead">{len(d)} examples from {creators} creators, with prompts, source links, and agent skills to explore. Copy it, make it yours, ship tonight.</p>
-{signup_form("home")}<div class="hint">Free weekly field notes. Confirm your email to join. No payment details.</div>
+{signup_form("home")}<div class="hint">The newsletter is coming soon. Explore the sample and help shape it.</div>
 <a class="newlink" href="/repos/">New: live GitHub trending, today's biggest star gainers →</a>
 <div class="stats"><div><b>{len(d)}</b>examples</div><div><b>{creators}</b>creators</div><div><b>{skills}</b>skills</div><div><b>Weekly</b>field notes</div></div></div>
 {hero_sponsor()}</section>
@@ -282,7 +281,7 @@ def build():
 <h1>{e(x['title'])}</h1><p class="answer">{e(answer)}</p>{media}
 <div class="acts" style="padding-top:14px"><button class="act up" data-vote="1" data-vid="{x['id']}">{ICON_UP}<span>0</span> Like</button><button class="act down" data-vote="-1" data-vid="{x['id']}">{ICON_DOWN}<span>0</span></button><a class="act cm" href="#comments">{ICON_C}<span>0</span> Comments</a><button class="act save" data-like="{x['id']}">{ICON_H} Save</button><a class="act r" target="_blank" rel="noopener" href="{e(x['post_url'])}">{'View on X ↗' if is_x(x) else 'Open on GitHub ↗'}</a></div>
 <div class="row" style="margin-top:14px">{tags}</div>
-<section class="panel comments" id="comments" style="margin-top:22px"><h2>Comments</h2><div id="clist"><p style="color:var(--mute)">Loading…</p></div><form id="cform" data-id="{x['id']}" style="margin-top:12px"><input class="field" id="cname" maxlength="40" placeholder="Your name (optional)" style="margin-bottom:8px"><textarea class="field" rows="3" maxlength="600" placeholder="What did you make with it? Any tweaks that worked?" required></textarea><div class="row" style="margin-top:10px;justify-content:space-between"><small style="color:var(--mute)" id="cwho">No sign-in needed. Be kind.</small><button class="btn sm">Post comment</button></div></form></section></div>
+<section class="panel comments" id="comments" style="margin-top:22px"><h2>Comments</h2><div id="clist"><p style="color:var(--mute)">Loading…</p></div><form id="cform" data-id="{x['id']}" style="margin-top:12px"><input class="field" id="cname" maxlength="40" placeholder="Your name (optional)" style="margin-bottom:8px"><textarea class="field" rows="3" maxlength="600" placeholder="What did you make with it? Any tweaks that worked?" required></textarea><div class="row" style="margin-top:10px;justify-content:space-between"><small style="color:var(--mute)" id="cwho">Sign in to comment. Be kind.</small><button class="btn sm">Post comment</button></div></form></section></div>
 <aside><div class="panel"><div class="row" style="justify-content:space-between"><div class="row"><img class="av" style="width:42px;height:42px;border-radius:50%" src="{avatar(x)}" alt=""><div><b>{e(x.get('display_name') or x['handle'])}</b><a style="color:var(--mute);font-size:13px" href="/creators/{slugify(x['handle'])}/">@{e(x['handle'])} · all their videos</a></div></div><a class="btn ghost sm" target="_blank" rel="noopener" href="{'https://x.com/'+e(x['handle']) if is_x(x) else e(x['post_url'])}">Follow</a></div>
 <div class="row" style="margin-top:12px;color:var(--mute);font-size:14px"><span>{e(x.get('model','—'))}</span><span>·</span><span>{e(x.get('posted_date',''))}</span>{f"<span>·</span><span>{x['likes']:,} likes on X</span>" if x.get('likes') else ''}</div></div>{body}</aside></div>
 {('<h2 class="sec">More like this</h2><div class="grid">'+''.join(related)+'</div>') if related else ''}</main>{FOOT}"""
@@ -362,7 +361,7 @@ def extra_pages(d):
     write("/library/", pg)
     write("/saved/", '<meta http-equiv="refresh" content="0;url=/library/">')
     write("/signin/", head(f"Sign in | {SITE}", "Sign in securely with your email. Newsletter consent is optional.", "/signin/") + signin() + FOOT)
-    write("/newsletter/", head(f"Free weekly GitHub finds, creative prompts and skills | {SITE}", "Free weekly field notes: useful GitHub projects, creative examples, and one practical build idea. Curated by Ritish Kurma.", "/newsletter/") + newsletter() + FOOT)
+    write("/newsletter/", head(f"Newsletter coming soon: GitHub finds, prompts and skills | {SITE}", "PromptReel Weekly is coming soon. Read a sample of useful GitHub projects, creative prompts, and practical build ideas. Share your feedback with Ritish Kurma.", "/newsletter/") + newsletter() + FOOT)
     write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from ₹499 per week. Email to book.", "/pricing/") + pricing() + FOOT)
     write("/privacy/", head(f"Privacy | {SITE}", "Account, newsletter consent, analytics and data rights.", "/privacy/") + privacy() + FOOT)
     pg = head(f"Terms · {SITE}", "PromptReel terms of use.", "/terms/")
@@ -373,7 +372,7 @@ def extra_pages(d):
 <p><b>Contact.</b> kurmaritish017@gmail.com</p></div></main>{FOOT}"""
     write("/terms/", pg)
     # help
-    faq = [("Is PromptReel free?", "Yes. Every video, prompt, skill and section is free. No sign-in is needed to browse and copy. Sign in for comments, votes, synced saves, and the optional newsletter."),
+    faq = [("Is PromptReel free?", "Yes. Every video, prompt, skill and section is free. No sign-in is needed to browse and copy. Sign in for comments, votes, synced saves, and optional updates about the upcoming newsletter."),
            ("Who owns the videos and prompts?", "The creators. Every entry credits and links the creator's original X post. Creators can ask for removal any time from the Submit page."),
            ("How do I use a section?", "Tap Copy section, paste into Claude Code, Cursor, v0, Lovable or Bolt, and ask it to add the section to your site. Copy prompt only if you want the AI to write it in your own stack."),
            ("Can I use sections in client work?", "Yes. PromptReel sections are original and free for personal and commercial projects."),

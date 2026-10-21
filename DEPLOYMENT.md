@@ -2,6 +2,8 @@
 
 Newsletter is free. No trial, card, UPI, payment integration, or automatic billing is enabled.
 
+Current launch choice: newsletter is Coming soon, with a sample and feedback links. Google is the selected account sign-in method. The sign-in page checks Supabase's public Auth settings and enables the Google button only when the provider is configured. Google client credentials must be entered directly in the Supabase dashboard; they never belong in this repository. Public Google sign-in has not yet passed real acceptance tests.
+
 ## Connected Supabase project
 
 - Organization: Ritish
@@ -23,7 +25,7 @@ Newsletter is free. No trial, card, UPI, payment integration, or automatic billi
 3. Configure a real SMTP provider. Supabase's default mail server is restricted to authorized team email addresses and is not a public newsletter service.
 4. Configure a verified sender domain with the provider's required DNS records. Suggested sender identity: PromptReel Weekly · Ritish Kurma. Reply-to is kurmaritish017@gmail.com.
 5. Test sign-in, confirmation, checkbox consent, duplicate signup, unsubscribe, logout, and account isolation. Only then set PR_EMAIL_AUTH_ENABLED=true in Vercel and rebuild. Public email forms are paused by default; existing verified sessions still work.
-6. Optional Google auth requires the provider configuration in Supabase. Then build with PR_GOOGLE_AUTH_ENABLED=true. It remains hidden otherwise.
+6. Google auth requires a Web application OAuth client configured in Supabase. Google redirect URI: https://uqwolvmvfufjrrhxpxbt.supabase.co/auth/v1/callback. Supabase allowed app redirect: https://promptreels.vercel.app/signin/. The page detects provider availability without a deployment flag. Email sign-in remains hidden unless separately enabled after SMTP acceptance tests.
 7. Do not claim public signup or email delivery is operational until a real confirmation and a real opted-in test issue have been received.
 
 A signup without the newsletter box creates only an account. A checked box records pending intent; subscription is saved only after confirmed Supabase sign-in. Subscribers can stop emails without deleting their account.

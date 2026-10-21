@@ -1,7 +1,8 @@
 const track=(n,p)=>{try{if(localStorage.getItem('pr-analytics')!=='off')window.gtag&&gtag('event',n,p||{})}catch(_){}};
 window.PRTrack=track;
 document.addEventListener('click',ev=>{const a=ev.target.closest('a');if(!a)return;
- if(a.dataset.campaign)track('sponsor_click',{campaign:a.dataset.campaign,slot:a.dataset.slot});
+ if(a.dataset.newsletterInterest)track('newsletter_interest',{source:a.dataset.newsletterInterest});
+ else if(a.dataset.campaign)track('sponsor_click',{campaign:a.dataset.campaign,slot:a.dataset.slot});
  else if(a.closest('.sponsor,.spot')&&a.getAttribute('href')?.startsWith('/sponsor'))track('promotion_interest',{slot:'site'});
  else if(a.href&&a.host&&a.host!==location.host)track('outbound',{to:a.host});
 });

@@ -19,3 +19,5 @@ footer .signup-form{margin:0 auto 22px}footer .signup-row{max-width:100%}.eyebro
 @media(max-width:820px){.newsletter-hero{grid-template-columns:1fr;gap:30px;padding-top:90px}.newsletter-benefits{grid-template-columns:1fr;gap:12px;margin-bottom:34px}.issue-cover{padding:28px}.device{height:50vh;max-height:420px}.auth-page .phero{padding-top:90px}}
 @media(max-width:440px){.signup-row{flex-direction:column}.signup-row button{align-self:flex-start}.newsletter-hero h1{font-size:39px}.issue-cover h2{font-size:31px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sthumb iframe{visibility:hidden}.sthumb:after{content:"Motion preview paused. Open Preview to view.";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:#52657b}}
+
+.newsletter-teaser p{font-size:14px;line-height:1.65}.newsletter-teaser small{display:block;margin-top:12px;color:var(--mute)}.newsletter-teaser .row{flex-wrap:wrap}.newsletter-teaser .row>a:last-child{font-size:13px;text-decoration:underline}footer .newsletter-teaser{max-width:600px;margin-inline:auto;margin-bottom:22px;text-align:left}

@@ -47,12 +47,19 @@ class SiteChecks(unittest.TestCase):
                 target=ROOT/'public'/loc.lstrip('/')
                 self.assertTrue(target.exists(),str(page)+': '+loc)
     def test_newsletter_consent_is_not_prechecked(self):
-        for file in ['signin/index.html','newsletter/index.html','index.html']:
+        for file in ['signin/index.html']:
             text=(ROOT/'public'/file).read_text(encoding='utf-8')
             boxes=re.findall(r'<input[^>]+type="checkbox"[^>]*>',text)
             self.assertTrue(boxes)
             self.assertTrue(all('checked' not in box for box in boxes))
             self.assertNotIn('₹99',text)
+    def test_upcoming_newsletter_has_sample_and_feedback_without_signup(self):
+        for file in ['newsletter/index.html','index.html']:
+            text=(ROOT/'public'/file).read_text(encoding='utf-8')
+            self.assertIn('COMING SOON',text)
+            self.assertIn('/newsletter/sample/',text)
+            self.assertIn('data-newsletter-interest=',text)
+            self.assertNotIn('class="subform',text)
     def test_email_does_not_execute_prompts_or_fake_video(self):
         issue=compose([{'id':'fixture','title':'Example','handle':'fixture','prompt_text':'<script>bad</script>','added':'2020-01-01','image_url':'https://example.invalid/poster.png','post_url':'https://example.invalid/source'}],[])
         text=render(issue,'https://promptreels.vercel.app',sample=True)

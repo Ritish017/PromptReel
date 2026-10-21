@@ -43,29 +43,46 @@ window.PRAuthReady=(async()=>{
    if(local.length){const {error:syncError}=await client.from('pr_bookmarks').upsert(local.map(entry_id=>({user_id:api.user.id,entry_id})),{onConflict:'user_id,entry_id'});if(!syncError)localStorage.removeItem('pr-saved');}
   }
   let pending;try{pending=JSON.parse(localStorage.getItem(pendingKey)||'null')}catch{}
-  if(pending?.expires>Date.now()&&pending.email===api.user.email?.toLowerCase()){
-   try{await api.subscribe(pending.source);status('Email confirmed. You are subscribed to free PromptReel Weekly.');}catch(e){status(e.message);}
+  if(pending?.expires>Date.now()&&(pending.email===api.user.email?.toLowerCase()||pending.provider==='google')){
+   try{await api.subscribe(pending.source);status('Signed in. Your newsletter interest is saved; delivery is coming soon.');}catch(e){status(e.message);}
   }
  }
- if(!config.emailEnabled&&!api.user){
-  status('Email sign-in opens soon. The library is free to browse.');
-  document.querySelectorAll('#auth-form input,#auth-form button:not(#auth-google),.subform input,.subform button').forEach(el=>el.disabled=true);
-  document.querySelectorAll('.signup-status').forEach(el=>el.textContent='Email signup opens soon. Browse the free library meanwhile.');
- }
  const form=document.querySelector('#auth-form');
- if(form)form.addEventListener('submit',async ev=>{ev.preventDefault();const button=form.querySelector('button');button.disabled=true;
-  const email=form.querySelector('[name=email]').value;const consent=form.querySelector('[name=newsletter]').checked;
-  try{
-   if(!config.emailEnabled)throw Error('Email sign-in opens soon. The library is free to browse.');
-   if(consent){const result=await api.join(email,true,'signin');status(result==='subscribed'?'You are subscribed.':'Check your email to sign in and confirm the newsletter.');}
-   else{localStorage.removeItem(pendingKey);const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+'/signin/'}});if(error)throw error;status('Check your email for your sign-in link. Newsletter is not enabled.');}
-  }catch(e){status(e.message||'Could not send sign-in link.');}finally{button.disabled=false;}
- });
- const google=document.querySelector('#auth-google');if(google&&config.googleEnabled){google.hidden=false;google.addEventListener('click',async()=>{
-  const consent=form?.querySelector('[name=newsletter]')?.checked;const email=form?.querySelector('[name=email]')?.value?.trim().toLowerCase();
-  if(consent&&email)localStorage.setItem(pendingKey,JSON.stringify({email,source:'google-signin',expires:Date.now()+86400000}));
-  else localStorage.removeItem(pendingKey);
-  const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+'/signin/'}});if(error)status(error.message);
- });}
+ const google=document.querySelector('#auth-google');
+ if(form){
+  const emailPanel=document.querySelector('#auth-email');
+  if(emailPanel){emailPanel.hidden=!config.emailEnabled;const email=form.querySelector('[name=email]');if(email)email.required=!!config.emailEnabled;}
+  if(api.user){
+   if(google)google.hidden=true;if(emailPanel)emailPanel.hidden=true;
+   const next=document.querySelector('#auth-continue');if(next){next.hidden=false;
+    try{const back=sessionStorage.getItem('pr-back');const target=new URL(back||'/library/',location.origin);
+     if(target.origin===location.origin&&target.pathname!=='/signin/'&&!target.pathname.startsWith('/api/'))next.href=target.pathname+target.search+target.hash;
+    }catch{}sessionStorage.removeItem('pr-back');
+   }
+  }else{
+   let googleEnabled=false;
+   try{const settings=await fetch(config.url+'/auth/v1/settings',{headers:{apikey:config.publishableKey},signal:AbortSignal.timeout(7000)});if(settings.ok)googleEnabled=(await settings.json()).external?.google===true;}catch{}
+   if(google){google.disabled=!googleEnabled;
+    if(googleEnabled)google.addEventListener('click',async()=>{
+     google.disabled=true;
+     if(form.querySelector('[name=newsletter]')?.checked)localStorage.setItem(pendingKey,JSON.stringify({provider:'google',source:'google-launch-interest',expires:Date.now()+86400000}));
+     else localStorage.removeItem(pendingKey);
+     try{const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+'/signin/'}});if(error)throw error;}
+     catch{localStorage.removeItem(pendingKey);status('Google sign-in could not start. Please try again.');google.disabled=false;}
+    });
+   }
+   status(googleEnabled?'Continue with Google. Newsletter interest is optional.':config.emailEnabled?'Use an email link to sign in. Newsletter interest is optional.':'Google sign-in is being connected. You can browse and copy everything meanwhile.');
+   if((new URLSearchParams(location.search).has('error')||new URLSearchParams(location.search).has('code'))){status('Sign-in could not finish. Please try again.');history.replaceState(null,'',location.pathname);}
+  }
+  form.addEventListener('submit',async ev=>{ev.preventDefault();if(!config.emailEnabled)return;
+   const button=document.querySelector('#auth-email-submit');if(button)button.disabled=true;
+   const email=form.querySelector('[name=email]').value.trim();const consent=form.querySelector('[name=newsletter]').checked;
+   try{
+    if(!email)throw Error('Enter your email address.');
+    if(consent){const result=await api.join(email,true,'signin');status(result==='subscribed'?'Your interest is saved. Newsletter delivery is coming soon.':'Check your email to confirm sign-in and your newsletter interest.');}
+    else{localStorage.removeItem(pendingKey);const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+'/signin/'}});if(error)throw error;status('Check your email for your sign-in link. Newsletter is not enabled.');}
+   }catch(e){status(e.message||'Could not send sign-in link.');}finally{if(button)button.disabled=false;}
+  });
+ }
  window.dispatchEvent(new Event('pr-auth-ready'));return api;
 })().catch(e=>{status('Sign-in is temporarily unavailable. '+e.message);window.dispatchEvent(new Event('pr-auth-ready'));return null;});
