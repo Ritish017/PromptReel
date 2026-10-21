@@ -59,7 +59,7 @@ SEO fixes cover UTF-8 builds, valid upload dates, safe JSON-LD, internal links, 
 
 New code no longer reads or writes the old public Blob store. The three legacy objects (420 bytes, categories state and subs) were copied into promptreel-private. Every copy passed SHA-256 validation and read-back verification. After user authorization, all three public originals were deleted; a new inventory confirmed zero remaining objects. No legacy email address was subscribed automatically. The temporary migration route and Blob dependency were removed. The private scheduled-job secret was rotated, which invalidates the migration bridge on older previews.
 
-Standard Vercel Authentication protection is enabled for generated deployment URLs and previews. Production domains stay public. Verify anonymous requests to the prior production deployment return 401 before declaring historical deployments inaccessible. Preserve private backups and unsubscribe suppression. See https://vercel.com/docs/deployment-protection/methods-to-protect-deployments/vercel-authentication.
+Standard Vercel Authentication protection is enabled for generated deployment URLs and previews. Production domains stay public. Anonymous requests to the prior production deployment and a prior preview returned HTTP 302 to https://vercel.com/sso-api; production /api/stats remained publicly accessible with HTTP 200. Preserve private backups and unsubscribe suppression. See https://vercel.com/docs/deployment-protection/methods-to-protect-deployments/vercel-authentication.
 
 ## Build and verification
 
