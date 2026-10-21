@@ -18,11 +18,11 @@ Newsletter is free. No trial, card, UPI, payment integration, or automatic billi
 
 ## Required before public email signup
 
-1. Set the Supabase Auth Site URL to the current owned production origin, https://promptreels.vercel.app.
+1. Verify the Supabase Auth Site URL is https://promptreels.vercel.app. It was saved during setup, but could not be rechecked after browser access was disabled.
 2. Allow https://promptreels.vercel.app/signin/ as an auth redirect. Add local preview URLs only when needed. Keep email confirmation enabled.
 3. Configure a real SMTP provider. Supabase's default mail server is restricted to authorized team email addresses and is not a public newsletter service.
 4. Configure a verified sender domain with the provider's required DNS records. Suggested sender identity: PromptReel Weekly · Ritish Kurma. Reply-to is kurmaritish017@gmail.com.
-5. Test sign-in, confirmation, checkbox consent, duplicate signup, unsubscribe, logout, and account isolation.
+5. Test sign-in, confirmation, checkbox consent, duplicate signup, unsubscribe, logout, and account isolation. Only then set PR_EMAIL_AUTH_ENABLED=true in Vercel and rebuild. Public email forms are paused by default; existing verified sessions still work.
 6. Optional Google auth requires the provider configuration in Supabase. Then build with PR_GOOGLE_AUTH_ENABLED=true. It remains hidden otherwise.
 7. Do not claim public signup or email delivery is operational until a real confirmation and a real opted-in test issue have been received.
 
@@ -32,7 +32,7 @@ A signup without the newsletter box creates only an account. A checked box recor
 
 The scheduled function fetches the weekly GitHub Trending subset and credited creative examples, then saves JSON to pr_issues with status draft. It never sends email. The first live function run created an issue with three repositories and three examples.
 
-At /admin/, the owner account can review and approve drafts. Preview links use /newsletter/issue/?id=ISSUE_ID. RLS restricts unpublished drafts to the editor. Public archives show only published rows.
+At /admin/, the owner account can review and approve drafts, then explicitly publish an approved web edition. Publishing a web edition does not send email. Published issues cannot be reapproved from the editor. Preview links use /newsletter/issue/?id=ISSUE_ID. RLS restricts unpublished drafts to the editor. Public archives show only published rows.
 
 newsletter/render.py is the email template. It uses email-safe table layouts, source links, readable prompts, linked video posters, and Ritish's name/contact links. Email clients do not reliably support inline video; posters open watch pages.
 
@@ -57,7 +57,9 @@ SEO fixes cover UTF-8 builds, valid upload dates, safe JSON-LD, internal links, 
 
 ## Legacy audience records
 
-New code no longer reads or writes the old public Blob store. The legacy store inventory showed three objects totalling 420 bytes. Their contents were not enumerated or deleted. Do not assume they contain no personal data. A separate private migration and approved cleanup are still required before declaring legacy storage fully remediated. Preserve unsubscribe suppression and do not auto-subscribe unconfirmed legacy email addresses.
+New code no longer reads or writes the old public Blob store. The three legacy objects (420 bytes, categories state and subs) were copied into promptreel-private. Every copy passed SHA-256 validation and read-back verification. After user authorization, all three public originals were deleted; a new inventory confirmed zero remaining objects. No legacy email address was subscribed automatically. The temporary migration route and Blob dependency were removed. The private scheduled-job secret was rotated, which invalidates the migration bridge on older previews.
+
+Standard Vercel Authentication protection is enabled for generated deployment URLs and previews. Production domains stay public. Verify anonymous requests to the prior production deployment return 401 before declaring historical deployments inaccessible. Preserve private backups and unsubscribe suppression. See https://vercel.com/docs/deployment-protection/methods-to-protect-deployments/vercel-authentication.
 
 ## Build and verification
 
@@ -70,10 +72,10 @@ New code no longer reads or writes the old public Blob store. The legacy store i
     node --test api_src/tests/security.test.mjs
     node api_src/dev-server.mjs
 
-The checked-in generated browser client comes from the exact pinned Supabase SDK. Package versions and lockfile are committed. The static build is network-independent once repo snapshots exist; collect fresh snapshots with node api_src/collect-repos.mjs.
+The build generates the browser client from the exact pinned Supabase SDK. Package versions and lockfile are committed. The static build is network-independent once repo snapshots exist; collect fresh snapshots with node api_src/collect-repos.mjs.
 
 ## Deployment boundary
 
 Deploy source and tests to a review branch. Preview deployment includes public/ contents and api_src/api + api_src/lib, with api_src/package.json and its lockfile at the deployment root. No legacy Blob token is needed by the replacement API. Do not disable deployment protection in a script.
 
-An SMTP provider, auth URL configuration, domain ownership, and legacy-storage cleanup remain explicit launch gates. There is no paid X ingestion or broad competitor scraping. New creator submissions enter a private moderation queue; publication requires source and permission review.
+An SMTP provider, final auth redirect configuration, real email acceptance tests, and domain ownership remain launch gates. Email signup stays visibly paused until these email gates pass. Generated deployment URLs require Vercel access; use the production domain for public browsing. There is no paid X ingestion or broad competitor scraping. New creator submissions enter a private moderation queue; publication requires source and permission review.

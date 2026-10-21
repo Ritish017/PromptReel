@@ -226,6 +226,7 @@ def build():
     json.dump([{k: x.get(k) for k in ("id","title","handle","model","image_url","type","prompt_text","skill","video_preview")} for x in d], open(os.path.join(OUT, "entries.json"), "w"))
     config = json.load(open(os.path.join(ROOT,"data","supabase_public.json"), encoding="utf-8"))
     config["googleEnabled"] = os.environ.get("PR_GOOGLE_AUTH_ENABLED") == "true"
+    config["emailEnabled"] = os.environ.get("PR_EMAIL_AUTH_ENABLED") == "true"
     json.dump(config, open(os.path.join(OUT,"auth-config.json"),"w",encoding="utf-8"))
     from newsletter.render import build_sample
     sample_html = build_sample(d, DOMAIN)

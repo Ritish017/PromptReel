@@ -15,6 +15,7 @@ window.PRAuthReady=(async()=>{
   async subscribe(source){await api.request('/api/subscribe',{method:'POST',body:JSON.stringify({consent:true,source})});track('newsletter_confirmed',{source});localStorage.setItem('pr-sub','1');localStorage.removeItem(pendingKey);},
   async join(email,consent,source='site'){
    if(consent!==true)throw Error('Check the newsletter box to continue');
+   if(!config.emailEnabled&&!api.user)throw Error('Email signup opens soon. The library is free to browse.');
    email=email.trim().toLowerCase();
    if(api.user?.email?.toLowerCase()===email){await api.subscribe(source);return 'subscribed';}
    localStorage.setItem(pendingKey,JSON.stringify({email,source,expires:Date.now()+86400000}));
@@ -46,10 +47,16 @@ window.PRAuthReady=(async()=>{
    try{await api.subscribe(pending.source);status('Email confirmed. You are subscribed to free PromptReel Weekly.');}catch(e){status(e.message);}
   }
  }
+ if(!config.emailEnabled&&!api.user){
+  status('Email sign-in opens soon. The library is free to browse.');
+  document.querySelectorAll('#auth-form input,#auth-form button:not(#auth-google),.subform input,.subform button').forEach(el=>el.disabled=true);
+  document.querySelectorAll('.signup-status').forEach(el=>el.textContent='Email signup opens soon. Browse the free library meanwhile.');
+ }
  const form=document.querySelector('#auth-form');
  if(form)form.addEventListener('submit',async ev=>{ev.preventDefault();const button=form.querySelector('button');button.disabled=true;
   const email=form.querySelector('[name=email]').value;const consent=form.querySelector('[name=newsletter]').checked;
   try{
+   if(!config.emailEnabled)throw Error('Email sign-in opens soon. The library is free to browse.');
    if(consent){const result=await api.join(email,true,'signin');status(result==='subscribed'?'You are subscribed.':'Check your email to sign in and confirm the newsletter.');}
    else{localStorage.removeItem(pendingKey);const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+'/signin/'}});if(error)throw error;status('Check your email for your sign-in link. Newsletter is not enabled.');}
   }catch(e){status(e.message||'Could not send sign-in link.');}finally{button.disabled=false;}
