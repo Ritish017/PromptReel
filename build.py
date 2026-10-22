@@ -71,7 +71,7 @@ def head(title, desc, path, img=None, ld=None, active=""):
 <meta name="theme-color" content="#fbfbfd"><link rel="stylesheet" href="/style.css?v={VER}"><link rel="stylesheet" href="/launch.css?v={VER}"><link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
 {f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());if(localStorage.getItem("pr-analytics")!=="off" && !["localhost","127.0.0.1"].includes(location.hostname))gtag("config","{GA_ID}",{{page_location:location.origin+location.pathname}});</script>' if GA_ID else ''}<link rel="preconnect" href="https://video.twimg.com"><link rel="preconnect" href="https://pbs.twimg.com">
 <link rel="icon" href="/brand/mark.svg" type="image/svg+xml"><link rel="icon" href="/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">{lds}</head><body>
-<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="PromptReel on X">𝕏</a><div id="auth" ><a class="btn ghost sm" href="/signin/">Sign in</a></div></header>"""
+<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="PromptReel on X">𝕏</a></header>"""
 
 FOOT = "<footer>" + signup_form("footer") + """<p>Videos, prompts, and skills belong to their creators. Check original sources and creator terms before use. <a href="/submit/">Submit or request removal</a>.</p><p>Curated by Ritish Kurma · Rynavo · <a href="https://x.com/KurmaRitish">@KurmaRitish</a> · <a href="mailto:kurmaritish017@gmail.com">Contact</a></p><p><a href="/newsletter/">Free newsletter</a> · <a href="/products/">Products</a> · <a href="/pricing/">Promote your product</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/llms.txt">llms.txt</a></p></footer><script type="module" src="/auth.js"></script><script src="/app.js?v={VER}"></script><script src="/engagement.js?v={VER}"></script><script src="/issues.js?v={VER}"></script></body></html>"""
 
@@ -97,7 +97,7 @@ def card(x):
     txt = (x['title'] + ' ' + x['handle'] + ' ' + x.get('model', '') + ' ' + ' '.join(x['tags']) + ' ' + (x.get('prompt_text') or '')[:400]).lower()
     return f"""<article class="card" data-id="{x['id']}" data-type="{x['type']}" data-tags="{e('|'.join(x['tags']))}" data-likes="{x['likes']}" data-plat="{e('|'.join(x['platforms']))}" data-added="{e(x.get('added') or x.get('posted_date',''))}" data-text="{e(txt)}" data-ar="{x.get('ar','')}" data-m="{1 if x.get('image_url') else 0}" data-sk="{1 if x['type']=='skill' else 0}">
 <a href="/p/{x['id']}/" class="media" aria-label="{e(x['title'])}">{poster(x)}{v}<span class="kind {'skill' if x['type']=='skill' else ''}">{'Skill' if x['type']=='skill' else 'Prompt'}</span>{dur}{f'<button class="ovcopy" data-copyp="{x["id"]}">{ICON_COPY} Copy {"skill" if x["type"]=="skill" else "prompt"}</button>' if x.get('prompt_text') or x.get('skill') else ''}</a>
-<div class="cmeta"><img class="av" loading="lazy" src="{avatar(x)}" alt=""><div class="t"><h3><a href="/p/{x['id']}/">{e(x['title'])}</a></h3><div class="h"><a href="/creators/{slugify(x['handle'])}/">@{e(x['handle'])}</a> · {e(x.get('model',''))}</div></div><div class="acts"><button class="act up" data-vote="1" data-vid="{x['id']}" aria-label="Like">{ICON_UP}<span>0</span></button><button class="act down" data-vote="-1" data-vid="{x['id']}" aria-label="Dislike">{ICON_DOWN}<span>0</span></button><a class="act cm" href="/p/{x['id']}/#comments" aria-label="Comments">{ICON_C}<span>0</span></a><button class="act save" data-like="{x['id']}" aria-label="Save">{ICON_H}</button></div></div></article>"""
+<div class="cmeta"><img class="av" loading="lazy" src="{avatar(x)}" alt=""><div class="t"><h3><a href="/p/{x['id']}/">{e(x['title'])}</a></h3><div class="h"><a href="/creators/{slugify(x['handle'])}/">@{e(x['handle'])}</a> · {e(x.get('model',''))}</div></div><div class="acts"><button class="act save" data-like="{x['id']}" aria-label="Save">{ICON_H}</button></div></div></article>"""
 
 SPONSOR_CARD = """<a class="card sponsor" href="/sponsor/" data-sponsor><small>Featured card · Available</small><h3>Your brand here</h3><p>Show a video made with your product to people making motion with AI.</p><span class="btn sm" style="align-self:flex-start">See options →</span></a>"""
 
@@ -155,7 +155,7 @@ HOME_FAQ = [
  ("What is PromptReel?","PromptReel is a free gallery of motion videos made by AI, each shown with a shared prompt or agent skill that made it, so you can copy it and make your own. Built by Ritish Kurma (x.com/KurmaRitish)."),
  ("Where can I find good AI video prompts?","PromptReel has hundreds of real AI video prompts for Claude, ChatGPT, Gemini, Remotion and HyperFrames, each next to the video it made. Filter by topic, model or shape and copy with one click."),
  ("Can Claude make videos?","Yes. Claude can write code (HTML, React with Remotion, Three.js or HyperFrames) that renders into a motion video. Every Claude example on PromptReel includes the prompt used."),
- ("Do I need to sign in?","No. Watching, filtering, copying prompts and skills, copying sections, and copying sections work without an account. Sign in to vote, comment, and sync saves."),
+ ("Do I need to sign in?","No. Browse, watch, copy prompts and sections, and save favourites in this browser. Account features are paused."),
  ("How do I get my video featured?","Submit the X post and prompt on the Submit page, or message @KurmaRitish on X. Creators are always credited and can remove their work any time."),
 ]
 KW = [
@@ -225,6 +225,7 @@ def build():
         (shutil.copytree(src, os.path.join(OUT, f)) if os.path.isdir(src) else shutil.copy(src, OUT))
     json.dump([{k: x.get(k) for k in ("id","title","handle","model","image_url","type","prompt_text","skill","video_preview")} for x in d], open(os.path.join(OUT, "entries.json"), "w"))
     config = json.load(open(os.path.join(ROOT,"data","supabase_public.json"), encoding="utf-8"))
+    config["accountsEnabled"] = False
     config["emailEnabled"] = os.environ.get("PR_EMAIL_AUTH_ENABLED") == "true"
     json.dump(config, open(os.path.join(OUT,"auth-config.json"),"w",encoding="utf-8"))
     from newsletter.render import build_sample
@@ -279,9 +280,9 @@ def build():
         pg = head(f"{x['title']}: {x.get('model','AI')} {kind} by @{x['handle']} | {SITE}", desc, f"/p/{x['id']}/", x.get("image_url"), ld=ld)
         pg += f"""<main class="wrap"><div class="crumbs"><a href="/">Gallery</a> › {e(x['title'])}</div><div class="detail"><div>
 <h1>{e(x['title'])}</h1><p class="answer">{e(answer)}</p>{media}
-<div class="acts" style="padding-top:14px"><button class="act up" data-vote="1" data-vid="{x['id']}">{ICON_UP}<span>0</span> Like</button><button class="act down" data-vote="-1" data-vid="{x['id']}">{ICON_DOWN}<span>0</span></button><a class="act cm" href="#comments">{ICON_C}<span>0</span> Comments</a><button class="act save" data-like="{x['id']}">{ICON_H} Save</button><a class="act r" target="_blank" rel="noopener" href="{e(x['post_url'])}">{'View on X ↗' if is_x(x) else 'Open on GitHub ↗'}</a></div>
+<div class="acts" style="padding-top:14px"><button class="act save" data-like="{x['id']}">{ICON_H} Save</button><a class="act r" target="_blank" rel="noopener" href="{e(x['post_url'])}">{'View on X ↗' if is_x(x) else 'Open on GitHub ↗'}</a></div>
 <div class="row" style="margin-top:14px">{tags}</div>
-<section class="panel comments" id="comments" style="margin-top:22px"><h2>Comments</h2><div id="clist"><p style="color:var(--mute)">Loading…</p></div><form id="cform" data-id="{x['id']}" style="margin-top:12px"><input class="field" id="cname" maxlength="40" placeholder="Your name (optional)" style="margin-bottom:8px"><textarea class="field" rows="3" maxlength="600" placeholder="What did you make with it? Any tweaks that worked?" required></textarea><div class="row" style="margin-top:10px;justify-content:space-between"><small style="color:var(--mute)" id="cwho">Sign in to comment. Be kind.</small><button class="btn sm">Post comment</button></div></form></section></div>
+</div>
 <aside><div class="panel"><div class="row" style="justify-content:space-between"><div class="row"><img class="av" style="width:42px;height:42px;border-radius:50%" src="{avatar(x)}" alt=""><div><b>{e(x.get('display_name') or x['handle'])}</b><a style="color:var(--mute);font-size:13px" href="/creators/{slugify(x['handle'])}/">@{e(x['handle'])} · all their videos</a></div></div><a class="btn ghost sm" target="_blank" rel="noopener" href="{'https://x.com/'+e(x['handle']) if is_x(x) else e(x['post_url'])}">Follow</a></div>
 <div class="row" style="margin-top:12px;color:var(--mute);font-size:14px"><span>{e(x.get('model','—'))}</span><span>·</span><span>{e(x.get('posted_date',''))}</span>{f"<span>·</span><span>{x['likes']:,} likes on X</span>" if x.get('likes') else ''}</div></div>{body}</aside></div>
 {('<h2 class="sec">More like this</h2><div class="grid">'+''.join(related)+'</div>') if related else ''}</main>{FOOT}"""
@@ -298,9 +299,7 @@ def build():
     pg += f"""<main class="wrap"><section class="phero"><h1>Agent <span>skills</span> for motion video</h1><p>One command installs a skill into your coding agent. Each one is shown with what it makes.</p></section><div class="grid" id="grid">{''.join(card(x) for x in sk)}</div></main>{FOOT}"""
     write("/skills/", pg)
     pg = head(f"Submit · {SITE}", "Submit your AI motion video and its prompt.", "/submit/", active="/submit/")
-    pg += f"""<main class="wrap" style="max-width:680px"><section class="phero"><h1>Submit your <span>video</span></h1><p>Made something with AI? Send the X post and the prompt or skill. We credit and link you. Creators can also claim or remove their work here.</p></section>
-<div class="panel"><label>Link to your X post</label><input class="field" id="s-url" placeholder="https://x.com/you/status/…"><label>Prompt or skill install command</label><textarea class="field" id="s-prompt" rows="6"></textarea><label>Model used</label><input class="field" id="s-model" placeholder="e.g. Claude Opus 5.5">
-<label class="consent"><input type="checkbox" id="s-permission"> I own this submission or have permission to share these instructions.</label><div class="row" style="margin-top:14px"><button class="btn" id="s-go">Send submission</button></div><p style="color:var(--mute);font-size:13px">Want something removed? Paste the link and write "remove".</p></div></main>{FOOT}"""
+    pg += '<main class="wrap" style="max-width:760px"><section class="phero"><h1>Share your work.</h1><p>No account needed. Email Ritish your original source link, a short description, and confirmation that you own the work or have permission to share it.</p><a class="btn" href="mailto:kurmaritish017@gmail.com?subject=PromptReel%20submission">Send a submission by email</a></section><section class="panel"><h2>Request a correction or removal</h2><p>Send the PromptReel page link and the original source. We verify ownership before making changes.</p><a href="mailto:kurmaritish017@gmail.com?subject=PromptReel%20removal%20request">Contact Ritish</a></section></main>' + FOOT
     write("/submit/", pg)
     write("/sponsor/", head(f"Promote your product | {SITE}", "Clearly labelled product placements with actual campaign reports. Contact Ritish Kurma.", "/sponsor/") + sponsor() + FOOT)
     write("/products/", head(f"Products for creative builders | {SITE}", "Useful products for AI motion and creative coding. Sponsored placements are labelled.", "/products/") + '<main class="wrap"><section class="phero"><h1>Products for your <span>next build</span></h1></section>' + products_zone() + '</main>' + FOOT)
@@ -338,7 +337,7 @@ def extra_pages(d):
     cats = sorted({x["cat"] for x in SECTIONS})
     chips = '<button class="chip on" data-cat="">All</button>' + "".join(f'<button class="chip" data-cat="{e(c)}">{e(c)}</button>' for c in cats)
     pg = head(f"Free website sections for Claude, Cursor and v0 · {SITE}", f"{len(SECTIONS)} original animated website sections. Copy the build prompt and code straight into Claude Code, Cursor, v0, Lovable or Bolt.", "/sections/", active="/sections/")
-    pg += f"""<main class="wrap"><section class="phero"><h1>Sections, <span>free to copy.</span></h1><p>{len(SECTIONS)} original animated sections. One click copies the build prompt and the code, ready to paste into Claude Code, Cursor, v0, Lovable or Bolt. Free to copy. Sign in to sync saved sections across devices. Preview names, numbers, and testimonials are illustrative sample content.</p>
+    pg += f"""<main class="wrap"><section class="phero"><h1>Sections, <span>free to copy.</span></h1><p>{len(SECTIONS)} original animated sections. One click copies the build prompt and the code, ready to paste into Claude Code, Cursor, v0, Lovable or Bolt. Free to copy. Saves stay in this browser; no account is needed. Preview names, numbers, and testimonials are illustrative sample content.</p>
 <div class="row"><span class="tag">Claude Code</span><span class="tag">Cursor</span><span class="tag">v0</span><span class="tag">Lovable</span><span class="tag">Bolt</span><span class="tag">Plain HTML</span></div></section>
 <div class="toolbar"><div class="trow scroll">{chips}</div></div><div class="sgrid" id="sgrid">{''.join(sec_card(x) for x in SECTIONS)}</div></main>{FOOT}"""
     write("/sections/", pg)
@@ -352,15 +351,15 @@ def extra_pages(d):
 <h2>More sections</h2><div class="sgrid">{''.join(sec_card(y) for y in SECTIONS if y['id']!=x['id'] and y['cat']==x['cat'][:]) or ''.join(sec_card(y) for y in SECTIONS[:3])}</div></main>{FOOT}"""
         write(f"/sections/{x['id']}/", pg)
     write("/newsletter/issue/", head(f"Newsletter edition | {SITE}", "GitHub findings and creative field notes.", "/newsletter/issue/").replace("</head>", '<meta name="robots" content="noindex"></head>') + '<main class="wrap" style="max-width:800px;padding-block:60px"><div id="issue-reader">Loading edition…</div></main>' + FOOT)
-    write("/admin/", head(f"Editorial desk | {SITE}", "Private editorial drafts.", "/admin/").replace("</head>", '<meta name="robots" content="noindex"></head>') + '<main class="wrap"><section class="phero"><h1>Editorial desk</h1><p>Review sources and permissions before approving. Delivery is off until an email provider is configured.</p></section><div id="editor-issues">Sign in to load your drafts.</div></main>' + FOOT)
+    write("/admin/", head(f"Editorial desk | {SITE}", "Private editorial drafts.", "/admin/").replace("</head>", '<meta name="robots" content="noindex"></head>') + '<main class="wrap"><section class="phero"><h1>Editorial desk</h1><p>Review sources and permissions before approving. Delivery is off until an email provider is configured.</p></section><div id="editor-issues">Account tools are paused. Editorial data remains protected.</div></main>' + FOOT)
     # library
     pg = head(f"My Library · {SITE}", "Your saved videos and sections.", "/library/", active="/library/")
-    pg += f"""<main class="wrap"><section class="phero"><h1>My <span>Library</span></h1><p id="lib-who">Your saved videos and sections. Sign in to sync saved videos and sections. Guest saves and copied history stay on this device.</p></section>
+    pg += f"""<main class="wrap"><section class="phero"><h1>My <span>Library</span></h1><p id="lib-who">Your saved videos, sections, and copied history stay in this browser. No account is needed. Clearing browser data removes these saves.</p></section>
 <div class="toolbar"><div class="trow"><button class="chip on" data-lib="videos">Favourite videos</button><button class="chip" data-lib="sections">Saved sections</button><button class="chip" data-lib="copied">Recently copied</button></div></div>
 <div class="grid" id="saved"></div><div class="sgrid" id="saved-sec" hidden></div><div class="empty" id="empty" hidden>Nothing here yet. Tap ♡ on any video or section.</div></main>{FOOT}"""
     write("/library/", pg)
     write("/saved/", '<meta http-equiv="refresh" content="0;url=/library/">')
-    write("/signin/", head(f"Sign in | {SITE}", "Sign in securely with your email. Newsletter consent is optional.", "/signin/") + signin() + FOOT)
+    write("/signin/", head(f"No account needed | {SITE}", "Browse, copy and save locally without an account.", "/signin/").replace("</head>", '<meta name="robots" content="noindex"></head>') + signin() + FOOT)
     write("/newsletter/", head(f"Newsletter coming soon: GitHub finds, prompts and skills | {SITE}", "PromptReel Weekly is coming soon. Read a sample of useful GitHub projects, creative prompts, and practical build ideas. Share your feedback with Ritish Kurma.", "/newsletter/") + newsletter() + FOOT)
     write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from ₹499 per week. Email to book.", "/pricing/") + pricing() + FOOT)
     write("/privacy/", head(f"Privacy | {SITE}", "Account, newsletter consent, analytics and data rights.", "/privacy/") + privacy() + FOOT)
@@ -372,7 +371,7 @@ def extra_pages(d):
 <p><b>Contact.</b> kurmaritish017@gmail.com</p></div></main>{FOOT}"""
     write("/terms/", pg)
     # help
-    faq = [("Is PromptReel free?", "Yes. Every video, prompt, skill and section is free. No sign-in is needed to browse and copy. Sign in for comments, votes, synced saves, and optional updates about the upcoming newsletter."),
+    faq = [("Is PromptReel free?", "Yes. Every video, prompt, skill and section is free. No account is needed to browse, copy, or save favourites in this browser. Login, voting and commenting are paused. The newsletter is coming soon."),
            ("Who owns the videos and prompts?", "The creators. Every entry credits and links the creator's original X post. Creators can ask for removal any time from the Submit page."),
            ("How do I use a section?", "Tap Copy section, paste into Claude Code, Cursor, v0, Lovable or Bolt, and ask it to add the section to your site. Copy prompt only if you want the AI to write it in your own stack."),
            ("Can I use sections in client work?", "Yes. PromptReel sections are original and free for personal and commercial projects."),

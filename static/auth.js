@@ -27,6 +27,7 @@ window.PRAuthReady=(async()=>{
   async signOut(){await client.auth.signOut();localStorage.removeItem('pr-user');location.assign('/');}
  };
  window.PRAuth=api;
+ if(config.accountsEnabled===false){window.PRGuestMode=true;window.dispatchEvent(new Event('pr-auth-ready'));return api;}
  const {data,error}=await client.auth.getUser();if(!error&&data.user?.email_confirmed_at&&!data.user.is_anonymous)api.user=data.user;
  // Do not trust or migrate the old browser-only identity record.
  localStorage.removeItem('pr-user');sessionStorage.removeItem('pr-cred');

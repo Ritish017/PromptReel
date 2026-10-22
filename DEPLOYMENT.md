@@ -2,7 +2,9 @@
 
 Newsletter is free. No trial, card, UPI, payment integration, or automatic billing is enabled.
 
-Current launch choice: newsletter is Coming soon, with a sample and feedback links. Google is the selected account sign-in method. The sign-in page checks Supabase's public Auth settings and enables the Google button only when the provider is configured. Google client credentials must be entered directly in the Supabase dashboard; they never belong in this repository. Public Google sign-in has not yet passed real acceptance tests.
+Current launch choice: public login and signup are paused. The public Auth configuration has accountsEnabled=false, so the browser does not load account identity or apply stored newsletter intent. Saves remain in the visitor's browser. Voting and comment posting are absent; submissions and removal requests use email. Existing API authorization and row ownership remain enforced. The newsletter stays Coming soon with a sample and feedback links. Google setup is deferred; the provider instructions below are for future activation, not a current launch requirement.
+
+Google Analytics operates independently of accounts. The configured PromptReel property was opened and confirmed to contain page views, realtime activity, and Direct/Referral traffic. These early figures include owner/testing activity and must not be presented as verified customer reach. No account ID or email is intentionally sent by the site's event handlers. GA browser identifiers are pseudonymous; visitor counts are estimates, not named people.
 
 ## Connected Supabase project
 
