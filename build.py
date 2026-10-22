@@ -365,7 +365,7 @@ def extra_pages(d):
     write("/saved/", '<meta http-equiv="refresh" content="0;url=/library/">')
     write("/signin/", head(f"No account needed | {SITE}", "Browse, copy and save locally without an account.", "/signin/").replace("</head>", '<meta name="robots" content="noindex"></head>') + signin() + FOOT)
     write("/newsletter/", head(f"Newsletter coming soon: GitHub finds, prompts and skills | {SITE}", "PromptReel Weekly is coming soon. Read a sample of useful GitHub projects, creative prompts, and practical build ideas. Share your feedback with Ritish Kurma.", "/newsletter/") + newsletter() + FOOT)
-    write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from ₹499 per week. Email to book.", "/pricing/") + pricing() + FOOT)
+    write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from $6 USD per week. Email to book.", "/pricing/") + pricing() + FOOT)
     write("/privacy/", head(f"Privacy | {SITE}", "Account, newsletter consent, analytics and data rights.", "/privacy/") + privacy() + FOOT)
     pg = head(f"Terms · {SITE}", "PromptReel terms of use.", "/terms/")
     pg += f"""<main class="wrap" style="max-width:760px"><section class="phero"><h1>Terms</h1><p>Last updated 21 October 2026.</p></section><div class="panel">
