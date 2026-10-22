@@ -16,6 +16,7 @@ e = html.escape
 VER = str(int(time.time()))
 KEYF = "9f3c2a7b4e1d4c8a9b0e5f6a7c8d9e0f"
 ME = {"name":"Ritish Kurma","x":"KurmaRitish","email":"kurmaritish017@gmail.com"}
+SUPPORT_BANNER = '<a class="support-float" href="/support/" aria-label="Support Ritish Kurma’s work"><span class="support-heart" aria-hidden="true">♡</span><span>Support my work</span></a>'
 SITE_LD = {"@context":"https://schema.org","@type":"WebSite","name":"PromptReel","url":"https://promptreels.vercel.app/","publisher":{"@type":"Organization","name":"Rynavo","url":"https://rynavo-site.vercel.app","logo":"https://promptreels.vercel.app/brand/mark-512.png","founder":{"@type":"Person","name":"Ritish Kurma","sameAs":["https://x.com/KurmaRitish"]},"email":"kurmaritish017@gmail.com","sameAs":["https://x.com/KurmaRitish","https://github.com/Ritish017"]},"potentialAction":{"@type":"SearchAction","target":"https://promptreels.vercel.app/?q={query}","query-input":"required name=query"}}
 
 SITE_LD["url"] = DOMAIN + "/"
@@ -71,11 +72,11 @@ def head(title, desc, path, img=None, ld=None, active=""):
 <meta name="theme-color" content="#fbfbfd"><link rel="stylesheet" href="/style.css?v={VER}"><link rel="stylesheet" href="/launch.css?v={VER}"><link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
 {f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());if(localStorage.getItem("pr-analytics")!=="off" && !["localhost","127.0.0.1"].includes(location.hostname))gtag("config","{GA_ID}",{{page_location:location.origin+location.pathname}});</script>' if GA_ID else ''}<link rel="preconnect" href="https://video.twimg.com"><link rel="preconnect" href="https://pbs.twimg.com">
 <link rel="icon" href="/brand/mark.svg" type="image/svg+xml"><link rel="icon" href="/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">{lds}</head><body>
-<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="Ritish Kurma on X"><span aria-hidden="true">𝕏</span><span class="maker-name">Ritish Kurma</span></a></header>"""
+{SUPPORT_BANNER}<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="Ritish Kurma on X"><span aria-hidden="true">𝕏</span><span class="maker-name">Ritish Kurma</span></a></header>"""
 
 FOOT = "<footer>" + signup_form("footer") + """<p>Videos, prompts, and skills belong to their creators. Check original sources and creator terms before use. <a href="/submit/">Submit or request removal</a>.</p><p>Curated by Ritish Kurma · Rynavo · <a href="https://x.com/KurmaRitish">@KurmaRitish</a> · <a href="mailto:kurmaritish017@gmail.com">Contact</a></p><p><a href="/newsletter/">Free newsletter</a> · <a href="/products/">Products</a> · <a href="/pricing/">Promote your product</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/llms.txt">llms.txt</a></p></footer><script type="module" src="/auth.js"></script><script src="/app.js?v={VER}"></script><script src="/engagement.js?v={VER}"></script><script src="/issues.js?v={VER}"></script></body></html>"""
 
-FOOT = FOOT.replace('</footer>', '<p><a href="/support/">Like the work? Support Ritish</a></p></footer><a class="support-float" href="/support/" aria-label="Support Ritish Kurma’s work"><span class="support-heart" aria-hidden="true">♡</span><span>Support my work</span></a>')
+FOOT = FOOT.replace('</footer>', '<p><a href="/support/">Like the work? Support Ritish</a></p></footer>')
 
 def fmt_dur(s):
     if not s: return ""
