@@ -1,0 +1,88 @@
+import { createClient } from './supabase-client.js';
+const status=message=>{const el=document.querySelector('#signin-msg');if(el)el.textContent=message;};
+const track=(name,data)=>window.PRTrack?.(name,data);
+const pendingKey='pr-newsletter-consent-v1';
+window.PRAuthReady=(async()=>{
+ const r=await fetch('/auth-config.json');if(!r.ok)throw Error('Sign-in is not configured');
+ const config=await r.json();const client=createClient(config.url,config.publishableKey,{auth:{flowType:'pkce',detectSessionInUrl:true,persistSession:true,autoRefreshToken:true}});
+ const api={
+  client,user:null,
+  async request(path,options={}){
+   const {data:{session}}=await client.auth.getSession();if(!session)throw Error('Sign in to continue');
+   const response=await fetch(path,{...options,headers:{'Content-Type':'application/json',...options.headers,Authorization:'Bearer '+session.access_token}});
+   const data=await response.json();if(!response.ok)throw Error(data.error||'Please try again');return data;
+  },
+  async subscribe(source){await api.request('/api/subscribe',{method:'POST',body:JSON.stringify({consent:true,source})});track('newsletter_confirmed',{source});localStorage.setItem('pr-sub','1');localStorage.removeItem(pendingKey);},
+  async join(email,consent,source='site'){
+   if(consent!==true)throw Error('Check the newsletter box to continue');
+   if(!config.emailEnabled&&!api.user)throw Error('Email signup opens soon. The library is free to browse.');
+   email=email.trim().toLowerCase();
+   if(api.user?.email?.toLowerCase()===email){await api.subscribe(source);return 'subscribed';}
+   localStorage.setItem(pendingKey,JSON.stringify({email,source,expires:Date.now()+86400000}));
+   const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+'/signin/'}});
+   if(error){localStorage.removeItem(pendingKey);throw Error(error.message);}
+   track('newsletter_confirmation_requested',{source});return 'check-email';
+  },
+  async save(id,on){if(!api.user)return;const q=on?client.from('pr_bookmarks').upsert({user_id:api.user.id,entry_id:id},{onConflict:'user_id,entry_id'}):client.from('pr_bookmarks').delete().eq('user_id',api.user.id).eq('entry_id',id);const {error}=await q;if(error)throw Error('Could not sync this save');},
+  async signOut(){await client.auth.signOut();localStorage.removeItem('pr-user');location.assign('/');}
+ };
+ window.PRAuth=api;
+ const {data,error}=await client.auth.getUser();if(!error&&data.user?.email_confirmed_at&&!data.user.is_anonymous)api.user=data.user;
+ // Do not trust or migrate the old browser-only identity record.
+ localStorage.removeItem('pr-user');sessionStorage.removeItem('pr-cred');
+ if(api.user){
+  const auth=document.querySelector('#auth');if(auth){const b=document.createElement('button');b.className='btn ghost sm';b.textContent='Sign out';b.addEventListener('click',()=>api.signOut());auth.replaceChildren(b);}
+  try{await api.request('/api/users',{method:'POST',body:'{}'});}catch{status('Signed in. Profile sync is temporarily unavailable.');}
+  const {data:votes,error:votesError}=await client.from('pr_votes').select('entry_id,value').eq('user_id',api.user.id);
+  if(!votesError)localStorage.setItem('pr-votes:'+api.user.id,JSON.stringify(Object.fromEntries((votes||[]).map(v=>[v.entry_id,v.value]))));
+  const name=api.user.user_metadata?.full_name||api.user.email;
+  status('Signed in as '+name+'. Newsletter signup is optional.');
+  const {data:marks,error:marksError}=await client.from('pr_bookmarks').select('entry_id').eq('user_id',api.user.id);
+  if(!marksError){let local=[];try{local=[...JSON.parse(localStorage.getItem('pr-saved')||'[]'),...JSON.parse(localStorage.getItem('pr-saved:'+api.user.email)||'[]')].filter(id=>typeof id==='string'&&/^[\w:-]{1,100}$/.test(id))}catch{}
+   const combined=[...new Set([...(marks||[]).map(x=>x.entry_id),...local])];localStorage.setItem('pr-saved:'+api.user.id,JSON.stringify(combined));
+   if(local.length){const {error:syncError}=await client.from('pr_bookmarks').upsert(local.map(entry_id=>({user_id:api.user.id,entry_id})),{onConflict:'user_id,entry_id'});if(!syncError)localStorage.removeItem('pr-saved');}
+  }
+  let pending;try{pending=JSON.parse(localStorage.getItem(pendingKey)||'null')}catch{}
+  if(pending?.expires>Date.now()&&(pending.email===api.user.email?.toLowerCase()||pending.provider==='google')){
+   try{await api.subscribe(pending.source);status('Signed in. Your newsletter interest is saved; delivery is coming soon.');}catch(e){status(e.message);}
+  }
+ }
+ const form=document.querySelector('#auth-form');
+ const google=document.querySelector('#auth-google');
+ if(form){
+  const emailPanel=document.querySelector('#auth-email');
+  if(emailPanel){emailPanel.hidden=!config.emailEnabled;const email=form.querySelector('[name=email]');if(email)email.required=!!config.emailEnabled;}
+  if(api.user){
+   if(google)google.hidden=true;if(emailPanel)emailPanel.hidden=true;
+   const next=document.querySelector('#auth-continue');if(next){next.hidden=false;
+    try{const back=sessionStorage.getItem('pr-back');const target=new URL(back||'/library/',location.origin);
+     if(target.origin===location.origin&&target.pathname!=='/signin/'&&!target.pathname.startsWith('/api/'))next.href=target.pathname+target.search+target.hash;
+    }catch{}sessionStorage.removeItem('pr-back');
+   }
+  }else{
+   let googleEnabled=false;
+   try{const settings=await fetch(config.url+'/auth/v1/settings',{headers:{apikey:config.publishableKey},signal:AbortSignal.timeout(7000)});if(settings.ok)googleEnabled=(await settings.json()).external?.google===true;}catch{}
+   if(google){google.disabled=!googleEnabled;
+    if(googleEnabled)google.addEventListener('click',async()=>{
+     google.disabled=true;
+     if(form.querySelector('[name=newsletter]')?.checked)localStorage.setItem(pendingKey,JSON.stringify({provider:'google',source:'google-launch-interest',expires:Date.now()+86400000}));
+     else localStorage.removeItem(pendingKey);
+     try{const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+'/signin/'}});if(error)throw error;}
+     catch{localStorage.removeItem(pendingKey);status('Google sign-in could not start. Please try again.');google.disabled=false;}
+    });
+   }
+   status(googleEnabled?'Continue with Google. Newsletter interest is optional.':config.emailEnabled?'Use an email link to sign in. Newsletter interest is optional.':'Google sign-in is being connected. You can browse and copy everything meanwhile.');
+   if((new URLSearchParams(location.search).has('error')||new URLSearchParams(location.search).has('code'))){status('Sign-in could not finish. Please try again.');history.replaceState(null,'',location.pathname);}
+  }
+  form.addEventListener('submit',async ev=>{ev.preventDefault();if(!config.emailEnabled)return;
+   const button=document.querySelector('#auth-email-submit');if(button)button.disabled=true;
+   const email=form.querySelector('[name=email]').value.trim();const consent=form.querySelector('[name=newsletter]').checked;
+   try{
+    if(!email)throw Error('Enter your email address.');
+    if(consent){const result=await api.join(email,true,'signin');status(result==='subscribed'?'Your interest is saved. Newsletter delivery is coming soon.':'Check your email to confirm sign-in and your newsletter interest.');}
+    else{localStorage.removeItem(pendingKey);const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+'/signin/'}});if(error)throw error;status('Check your email for your sign-in link. Newsletter is not enabled.');}
+   }catch(e){status(e.message||'Could not send sign-in link.');}finally{if(button)button.disabled=false;}
+  });
+ }
+ window.dispatchEvent(new Event('pr-auth-ready'));return api;
+})().catch(e=>{status('Sign-in is temporarily unavailable. '+e.message);window.dispatchEvent(new Event('pr-auth-ready'));return null;});

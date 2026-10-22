@@ -3,3 +3,5 @@ node_modules/
 __pycache__/
 .vercel/
 .env*
+.deploy-stage/
+static/supabase-client.js
