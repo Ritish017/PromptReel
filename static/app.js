@@ -9,7 +9,7 @@ document.addEventListener('click',ev=>{const a=ev.target.closest('a');if(!a)retu
 (function(){
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
-const user=()=>{const u=window.PRAuth?.user;return u?{...u,name:u.user_metadata?.full_name||u.user_metadata?.name||'Member'}:null;};
+const user=()=>{if(window.PRGuestMode)return null;const u=window.PRAuth?.user;return u?{...u,name:u.user_metadata?.full_name||u.user_metadata?.name||'Member'}:null;};
 const K=()=>'pr-saved'+(user()?':'+user().id:'');
 const saved=()=>LS.get(K(),null)||LS.get('pr-saved',[]);
 const toast=m=>{const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),1800)};
@@ -17,7 +17,7 @@ const voteKey=()=>'pr-votes:'+(user()?.id||'guest');
 const myVotes=()=>user()?LS.get(voteKey(),{}):{};
 
 /* ---------- Supabase identity; never trust a browser profile ---------- */
-function needSignIn(){if(user())return false;sessionStorage.setItem('pr-back',location.pathname+location.search);location.assign('/signin/');return true;}
+function needSignIn(){if(user())return false;toast('Account features are paused. Browse, copy and save locally.');return true;}
 async function api(path,options){await window.PRAuthReady;if(!window.PRAuth)throw Error('Sign-in is unavailable');return window.PRAuth.request(path,options);}
 window.addEventListener('pr-auth-ready',()=>{syncSaves();if(window.__apply)window.__apply();const u=user();if(u&&$('#cwho'))$('#cwho').textContent='Commenting as '+u.name;});
 

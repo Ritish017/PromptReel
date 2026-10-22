@@ -46,13 +46,14 @@ class SiteChecks(unittest.TestCase):
                 if loc.startswith('/api/'):continue
                 target=ROOT/'public'/loc.lstrip('/')
                 self.assertTrue(target.exists(),str(page)+': '+loc)
-    def test_newsletter_consent_is_not_prechecked(self):
-        for file in ['signin/index.html']:
-            text=(ROOT/'public'/file).read_text(encoding='utf-8')
-            boxes=re.findall(r'<input[^>]+type="checkbox"[^>]*>',text)
-            self.assertTrue(boxes)
-            self.assertTrue(all('checked' not in box for box in boxes))
-            self.assertNotIn('₹99',text)
+    def test_public_site_does_not_offer_account_actions(self):
+        config=json.loads((ROOT/'public/auth-config.json').read_text(encoding='utf-8'))
+        self.assertFalse(config['accountsEnabled'])
+        for page in (ROOT/'public').rglob('*.html'):
+            text=page.read_text(encoding='utf-8')
+            self.assertNotIn('href="/signin/"',text,str(page))
+            self.assertNotRegex(text,r'<(?:form|button)[^>]+(?:id="auth-form"|id="auth-google"|data-vote=|id="cform")')
+        self.assertIn('mailto:kurmaritish017@gmail.com',(ROOT/'public/submit/index.html').read_text(encoding='utf-8'))
     def test_upcoming_newsletter_has_sample_and_feedback_without_signup(self):
         for file in ['newsletter/index.html','index.html']:
             text=(ROOT/'public'/file).read_text(encoding='utf-8')
