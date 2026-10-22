@@ -12,6 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 import build
 from newsletter.render import compose,render
+from site_pages import support_link
 
 class GridParser(HTMLParser):
     def __init__(self):super().__init__();self.divs=[];self.inside=0
@@ -25,6 +26,15 @@ class GridParser(HTMLParser):
         if tag=='div' and self.divs:self.divs.pop()
 
 class SiteChecks(unittest.TestCase):
+    def test_support_only_accepts_explicit_public_paypal_links(self):
+        for link in ('https://paypal.me/example', 'https://www.paypal.com/ncp/payment/example'):
+            self.assertEqual(support_link(link), link)
+        for link in ('', 'kurmaritish017@gmail.com', 'javascript:alert(1)', 'http://paypal.me/example',
+                     'https://paypal.me.evil.invalid/example', 'https://paypal.me@evil.invalid/example',
+                     'https://evil.invalid@paypal.me/example', 'https://paypal.me:443/example',
+                     'https://paypal.me:bad/example', 'https://[bad', 'https://paypal.me/',
+                     'https://paypal.me/exam\nple', 'https://paypal.me/example#fragment'):
+            self.assertEqual(support_link(link), '', link)
     def test_all_sections_stay_inside_grid(self):
         parser=GridParser();parser.feed((ROOT/'public/sections/index.html').read_text(encoding='utf-8'))
         self.assertEqual(parser.inside,16)

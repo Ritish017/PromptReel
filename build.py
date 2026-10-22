@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """PromptReel static site generator: data/entries.json -> public/"""
 import json, os, re, shutil, html, hashlib, datetime, urllib.parse, time
-from site_pages import signup_form, newsletter, signin, pricing, sponsor, privacy, products_zone, hero_sponsor
+from site_pages import signup_form, newsletter, signin, pricing, sponsor, privacy, products_zone, hero_sponsor, support
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "PromptReel"
 GCID = os.environ.get("PR_GOOGLE_CLIENT_ID", open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","google_client_id.txt")).read().strip() if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","google_client_id.txt")) else "")
@@ -71,9 +71,11 @@ def head(title, desc, path, img=None, ld=None, active=""):
 <meta name="theme-color" content="#fbfbfd"><link rel="stylesheet" href="/style.css?v={VER}"><link rel="stylesheet" href="/launch.css?v={VER}"><link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
 {f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());if(localStorage.getItem("pr-analytics")!=="off" && !["localhost","127.0.0.1"].includes(location.hostname))gtag("config","{GA_ID}",{{page_location:location.origin+location.pathname}});</script>' if GA_ID else ''}<link rel="preconnect" href="https://video.twimg.com"><link rel="preconnect" href="https://pbs.twimg.com">
 <link rel="icon" href="/brand/mark.svg" type="image/svg+xml"><link rel="icon" href="/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">{lds}</head><body>
-<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="PromptReel on X">𝕏</a></header>"""
+<header><a class="logo" href="/"><img src="/brand/mark.svg" width="28" height="28" alt="">Prompt<span class="lr">Reel</span></a><nav>{navh}</nav><a class="xme" href="https://x.com/KurmaRitish" target="_blank" rel="noopener" aria-label="Ritish Kurma on X"><span aria-hidden="true">𝕏</span><span class="maker-name">Ritish Kurma</span></a></header>"""
 
 FOOT = "<footer>" + signup_form("footer") + """<p>Videos, prompts, and skills belong to their creators. Check original sources and creator terms before use. <a href="/submit/">Submit or request removal</a>.</p><p>Curated by Ritish Kurma · Rynavo · <a href="https://x.com/KurmaRitish">@KurmaRitish</a> · <a href="mailto:kurmaritish017@gmail.com">Contact</a></p><p><a href="/newsletter/">Free newsletter</a> · <a href="/products/">Products</a> · <a href="/pricing/">Promote your product</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/llms.txt">llms.txt</a></p></footer><script type="module" src="/auth.js"></script><script src="/app.js?v={VER}"></script><script src="/engagement.js?v={VER}"></script><script src="/issues.js?v={VER}"></script></body></html>"""
+
+FOOT = FOOT.replace('</footer>', '<p><a href="/support/">Like the work? Support Ritish</a></p></footer><a class="support-float" href="/support/" aria-label="Support Ritish Kurma’s work"><span class="support-heart" aria-hidden="true">♡</span><span>Support my work</span></a>')
 
 def fmt_dur(s):
     if not s: return ""
@@ -303,6 +305,7 @@ def build():
     write("/submit/", pg)
     write("/sponsor/", head(f"Promote your product | {SITE}", "Clearly labelled product placements with actual campaign reports. Contact Ritish Kurma.", "/sponsor/") + sponsor() + FOOT)
     write("/products/", head(f"Products for creative builders | {SITE}", "Useful products for AI motion and creative coding. Sponsored placements are labelled.", "/products/") + '<main class="wrap"><section class="phero"><h1>Products for your <span>next build</span></h1></section>' + products_zone() + '</main>' + FOOT)
+    write("/support/", head(f"Support Ritish Kurma | {SITE}", "Like PromptReels? Optional support helps Ritish Kurma curate useful prompts, skills and GitHub discoveries. The gallery stays free.", "/support/") + support() + FOOT)
     repos_page()
     seo_urls = seo_pages(d)
     extra_pages(d)
@@ -313,6 +316,7 @@ def build():
     write("/llms.txt", "\n".join(llm) + "\n")
     write("/llms-full.txt", "\n".join(llm[:3]) + "\n\n## All videos\n" + "\n".join(f"- [{x['title']}]({DOMAIN}/p/{x['id']}/): {x.get('model','AI')} {x['type']} by @{x['handle']}" for x in d) + "\n")
     today = datetime.date.today().isoformat()
+    seo_urls.append('/support/')
     urls = seo_urls + ["/", "/repos/", "/sections/", "/skills/", "/pricing/", "/help/", "/privacy/", "/terms/", "/submit/", "/sponsor/", "/newsletter/", "/products/", "/newsletter/sample/"] + [f"/sections/{x['id']}/" for x in SECTIONS] + [f"/p/{x['id']}/" for x in d] + [f"/tags/{slugify(t)}/" for t in TAGS if any(t in x["tags"] for x in d)]
     vid = {f"/p/{x['id']}/": x for x in d if x.get("video_full")}
     def u(p):
@@ -361,7 +365,7 @@ def extra_pages(d):
     write("/saved/", '<meta http-equiv="refresh" content="0;url=/library/">')
     write("/signin/", head(f"No account needed | {SITE}", "Browse, copy and save locally without an account.", "/signin/").replace("</head>", '<meta name="robots" content="noindex"></head>') + signin() + FOOT)
     write("/newsletter/", head(f"Newsletter coming soon: GitHub finds, prompts and skills | {SITE}", "PromptReel Weekly is coming soon. Read a sample of useful GitHub projects, creative prompts, and practical build ideas. Share your feedback with Ritish Kurma.", "/newsletter/") + newsletter() + FOOT)
-    write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from ₹499 per week. Email to book.", "/pricing/") + pricing() + FOOT)
+    write("/pricing/", head(f"Product promotion pricing | {SITE}", "Free gallery and newsletter. Clearly labelled product promotion from $6 USD per week. Email to book.", "/pricing/") + pricing() + FOOT)
     write("/privacy/", head(f"Privacy | {SITE}", "Account, newsletter consent, analytics and data rights.", "/privacy/") + privacy() + FOOT)
     pg = head(f"Terms · {SITE}", "PromptReel terms of use.", "/terms/")
     pg += f"""<main class="wrap" style="max-width:760px"><section class="phero"><h1>Terms</h1><p>Last updated 21 October 2026.</p></section><div class="panel">

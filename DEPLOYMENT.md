@@ -45,8 +45,8 @@ scripts/send_newsletter.py remains disabled unless --send and NEWSLETTER_SEND_EN
 ## Promotions
 
 Book by email: kurmaritish017@gmail.com.
-- Product card: introductory ₹499 per seven days.
-- Featured homepage launch: introductory ₹999 per seven days.
+- Product card: introductory $6 USD per seven days.
+- Featured homepage launch: introductory $12 USD per seven days.
 - Maximum five active products, including at most one featured homepage campaign.
 - Set approved campaigns in data/sponsors.json. Each needs id, name, description, HTTPS url, starts, ends, and optional tier=featured.
 - No invented client logos, visitor counts, sales, or reach guarantees.
@@ -83,3 +83,7 @@ The build generates the browser client from the exact pinned Supabase SDK. Packa
 Deploy source and tests to a review branch. Preview deployment includes public/ contents and api_src/api + api_src/lib, with api_src/package.json and its lockfile at the deployment root. No legacy Blob token is needed by the replacement API. Do not disable deployment protection in a script.
 
 An SMTP provider, final auth redirect configuration, real email acceptance tests, and domain ownership remain launch gates. Email signup stays visibly paused until these email gates pass. Generated deployment URLs require Vercel access; use the production domain for public browsing. There is no paid X ingestion or broad competitor scraping. New creator submissions enter a private moderation queue; publication requires source and permission review.
+
+## Optional creator support
+
+Every page using the shared site shell has a fixed Support my work link. The heart animates twice on entry and respects reduced-motion preferences. /support/ suggests $3, $5 and $10 USD. Set the owner-provided public PayPal URL in data/support.json; only HTTPS paypal.me and paypal.com destinations are accepted. The site does not infer a payment address from the contact email. Until configured, the page clearly says payments are not active. Support is separate from sponsorship and the upcoming free newsletter. No payment details are collected by this app. PayPal India does not support domestic receipts. Do not add a QR until its intended recipient and public destination are confirmed.
