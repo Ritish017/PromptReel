@@ -1,3 +1,4 @@
+(function(){
 // Count real activity; sales placeholders are never advertiser clicks.
 const track=(name,params)=>window.PRTrack?.(name,params);
 const campaigns=new Set();
@@ -31,3 +32,5 @@ window.addEventListener('pr-auth-ready',async()=>{
   if(!error&&data?.length){list.replaceChildren();for(const issue of data){const a=document.createElement('a');a.className='panel';a.href='/newsletter/issue/?id='+encodeURIComponent(issue.id);a.textContent=issue.subject+' · '+new Date(issue.published_at).toLocaleDateString();list.append(a);}}
  }
 });
+
+})();
