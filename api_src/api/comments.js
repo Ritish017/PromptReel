@@ -1,12 +1,14 @@
-import { db,identity,body,checked,safe,validId,HttpError } from '../lib/supabase.js';
-const render=rows=>rows.map(x=>({id:x.id,n:x.author_name,p:'',t:x.body,ts:Date.parse(x.created_at)}));
-export default safe(async(req,res)=>{
- const input=req.method==='POST'?await body(req):{};const id=req.method==='GET'?req.query.id:input.id;if(!validId(id))throw new HttpError(400,'Invalid entry');
- if(req.method==='GET'){const rows=checked(await db().from('pr_comments').select('id,entry_id,author_name,body,created_at').eq('entry_id',id).order('created_at',{ascending:false}).limit(100));return res.status(200).json(render(rows.reverse()));}
- if(req.method!=='POST')throw new HttpError(405,'Method not allowed');
- const {client,user}=await identity(req);const text=String(input.text||'').trim();if(text.length<2||text.length>600)throw new HttpError(400,'Use 2 to 600 characters');
- const name=String(user.user_metadata?.full_name||user.user_metadata?.name||'Member').replace(/[<>]/g,'').slice(0,80);
- checked(await client.from('pr_comments').insert({user_id:user.id,entry_id:id,author_name:name,body:text}));
- const rows=checked(await client.from('pr_comments').select('id,entry_id,author_name,body,created_at').eq('entry_id',id).order('created_at',{ascending:false}).limit(100));
- res.status(200).json(render(rows.reverse()));
-});
+import { load, save, body } from './_store.js';
+const clean = t => String(t || '').replace(/[<>]/g, '').trim();
+export default async function handler(req, res) {
+  const s = await load(); s.c = s.c || {};
+  if (req.method === 'GET') { res.setHeader('Cache-Control', 'no-store'); return res.status(200).json(s.c[req.query.id] || []); }
+  if (req.method !== 'POST') return res.status(405).end();
+  const { id, name, text, credential } = await body(req);
+  if (!/^[\w:-]{1,80}$/.test(id || '')) return res.status(400).json({ error: 'bad id' });
+  let who = clean(name).slice(0, 40) || 'Guest', pic = '';
+  if (credential) { try { const r = await fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + credential); const j = await r.json(); if (j.aud === '887518336592-u62gnnq2a80hprnp7s8mnnp8i5o7cpai.apps.googleusercontent.com') { who = j.name || who; pic = j.picture || ''; } } catch {} }
+  const t = clean(text).slice(0, 600); if (t.length < 2) return res.status(400).json({ error: 'empty' });
+  s.c[id] = s.c[id] || []; s.c[id].push({ n: who, p: pic, t, ts: Date.now() }); s.c[id] = s.c[id].slice(-200);
+  await save(s); res.status(200).json(s.c[id]);
+}

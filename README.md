@@ -1,26 +1,30 @@
 # PromptReel
 
-A free gallery of creative AI examples, shared prompts, agent skills, and useful GitHub projects. Curated by Ritish Kurma (Rynavo).
+A free gallery of AI-made motion videos, each paired with the exact prompt or agent skill that made it. Live at **https://promptreels.vercel.app**.
 
-## This launch update
+## Features
+- 254 videos from 233 creators, credited and linked to their original public posts
+- Inline video previews that play only while on screen, with a pause toggle
+- Combined filters: search (`/`), prompt/skill, topic, made-with platform, shape, saved, and sort (recent, popular on X, most liked, most discussed, shuffle)
+- Like, dislike, save and comment on every video (comments use Google sign-in)
+- "Make it yours" prompt customizer and Open in Claude
+- 16 original, free animated website sections to copy into Claude Code, Cursor or v0
+- My Library, Pricing, Help, Privacy, Terms
+- SEO/GEO: VideoObject, CreativeWork, BreadcrumbList and ItemList JSON-LD, video sitemap, `llms.txt`, AI-crawler-friendly `robots.txt`
 
-- Supabase verified identity, private audience records, explicit newsletter consent, owner-only saved libraries, and signed-in community actions.
-- Free weekly field notes with repository descriptions and weekly Trending gains, credited creative examples, linked video posters, and practical build ideas.
-- Daily repo snapshots and Monday editorial drafts in Supabase; no email is sent until a provider is configured.
-- Bounded section previews, safe structured data, normalized video dates, consistent canonical origins, and source-aware copy.
-- Email-booked product promotion: up to five active products; launch pricing from ₹499 per week. No reader payments.
+## Structure
+- `build.py` generates the static site into `public/` from `data/entries.json` and `data/sections.py`
+- `static/` CSS and JS copied into the build
+- `api_src/api/` Vercel serverless functions (votes, comments, stats, subscribe) backed by Vercel Blob
+- `merge.py` adds new entries (dedupes by X status id); `enrich_video.py` adds video preview URLs
+- `deploy.py` deploys `public/` + `api_src/` to Vercel
 
-## Build
+## Run
+```bash
+python3 build.py              # builds public/
+python3 -m http.server -d public 8000
+python3 deploy.py promptreel  # needs a Vercel token
+```
 
-    npm ci
-    npm run build
-    node api_src/dev-server.mjs
-
-## Verify
-
-    python -m unittest discover -s tests -p '*checks.py'
-    npm test
-
-Read DEPLOYMENT.md for the connected Supabase project, SMTP and auth URL gates, domain migration, newsletter operations, legacy audience cleanup, and promotion setup. No secrets belong in source.
-
-Videos, prompts, and skills belong to their credited creators. Verify original sources and applicable creator terms before reuse.
+## Credits
+Videos, prompts and skills belong to their creators. Creators can claim or remove their work via the Submit page.

@@ -1,3 +1,13 @@
-import { identity,checked,method,safe } from '../lib/supabase.js';
-export default safe(async(req,res)=>{method(req,'POST');const {client,user}=await identity(req);const name=String(user.user_metadata?.full_name||user.user_metadata?.name||'Member').replace(/[<>]/g,'').slice(0,80);
- checked(await client.from('pr_profiles').upsert({user_id:user.id,display_name:name},{onConflict:'user_id'}));res.status(200).json({ok:true,name});});
+import { body } from './_store.js';
+import { upsert } from './_people.js';
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).end();
+  const { credential } = await body(req);
+  if (!credential) return res.status(400).json({ error: 'no credential' });
+  const r = await fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + encodeURIComponent(credential));
+  if (!r.ok) return res.status(401).json({ error: 'bad token' });
+  const p = await r.json();
+  if (!p.email || p.email_verified === 'false') return res.status(401).json({ error: 'unverified' });
+  await upsert('users', p.email, { name: p.name || '', picture: p.picture || '', ts: Date.now(), via: 'google' });
+  res.status(200).json({ ok: true });
+}
