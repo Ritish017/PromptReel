@@ -110,5 +110,117 @@
    "Sound design"
   ],
   "type": "prompt"
+ },
+ {
+  "handle": "ai_300",
+  "post_url": "https://x.com/ai_300/status/2113163447299092663",
+  "posted_date": "2026-10-22",
+  "model": "Claude Opus 5.5 + Claude Code + Remotion",
+  "title": "Motion Prompt Library: 120 animation samples as a Claude Code skill",
+  "prompt_text": "Load github.com/showheyohtaki/motion-prompt and install the motion-prompt skill in this environment. Once installation is complete, explain how to use it in 3 lines.",
+  "skill": "Load github.com/showheyohtaki/motion-prompt and install the motion-prompt skill in this environment. Once installation is complete, explain how to use it in 3 lines.",
+  "repo": "https://github.com/showheyohtaki/motion-prompt",
+  "tags": [
+   "Motion graphics",
+   "Transitions",
+   "Product UI"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "nicebabycat",
+  "post_url": "https://x.com/nicebabycat/status/2113127789754785979",
+  "posted_date": "2026-10-22",
+  "model": "Claude Code + Remotion + Keling v3",
+  "title": "OpenMontage: turn a coding agent into a video studio",
+  "prompt_text": "https://github.com/calesthio/OpenMontage",
+  "skill": "https://github.com/calesthio/OpenMontage",
+  "repo": "https://github.com/calesthio/OpenMontage",
+  "tags": [
+   "Animation",
+   "Remotion",
+   "Voiceover"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Marlenuii",
+  "post_url": "https://x.com/Marlenuii/status/2112962130349818180",
+  "posted_date": "2026-10-21",
+  "model": "Claude Code",
+  "title": "Motion design skills pack for Claude Code",
+  "prompt_text": "https://github.com/iart-ai/motion-design-skills",
+  "skill": "https://github.com/iart-ai/motion-design-skills",
+  "repo": "https://github.com/iart-ai/motion-design-skills",
+  "tags": [
+   "Motion graphics",
+   "Lottie",
+   "GSAP"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Forhanvv",
+  "post_url": "https://x.com/Forhanvv/status/2113334421990556119",
+  "posted_date": "2026-10-22",
+  "model": "Claude Opus 5.5",
+  "title": "700+ animation prompts for Claude Opus 5.5",
+  "prompt_text": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "skill": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "repo": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "Motion graphics",
+   "3D",
+   "Explainer"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "junwatu",
+  "post_url": "https://x.com/junwatu/status/2113458984011321684",
+  "model": "HyperFrames Studio",
+  "title": "95-second developer tools tour in HyperFrames",
+  "prompt_text": "This prompt was exported from HyperFrames Studio, so I can't guarantee that it will produce the exact same results:\n\n> Create a 95-second English video in HyperFrames titled “Fresh macOS. 15 Tools. Let’s Build Something.” FORMAT 1920×1080, 16:9, 30 fps. A polished motion graphics tour of a developer and AI creator’s fresh Mac setup. Keep scenes, text, graphics, and audio editable.\n\nVISUAL STYLE\nUse the junwatu look:\n- Background: #090909\n- Panels: #060B08\n- Main text: #B7DEFF\n- Accent: #C0EFC7\n- Secondary text: #8BAD92\n- IBM Plex Mono, regular and medium weights. Use generous spacing, large headlines, rounded dark interface windows, terminal commands, symbolic tool badges, subtle gradients, and a segmented progress indicator. Place tool names and explanations on the left, animated interface demonstrations on the right. Add small, witty supporting lines.\n\nMOTION\nUse crisp staged reveals, smooth typography entrances, purposeful cursor movements, responsive interface animations, and quick wipes between tools. Every demonstration should show an action and its result. Keep text readable and avoid dead time.\n\nTIMELINE AND NARRATION\n0–6s — Opening\nShow realistic first-person hands opening a MacBook on a charcoal desk. Move the camera toward its display until the screen fills the frame and transitions into the first tool.\nTitle: “Fresh macOS. 15 Tools. Let’s Build Something.”\nNarration: “Fresh macOS. Fifteen tools. Let’s build something.”\n\n6–11s — Python\nAnimate a terminal command and an AI workflow.\nNarration: “Python powers many of the AI tools I use.”\n\n11–16s — Node.js + npm\nShow a local web development workflow with React, Tailwind, and Three.js.\nNarration: “Node and npm power my local React, Tailwind, and Three.js projects.”\n\n16–21s — Grok\nShow a conversational AI interface.\nNarration: “I access Grok through my X subscription.”\nKeep subscription claims specific to the creator’s account; do not imply every X plan includes every service.\n\n21–26s — Grok Bot\nAnimate connected services feeding a task checklist.\nNarration: “Grok Bot helps with routines through tools I connect.”\nSupporting text: “Connected services and permissions required.”\nTreat scheduling or wallet monitoring as configured workflows, not guaranteed built-in features.\n\n26–31s — Antigravity CLI\nShow a coding agent receiving a terminal task and returning results.\nNarration: “Antigravity brings coding agents straight into my terminal.”\n\n31–36s — OpenCode\nShow a model picker and a terminal coding session.\nNarration: “OpenCode lets me try models, including free options when available.”\nDo not promise permanently free models or describe them as mysterious.\n\n36–47s — Cursor\nGive this tool a longer demonstration: select code, ask AI for an edit, inspect a diff, apply the change, then generate files.\nNarration: “Cursor is my IDE for vibe coding. Select code, ask AI, review changes, apply edits, and generate files.”\nMention any subscription bundle only if verified for the creator’s actual plan.\n\n47–52s — ChatGPT\nAnimate brainstorming, research, and proofreading exchanges.\nNarration: “ChatGPT helps with brainstorming, quick research, and proofreading.”\n\n52–57s — GitHub CLI\nShow repository and pull request commands with successful results.\nNarration: “GitHub CLI connects my repositories with AI tools and agents.”\nPresent it as a command-line tool used by automation, not as an AI agent itself.\n\n57–62s — Modal CLI\nAnimate a laptop submitting a workload to cloud GPUs.\nNarration: “Modal gives my laptop access to cloud GPUs.”\n\n62–67s — Hugging Face CLI\nShow model and dataset downloads with progress and completed files.\nNarration: “Hugging Face brings models and datasets to my Mac.”\n\n67–72s — HyperFrames Studio\nShow editable video tracks, a moving playhead, and an animated preview.\nNarration: “HyperFrames Studio turns code into animated video.”\n\n72–77s — DaVinci Resolve\nShow editing tracks, color controls, and audio meters.\nNarration: “DaVinci Resolve handles editing, color, sound, and the final polish.”\n\n77–82s — Discord\nShow community conversations and screen sharing.\nNarration: “Discord connects me with the people I build with.”\n\n82–87s — Amphetamine\nShow an active keep-awake session and a simple coffee-cup motif.\nNarration: “Amphetamine keeps my Mac awake while the work keeps running.”\n\n87–95s — Finale\nAssemble all fifteen tool badges around a central MacBook, connecting them into one creative ecosystem.\nMain text: “CODE. CREATE. AUTOMATE. REPEAT.”\nClosing text: “Fresh Mac. Fresh Start.”\nNarration: “One connected creative toolkit. Code. Create. Automate. Repeat. Fresh Mac. Fresh Start.”\n\nAUDIO\nGenerate a warm, friendly male English narration with clear pronunciation. Fit delivery naturally into each scene. Add understated instrumental electronic music, ducked beneath speech, with a gentle opening and closing fade.\n\nCONTENT ACCURACY\nBefore generation, verify current product names, capabilities, and subscription eligibility using official sources. Preserve the qualifications above in both narration and on-screen text.\n\nFINISH\nKeep essential content inside safe margins. Check layout, readability, motion, audio, and scene transitions. Inspect representative frames and fix all errors before handing over the video.",
+  "tags": [
+   "Kinetic type",
+   "Product UI"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "Yuki26856052",
+  "post_url": "https://x.com/Yuki26856052/status/2113463132266037355",
+  "model": "MiniMax H3 × Ima Studio",
+  "title": "THE RED EDIT, 13-cut Korean fashion editorial",
+  "prompt_text": "A little Korean fashion editorial, squeezed into 5 seconds. I like this use of AI: taking a mood you have in mind and giving it a few seconds on screen. Prompt below / Mini... MiniMax H3 × Ima Studio THE RED EDIT — BOLD LOOK. SOFT POWER. STYLE: Korean fashion magazine × K-pop comeback\"\nHas a Show more button to reveal the embedded prompt. Models referenced: MiniMax H3 × Ima Studio.\nRoughs: 0 replies / 0 reposts / 0 likes / 83 views.=== Yuki He full prompt (appended) ===\nFull verbatim post text for @Yuki26856052 / https://x.com/Yuki26856052/status/2113463132266037355:\n\n\"A little Korean fashion editorial, squeezed into 5 seconds.\nI like this use of AI: taking a mood you have in mind and giving it a few seconds on screen.\nPrompt below\nMiniMax H3 × Ima Studio\nTHE RED EDIT — BOLD LOOK. SOFT POWER.\nSTYLE: Korean fashion magazine × K-pop comeback teaser × cinematic motion typography. A luxurious red magazine comes alive through 3D editorial installations, paper transitions, and dynamic layouts.\nCHARACTER: Use the uploaded reference image. Only ONE adult Korean female model, preserving exactly the same face, features, skin tone, slim proportions, and long dark brown-black hair throughout. Mature, glamorous, confident Korean idol aesthetic. No identity drift.\nWORLD: One unified red editorial studio with giant cream magazine pages, burgundy torn paper, red silk, geometric panels, chrome lettering, silver reflections, film strips, and contact sheets. Palette: scarlet, burgundy, cream, black, silver. 55% live-action fashion film, 45% dimensional motion graphics. Different typography and camera compositions across cuts.\n7 LOOKS: Burgundy tweed jacket, cream top, red mini skirt. Scarlet fitted mini dress, black heeled boots. Cream top, high-waisted red skirt, ruby necklace. Black corset top, burgundy skirt, black boots. Red cropped leather jacket, black top and mini skirt. Silver-red metallic top, fitted black skirt. Scarlet off-shoulder couture gown, structured waist.\n13 CUTS:\n01 | 0–0.8s: Extreme eye close-up, raises gaze, burgundy paper. Large serif: \"THE RED EDIT\".\n02 | 0.8–1.7s: Look 1, waist-up shoulder turn, cream page. Condensed text: \"SCARLET\".\n03 | 1.7–2.6s: Look 1, beauty close-up, brushes hair, red editorial line. \"SEOUL MUSE\".\n04 | 2.6–3.7s: Look 2, full-body, steps forward, giant scarlet panel. \"RED SIGNAL\".\n05 | 3.7–4.8s: Look 3, folding magazine page reveal, adjusts necklace. Thin serif: \"CRIMSON TOUCH\".\n06 | 4.8–5.9s: Look 4, seated pose, weight shift, black platform, burgundy silk. \"BOLD MOOD\".\n07 | 5.9–7s: Look 5, three-quarter turn, brushes hair, silver reflective set. Chrome: \"ICON GIRL\".\n08 | 7–8.1s: Look 5, chest-up, lowers chin then raises gaze, giant red typography wall. \"강렬하게\".\n09 | 8.1–9.2s: Look 6, knee-up, subtle waist shift, black-and-white contact sheets of herself. \"AFTER DARK\".\n10 | 9.2–10.3s: Look 6, burgundy torn-paper reveal, hand on waist, cream background. \"OWN THE LOOK\".\n11 | 10.3–11.4s: Look 7, steps toward camera, minimal red-white editorial grid. \"SEOUL MUSE\".\n12 | 11.4–12.7s: Look 7, slow knee-up push-in. Magazine pages, film strips, red silk, contact sheets, and chrome frames assemble around her. \"THE RED EDIT\".\n13 | 12.7–15s: FINAL COVER. Graphics snap into an elegant Korean luxury magazine cover. She stands slightly right, turns, raises her chin, and looks into camera. Text: \"THE RED EDIT / SEOUL MUSE / BOLD LOOK. SOFT POWER. / VOL. 2026\". Final 0.5s completely still.\nMOTION: Slow, elegant model gestures; fast rhythmic graphics. Hard cuts, page flips, paper folds, typography slams, and contact-sheet flashes. Change outfits instantly between cuts, never morph.\nAUDIO: 120–124 BPM premium K-pop instrumental, punchy kick, clean bass, hi-hats, paper snaps, metallic clicks. No vocals or dialogue.\nAVOID: Extra people, face drift, hair changes, outfit morphing, outdoor scenes, dancing, static slideshow, repetitive framing, flat stickers, cheap graphics, cyberpunk, garbled text, logos, watermarks, subtitles.\nRESULT: One girl, seven looks, thirteen dynamic red luxury magazine spreads, ending in a polished THE RED EDIT cover.\n#MiniMaxH3 #AIVideo #AIFashion #ImaStudio",
+  "tags": [
+   "Fashion",
+   "Kinetic type"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "va1enti_ai",
+  "post_url": "https://x.com/va1enti_ai/status/2113465147238801916",
+  "model": "Veo 3.1 (Google Flow)",
+  "title": "Amber gem macro with ancient insect, 8s orbital push-in",
+  "prompt_text": "Frozen in 40 million years.\nTesting internal light refraction, micro-bubble optics & probe-lens rotation in Google Flow (Veo 3.1). Did the model maintain genuine optical depth inside the resin, or did it flatten the insect into a surface texture on the arc?\nPrompt:\n8s cinematic extreme macro video, 16:9, 24fps, smooth continuous spiral orbital push-in shot. Centered in a dark moody studio is a raw translucent golden-amber gem with natural polished facets and ancient rough edges. A single warm off-camera tungsten rim light slowly sweeps from behind, igniting deep honey-orange refractions, microscopic suspended air bubbles, and internal stress fissures. Embedded deep within the amber core sits a pristine, perfectly preserved prehistoric winged insect with delicate iridescent veined wings and multifaceted compound eyes. Macro probe lens smoothly rotates around the amber in an arc while pushing deeply into the glowing resin, transitioning focus from the refractive outer surface straight onto the razor-sharp micro-anatomy of the frozen insect. Authentic 35mm cinema aesthetic, shallow depth of field, organic fine grain. Exclude: living movement, twitching legs, human hands, fast erratic spinning, plastic CGI gloss, modern jewelry mounts, text, watermark. Model: Google Flow / Veo 3.1 Ratio: 16:9\nSave for your next macro refraction benchmark",
+  "tags": [
+   "Macro",
+   "Cinematic"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "mehvishs25",
+  "post_url": "https://x.com/mehvishs25/status/2113475010933489784",
+  "model": "Seedance 2.5 on Higgsfield",
+  "title": "30s Seoul home-video day, six scenes",
+  "prompt_text": "I loved meeting my old friend after a long, long time! Created using Seedance 2.5 on Higgsfield AI\nPrompt: Create a 30-second ultra-realistic fictional home-video featuring an adult Korean woman in her late 20s spending a cheerful afternoon in an older Seoul residential neighborhood. CHARACTER: A fictional adult Korean woman in her late 20s with long dark hair tied in a casual ponytail, natural facial features, realistic skin texture and a friendly expressive personality. Keep her appearance consistent throughout the entire video. OUTFIT: She wears a bold, fashionable summer outfit consisting of a vivid red fitted crop top, high-waisted white denim shorts with a relaxed fit, clean casual sneakers, small hoop earrings, a simple bracelet and a small shoulder bag. The outfit is youthful, colorful and stylish, appropriate for a warm summer day. SCENE 1 — LEAVING HOME She steps out of an older Seoul apartment building carrying a small reusable shopping bag. She closes the gate behind her, notices the camera and gives a spontaneous smile before walking down the quiet residential lane. SCENE 2 — LOCAL BAKERY She enters a tiny neighborhood bakery, looks through the pastry display and chooses a small baked treat. She pays the shopkeeper with coins, thanks them and walks back outside. SCENE 3 — FRIENDLY ENCOUNTER While walking through the narrow lane, she suddenly sees her adult female friend approaching from the opposite direction. They smile, greet each other warmly and share a quick friendly hug. They chat and laugh for a moment before waving goodbye and continuing in opposite directions. SCENE 4 — FRUIT STAND She stops at a small roadside fruit stall and chooses a peach. She pays the vendor, places it inside her shopping bag and continues walking. SCENE 5 — EVERYDAY NEIGHBORHOOD MOMENT She walks beneath trees while eating her pastry. A bicycle passes nearby, and she naturally steps aside. She looks around at the quiet houses and smiles as the camera follows her from a short distance. SCENE 6 — ENDING She reaches the end of the lane, turns toward the camera and gives a cheerful wave. She smiles naturally and says, \"Bye bye!\" She then turns around and walks away down the residential street while carrying her bag and peach. The camera stays behind her until she disappears around the corner. CAMERA STYLE: Authentic early-2000s consumer MiniDV home-video footage. Handheld camera shake, imperfect framing, autofocus hunting, automatic exposure fluctuations, soft digital detail, mild digital noise, slight compression artifacts, realistic motion blur and occasional awkward zooms. It should feel like a genuine recording made by a friend or family member, not a professional production. AUDIO: Only natural neighborhood sounds: footsteps, bicycles, distant traffic, bakery activity, casual conversations, birds, children playing and light wind. No music, no narration, no subtitles, no text overlays, no beauty filter, no sexualized posing, no CGI appearance, no cinematic lighting and no polished commercial cinematography.",
+  "tags": [
+   "Cinematic",
+   "Handheld"
+  ],
+  "type": "prompt"
  }
 ]

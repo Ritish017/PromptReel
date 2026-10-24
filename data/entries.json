@@ -6910,5 +6910,56 @@
   "display_name": "Pan",
   "added": "2026-10-22",
   "source": "x"
+ },
+ {
+  "handle": "bmx_ai13",
+  "post_url": "https://x.com/bmx_ai13/status/2113620686346523093",
+  "posted_date": "2026-10-23",
+  "model": "Kling 4.0",
+  "title": "Monsoon Velocity: speedster action",
+  "prompt_text": "TITLE: MONSOON VELOCITY\nFORMAT: 20 seconds, 16:9, 24fps, photoreal live-action superhero action, anamorphic lens feel, handheld chase camera with whip pans, heavy motion blur on the speedster only. Pure text to video, no on-screen text, no logos, no subtitles at any point.\nWORLD: A monsoon evening in a dense South Asian city. Narrow wet street between old pastel colonial buildings with iron balconies, hanging shop signs blurred and unreadable, rickshaws parked, tangled overhead wires, steam rising from a tea stall. Light rain falls steadily. Sodium orange streetlamps and cyan neon spill reflections across ankle-deep puddles. Color grade: teal shadows, warm amber highlights, wet glossy surfaces.\nCHARACTERS: NIRA, the speedster. Mid 20s South Asian woman, athletic, long black hair tied in a high braid, sleek charcoal grey running suit with thin copper seams, bare forearms, calm fierce eyes. When she moves at speed she leaves a crackling copper-crimson energy trail with small electric sparks, never gold. THE ASHEN MONK, the rival. Tall lean man in layered ash-grey wrap robes, deep hood, cloth mask covering nose and mouth, leather wrist bindings, barefoot. Moves with martial calm. He can phase into a burst of grey smoke and reappear a few meters away.\nSHOT LIST: 0 to 2s. Wide low angle down the rainy street. Pedestrians with umbrellas in the background. The Ashen Monk stands still in the middle of the road, rain bouncing off his hood. Far behind him a copper streak ignites at the end of the street. 2 to 4s. Time slows. Every raindrop freezes in midair like suspended glass beads. Nira runs through them in real speed, her body shattering the frozen drops into glittering spray, copper trail crackling behind her. Camera tracks beside her at shoulder height. 4 to 6s. Impact. Nira tackles the Monk at full speed. Both bodies fly sideways and slam into the hood of a parked white car, the metal crumples, windshield cracks into a spiderweb, water sheets off the roof in a wave. 6 to 8s. Tight close up, handheld shake. The Monk grabs her braid and twists. Nira's face strains, sparks jump from her skin. He bursts into grey smoke in her hands and she falls through empty air onto wet asphalt. 8 to 10s. Over the shoulder of the Monk as he reforms beside a crumbling plaster wall, smoke curling off his robes, eyes narrowing above the mask. Behind him puddles ripple outward as something approaches too fast to see. 10 to 13s. Nira circles him at super speed, a ring of copper light spinning around the Monk, the rain inside the ring spiraling upward into a vortex. Rickshaw canopies flap, shop shutters rattle, a tea glass tips off the stall and hangs frozen midair. 13 to 15s. The Monk throws a sharp palm strike into the ring. It connects. Nira is knocked out of speed, skidding on one knee across the flooded road, a wake of water spraying behind her, copper sparks hissing in the puddle. 15 to 17s. Low angle on Nira rising, rain streaming down her face, she exhales, lowers into a sprinter crouch. The asphalt under her fingertips glows hot and steams. 17 to 19s. She launches. One continuous blur of copper light straight at the Monk. He tries to phase but too late. She drives him backward into the plaster wall. Massive impact, the wall cracks outward in a radial web, brick dust and rainwater explode together in a dense cloud, a balcony above shakes and drips. 19 to 20s. LAST FRAME. Locked wide shot. Dust settling in the rain. A Monk shaped crater in the wall, empty, wisps of grey smoke drifting out of it. Nira stands in front of the crater breathing hard, copper sparks fading off her hands, back to camera, staring left down the street where a faint smoke trail disappears. Hold still. No text, no title card, no letters, no signage legible anywhere in frame.\nAUDIO, diegetic only, no music, no narration: Steady rain hiss on tin awnings and puddles, distant rickshaw bells, a tea kettle whistle. Sharp electric crackle and whoosh whenever Nira moves at speed. Near silence with single tinkling drops during the frozen rain moment. Metal crunch and glass crack on the car impact. Soft smoke whump when the Monk phases. Low rising whirlwind roar inside the speed ring. Heavy concrete crack and rumble of the wall impact, then debris trickle, rain returning, Nira's heavy breathing.\nSTYLE NOTES: Realistic physics for water, debris and cloth. Speed effect only on Nira, everything else stays sharp. Consistent faces and costumes in every shot. No extra superheroes, no flying, no weapons, no blood.",
+  "tags": [
+   "Characters",
+   "Photos"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "bmx-ai13-bc89ce",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2113619536629129217/img/ERXlEOPtpqjVypKG.jpg",
+  "likes": 24,
+  "display_name": "BMX",
+  "added": "2026-10-23",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2113619536629129217/vid/avc1/640x360/TGBsLAGfV21YSLmC.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2113619536629129217/vid/avc1/1280x720/RTc_GaD5dVxLrnUq.mp4?tag=29",
+  "duration": 20.041,
+  "w": 1920,
+  "h": 1080
+ },
+ {
+  "handle": "Frandeeer",
+  "post_url": "https://x.com/Frandeeer/status/2113726670884798544",
+  "posted_date": "2026-10-24",
+  "model": "Codex + HyperFrames",
+  "title": "ASCII film: character stops the rain",
+  "prompt_text": "1/ The director + developer prompt. Use this as the agent's project instructions: You are an animation director and creative developer. Build an editable ASCII short film with HTML Canvas and a deterministic timeline. Use HyperFrames for video export. Render the scene as colored monospace characters on black, not smooth shapes with a decorative text overlay. Prioritize readable acting: anticipation, action, follow-through, then a brief pause. Keep hands attached to props and feet grounded. Use negative space. No random movement or effects that hide the action. Every frame must depend only on timeline time, so seeking reproduces the same image. Build a local player with play/pause, replay, seeking, sound and fullscreen. Show the moving draft and wait for feedback before exporting.\n\n2/ Give it a shot-by-shot story. Create a 32-second, 1920\u00d71080 ASCII film at 30 fps. Silver hooded character, muted cyan rain, black background. Wide shots with plenty of empty space. 0\u20134s: He walks through heavy rain made of symbols. 4\u20137s: He stops and raises an open palm. Every raindrop freezes. 7\u201311s: He touches one drop and spins it like a tiny ringed planet. 11\u201315s: He pinches and pulls it. Resistance, then a harder tug. It becomes a black hole. 15\u201320s: Rain spirals inward. He slips, struggles away and grabs the left screen edge with both hands. 20\u201323s: He pulls the edge. The entire scene folds and flies offscreen. 23\u201326s: He climbs back over the bottom edge and lands. Show his whole body clearly. 26\u201328s: He ignites a red lightsaber, holds, then winds up. 28\u201332s: One fast diagonal strike cuts the entire picture in two. Both halves slide apart. End on black. No dialogue, captions or title card. Make every action readable before starting the next.\n\n3/ The revision pass matters. Review the actual moving preview and screenshots of each story beat. Fix unclear silhouettes, floating feet, disconnected hands and overlapping gestures. Slow down the setup, not the strike. Add synchronized rain, footsteps, freeze, suction, landing, saber ignition, hum and slash FX. Keep music behind the effects. Use only audio I supply or original synthesized sounds; don't download a commercial track. Test playback, seeking, replay and audio sync. Check the ending at full size and on a phone-sized viewport. After I approve the preview, export an H.264 MP4 with AAC stereo audio. Verify duration, resolution, audio presence and full-file decoding. Inspect frames from the exported file, then give me the download link.",
+  "tags": [
+   "Characters",
+   "Kinetic type",
+   "Shapes"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "frandeeer-e60663",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2113726523945390080/img/RjDDsbrsIFGMBylJ.jpg",
+  "likes": 12,
+  "display_name": "Frander",
+  "added": "2026-10-23",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2113726523945390080/vid/avc1/640x360/JK7O_-pu-og6fNgX.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2113726523945390080/vid/avc1/1280x720/Ta0wVkq-4S-eN4GS.mp4?tag=29",
+  "duration": 32,
+  "w": 1920,
+  "h": 1080
  }
 ]
