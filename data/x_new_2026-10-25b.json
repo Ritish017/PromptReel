@@ -1,0 +1,31 @@
+[
+ {
+  "handle": "kirillk_web3",
+  "post_url": "https://x.com/kirillk_web3/status/2114157494650257431",
+  "posted_date": "2026-10-25",
+  "model": "Claude Code (and Codex)",
+  "prompt_text": "this is f*cking gold the diagram skill for Claude Code. 53K stars on GitHub. most AI diagrams look like the same gray Mermaid boxes. this one looks like it came out of a magazine. > 44 diagram types: flows, architectures, timelines, org charts and more > give it your website and it pulls your brand colors and fonts > checks contrast so every label is readable > redraws your old draw. io and Mermaid files > exports to HTML, SVG and PNG one skill. one prompt. a diagram you'd actually put in a deck. works with Claude Code and Codex. free and open source. repo below github.com/cathrynlavery/diagram-design",
+  "tags": [
+   "Diagrams",
+   "Code"
+  ],
+  "type": "skill",
+  "title": "Diagram Design: Claude Code skill for 44 diagram types",
+  "repo": "https://github.com/cathrynlavery/diagram-design"
+ },
+ {
+  "handle": "Asteri_eth",
+  "post_url": "https://x.com/Asteri_eth/status/2113951366456479909",
+  "posted_date": "2026-10-24",
+  "model": "Opus 5.5 + Remotion (Claude Code)",
+  "prompt_text": "<Build one reusable Remotion promo composition with three brand themes and three layouts: 1080x1350, 1080x1920 and 1920x1080. Make headline, palette, media and tempo props. Give each format its own type scale, line breaks and safe areas. Render all nine combinations and show me a contact sheet to review them.>",
+  "tags": [
+   "Product UI",
+   "Kinetic type",
+   "Phone"
+  ],
+  "type": "prompt",
+  "title": "Opus 5.5 + Remotion: one prompt, nine ad videos",
+  "skill": "npx skills add remotion-dev/skills"
+ }
+]

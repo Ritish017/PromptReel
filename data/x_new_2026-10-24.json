@@ -18,12 +18,201 @@
   "posted_date": "2026-10-24",
   "model": "Codex + HyperFrames",
   "title": "ASCII film: character stops the rain",
-  "prompt_text": "1/ The director + developer prompt. Use this as the agent's project instructions: You are an animation director and creative developer. Build an editable ASCII short film with HTML Canvas and a deterministic timeline. Use HyperFrames for video export. Render the scene as colored monospace characters on black, not smooth shapes with a decorative text overlay. Prioritize readable acting: anticipation, action, follow-through, then a brief pause. Keep hands attached to props and feet grounded. Use negative space. No random movement or effects that hide the action. Every frame must depend only on timeline time, so seeking reproduces the same image. Build a local player with play/pause, replay, seeking, sound and fullscreen. Show the moving draft and wait for feedback before exporting.\n\n2/ Give it a shot-by-shot story. Create a 32-second, 1920\u00d71080 ASCII film at 30 fps. Silver hooded character, muted cyan rain, black background. Wide shots with plenty of empty space. 0\u20134s: He walks through heavy rain made of symbols. 4\u20137s: He stops and raises an open palm. Every raindrop freezes. 7\u201311s: He touches one drop and spins it like a tiny ringed planet. 11\u201315s: He pinches and pulls it. Resistance, then a harder tug. It becomes a black hole. 15\u201320s: Rain spirals inward. He slips, struggles away and grabs the left screen edge with both hands. 20\u201323s: He pulls the edge. The entire scene folds and flies offscreen. 23\u201326s: He climbs back over the bottom edge and lands. Show his whole body clearly. 26\u201328s: He ignites a red lightsaber, holds, then winds up. 28\u201332s: One fast diagonal strike cuts the entire picture in two. Both halves slide apart. End on black. No dialogue, captions or title card. Make every action readable before starting the next.\n\n3/ The revision pass matters. Review the actual moving preview and screenshots of each story beat. Fix unclear silhouettes, floating feet, disconnected hands and overlapping gestures. Slow down the setup, not the strike. Add synchronized rain, footsteps, freeze, suction, landing, saber ignition, hum and slash FX. Keep music behind the effects. Use only audio I supply or original synthesized sounds; don't download a commercial track. Test playback, seeking, replay and audio sync. Check the ending at full size and on a phone-sized viewport. After I approve the preview, export an H.264 MP4 with AAC stereo audio. Verify duration, resolution, audio presence and full-file decoding. Inspect frames from the exported file, then give me the download link.",
+  "prompt_text": "1/ The director + developer prompt. Use this as the agent's project instructions: You are an animation director and creative developer. Build an editable ASCII short film with HTML Canvas and a deterministic timeline. Use HyperFrames for video export. Render the scene as colored monospace characters on black, not smooth shapes with a decorative text overlay. Prioritize readable acting: anticipation, action, follow-through, then a brief pause. Keep hands attached to props and feet grounded. Use negative space. No random movement or effects that hide the action. Every frame must depend only on timeline time, so seeking reproduces the same image. Build a local player with play/pause, replay, seeking, sound and fullscreen. Show the moving draft and wait for feedback before exporting.\n\n2/ Give it a shot-by-shot story. Create a 32-second, 1920×1080 ASCII film at 30 fps. Silver hooded character, muted cyan rain, black background. Wide shots with plenty of empty space. 0–4s: He walks through heavy rain made of symbols. 4–7s: He stops and raises an open palm. Every raindrop freezes. 7–11s: He touches one drop and spins it like a tiny ringed planet. 11–15s: He pinches and pulls it. Resistance, then a harder tug. It becomes a black hole. 15–20s: Rain spirals inward. He slips, struggles away and grabs the left screen edge with both hands. 20–23s: He pulls the edge. The entire scene folds and flies offscreen. 23–26s: He climbs back over the bottom edge and lands. Show his whole body clearly. 26–28s: He ignites a red lightsaber, holds, then winds up. 28–32s: One fast diagonal strike cuts the entire picture in two. Both halves slide apart. End on black. No dialogue, captions or title card. Make every action readable before starting the next.\n\n3/ The revision pass matters. Review the actual moving preview and screenshots of each story beat. Fix unclear silhouettes, floating feet, disconnected hands and overlapping gestures. Slow down the setup, not the strike. Add synchronized rain, footsteps, freeze, suction, landing, saber ignition, hum and slash FX. Keep music behind the effects. Use only audio I supply or original synthesized sounds; don't download a commercial track. Test playback, seeking, replay and audio sync. Check the ending at full size and on a phone-sized viewport. After I approve the preview, export an H.264 MP4 with AAC stereo audio. Verify duration, resolution, audio presence and full-file decoding. Inspect frames from the exported file, then give me the download link.",
   "tags": [
    "Characters",
    "Kinetic type",
    "Shapes"
   ],
   "type": "prompt"
+ },
+ {
+  "handle": "voidJan",
+  "post_url": "https://x.com/voidJan/status/2113094026987807069",
+  "posted_date": "2026-10-22",
+  "model": "Claude + Remotion",
+  "title": "Flat to 3D Remotion video prompt",
+  "prompt_text": "Turn [this image / this theme] into a real 3D Remotion video: Use remotion/three to build a navigable three-dimensional space with a camera that can move through it, pull flat elements into depth and extrude them into volumes based on real data or meaning, have the camera push through, circle around, and traverse inside, paired with bloom lighting and flash white / whip pan transitions; put the most eye-catching, flashiest shot in the first 3 seconds; preview in Studio first, don't render.",
+  "tags": [
+   "remotion",
+   "3d",
+   "claude"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "beamnxw",
+  "post_url": "https://x.com/beamnxw/status/2113275303808160226",
+  "posted_date": "2026-10-22",
+  "model": "Claude Code + Blender MCP",
+  "title": "Blender MCP + Remotion character animation stack",
+  "prompt_text": "https://github.com/ahujasid/mcp-for-blender\nclaude mcp add blender uvx mcp-for-blender\nnpx skills add remotion-dev/skills",
+  "tags": [
+   "blender",
+   "remotion",
+   "claude-code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Davidgmi_01",
+  "post_url": "https://x.com/Davidgmi_01/status/2113555264422985810",
+  "posted_date": "2026-10-24",
+  "model": "Claude Code skill",
+  "title": "AI Film Producer skill",
+  "prompt_text": "https://github.com/Nova0x2/ai-film-producer-skill",
+  "tags": [
+   "claude-code",
+   "ad",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "bonsaixbt",
+  "post_url": "https://x.com/bonsaixbt/status/2113751074414744061",
+  "posted_date": "2026-10-24",
+  "model": "Claude Opus 5.5 + Remotion",
+  "title": "Official Remotion agent skills",
+  "prompt_text": "npx skills add remotion-dev/skills",
+  "tags": [
+   "remotion",
+   "claude",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "SeeratFatima112",
+  "post_url": "https://x.com/SeeratFatima112/status/2113531493956083890",
+  "posted_date": "2026-10-23",
+  "model": "Seedance 2.5",
+  "title": "Rooftop aerial kick fight scene",
+  "prompt_text": "A highly realistic cinematic rooftop fight scene at dusk, featuring a skilled female fighter wearing a beige fitted blazer, dark brown cargo pants, and black boots. She performs a powerful sideways aerial kick while balancing momentarily on a metal staircase railing, her body suspended horizontally in midair. Her long dark hair flows naturally with the motion as she launches a precise kick toward a male opponent dressed in black tactical clothing. The opponent loses balance and falls backward from the impact. The scene takes place on an old urban rooftop with metal staircases, rusty railings, concrete walls, and distant city buildings beneath a clear blue evening sky. Dynamic low-angle camera movement, dramatic slow motion during the aerial kick, realistic body physics, natural hair and fabric movement, detailed facial features, cinematic lighting, subtle motion blur, realistic shadows, professional action-movie choreography, smooth camera tracking, shallow depth of field, 4K ultra-realistic quality, vertical 9:16 composition. Negative Prompt: Cartoon, anime, unrealistic physics, distorted body, extra limbs, deformed hands, floating objects, unnatural movements, flickering, duplicate characters, blurry faces, low quality, text, logos, watermarks. Suggested duration: 6-8 seconds. Camera movement: Start with a low-angle tracking shot, follow the female fighter's aerial kick in slow motion, then smoothly pan toward the opponent as he falls backward.",
+  "tags": [
+   "seedance",
+   "action",
+   "cinematic"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2113660899575672936",
+  "posted_date": "2026-10-23",
+  "model": "Claude Code",
+  "title": "5 GitHub repos for Claude Code video editing",
+  "prompt_text": "https://github.com/kingbootoshi/video-alchemy\nhttps://github.com/imtamiliniyan/claude-video-skills\nhttps://github.com/vyn-store/claude-code-video-editing\nhttps://github.com/ElSalvatore-sy/video-editor-plugin\nhttps://github.com/remotion-dev/remotion",
+  "tags": [
+   "claude",
+   "remotion",
+   "repos"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "apimasteratai",
+  "post_url": "https://x.com/apimasteratai/status/2113845575003320356",
+  "posted_date": "2026-10-24",
+  "model": "Kimi K3.1 Pro",
+  "title": "15-second motion-graphics showreel prompt",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.",
+  "tags": [
+   "motion-graphics"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "Bic_Revelation",
+  "post_url": "https://x.com/Bic_Revelation/status/2113819330047615445",
+  "posted_date": "2026-10-24",
+  "model": "Remotion + Claude Code",
+  "title": "Remotion SaaS promo production brief",
+  "prompt_text": "Create a 30-second promotional video for a SaaS product. Use a 1920×1080 composition at 30 FPS. Keep the visual identity consistent across all scenes. Use three sections: problem, product demonstration, and final offer. Animate headlines with controlled entrances. Use the supplied product screenshots and official brand assets. Keep all prices, statistics, and text in a separate configuration file so they can be updated without rewriting the animation. Create a preview before final rendering.",
+  "tags": [
+   "remotion",
+   "claude-code",
+   "promo"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "Kizuno18",
+  "post_url": "https://x.com/Kizuno18/status/2113859711699140720",
+  "posted_date": "2026-10-24",
+  "model": "Remotion",
+  "title": "Remotion official agent skills",
+  "prompt_text": "npx remotion skills add",
+  "tags": [
+   "remotion",
+   "agent-skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "troquelai",
+  "post_url": "https://x.com/troquelai/status/2113158307049254968",
+  "posted_date": "2026-10-22",
+  "model": "Topview T1",
+  "title": "Samurai Cat vs. Husky kung fu battle",
+  "prompt_text": "Cinematic AI Video Prompt: Samurai Cat vs. Husky — Epic Kung Fu Dance Battle",
+  "tags": [
+   "Characters"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "ZoyaAi_",
+  "post_url": "https://x.com/ZoyaAi_/status/2113998714842779948",
+  "posted_date": "2026-10-24",
+  "model": "Seedance 2.5",
+  "title": "Medieval kitchen dragon-cooking fantasy",
+  "prompt_text": "Create a 30-second ultra-realistic cinematic fantasy video set in a rustic medieval village kitchen, featuring a young blonde woman with braided hair, wearing a cream blouse and a dark brown apron, alongside a magnificent white dragon with pale pink spikes, glowing amber eyes, and highly detailed scales. Scene 1 (0–5 seconds): A wide establishing shot of the woman preparing food at a rustic wooden table outside a medieval cottage. A giant white dragon slowly approaches her from behind, curiously observing the food. Warm golden sunlight streams through the village, creating a magical atmosphere. Scene 2 (5–10 seconds): Close-up of the dragon's glowing amber eye as it opens its mouth and breathes a powerful burst of fire toward the cooking area. The woman reacts with shock and quickly moves away from the flames. Sparks, smoke, and realistic fire effects fill the scene. Scene 3 (10–15 seconds): The woman uses a metal pan to control the cooking fire while the dragon watches with curiosity. Smoke rises dramatically as the dragon lowers its enormous head beside her, creating a funny yet cinematic moment. Scene 4 (15–20 seconds): Inside a cozy medieval kitchen illuminated by flickering candlelight, the woman carefully prepares a piece of roasted meat on a wooden table. The giant white dragon rests its head beside her, watching every movement with intense curiosity. Use intimate close-ups and warm amber lighting. Scene 5 (20–25 seconds): The woman holds a small flame near the dragon's snout. Capture an extreme close-up of its beautiful golden eye reflecting the firelight. She tastes the freshly cooked meat, smiles, and gestures approvingly toward the dragon. Scene 6 (25–30 seconds): The woman and the dragon share a playful, heartwarming moment beside the dinner table. The dragon gently lowers its enormous head toward her while she continues eating. End with a wide cinematic shot of the medieval kitchen, warm candlelight, rustic wooden furniture, and the dragon curling around the room. Visual Style: Photorealistic fantasy, Hollywood-level CGI, cinematic composition, realistic dragon anatomy, highly detailed skin and scales, natural facial expressions, physically accurate fire and smoke, volumetric lighting, shallow depth of field, smooth camera movements, dramatic close-ups, warm golden color grading, realistic textures, 4K quality. Camera: Smooth tracking shots, wide establishing shots, extreme close-ups, slow cinematic push-ins, and seamless transitions. Audio: Natural kitchen ambience, crackling fire, subtle dragon breathing and growls, sizzling meat, and cinematic fantasy background music. Format: 16:9 widescreen, 30 seconds, 24 FPS, consistent character design, consistent dragon appearance, no text, no subtitles, no logos, no watermarks.",
+  "tags": [
+   "Characters",
+   "Cinematic"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "CaptainHaHaa",
+  "post_url": "https://x.com/CaptainHaHaa/status/2113996000029507971",
+  "posted_date": "2026-10-24",
+  "model": "Kling 4.0",
+  "title": "Camcorder-footage colossal creature rampage",
+  "prompt_text": "Kling 4.0 Prompt Image to video\n30-second terrifying amateur camcorder recording of a colossal creature rampaging through the city district in the supplied reference. Preserve the dusty brick main street, vintage parked cars, blue pickup truck, storefronts and water tower.Match the creature exactly: enormous ridged head, gaping toothed mouth, hanging facial tentacles, hooked claws and vast ragged wings. Maintain its immense scale relative to the buildings. One continuous handheld recording from street level. The unseen camera operator is frightened but keeps trying to capture what's happening. No additional visible people or creatures.\nCAMCORDER LOOK: Weathered consumer videotape footage: muted brown colours, blown-out dusty skies, colour bleed, interlacing, mild tracking distortion and imperfect autofocus. Sudden zooms amplify hand tremor. Exposure struggles when dust fills the frame. Keep the monster readable between disturbances.\n[00:00–00:06] Begin with the reference street composition, already trembling slightly in the operator's hands.The creature takes an immense step towards the street, shoulders rolling and facial tentacles swinging with its momentum. Dust erupts around its feet. The operator hurriedly zooms towards its face, overshoots, then widens enough to recover its head and wings.The monster lifts its head and releases a deep, ragged roar. The recording microphone distorts at the peak.\n[00:06–00:13] The creature drives one clawed forelimb through the corner of a brick building. The wall buckles at the impact point, then masonry and roof timbers tumble into the street.The operator flinches, briefly pointing at the road before snapping back towards the destruction. Autofocus catches airborne dust, then finds the creature again.Its torn wings begin opening, scraping roof edges and pulling loose signs from their brackets.\n[00:13–00:20] A massive wingbeat sends a pressure wave down the street. Dust, paper and loose debris race towards the camera. Shop awnings thrash, parked vehicles rock on their suspensions and a storefront window shatters.The operator retreats towards the blue pickup, camera bouncing with hurried backward steps. The truck's bonnet enters the foreground as the operator crouches behind it.Peer over the bonnet to reveal the monster still advancing through the haze, each footfall shaking the image.\n[ 00:20–00:26] From behind the pickup, the operator attempts another shaky zoom. The creature turns its head towards the camera's position. Its tentacles curl and spread around its open mouth. It shoves against the nearby water tower. Metal supports bend, the tank tilts and a torrent of water pours across the rooftops as the structure collapses behind it.The camera jerks sideways at the crash, then finds the monster's silhouette looming through water spray and dust.\n[00:26–00:30] The creature surges forward, lowering its head into the street.The operator abandons the shot and runs. The camera whips towards the pavement, catching blurred glimpses of kerb, truck tyres and shopfronts. Heavy footsteps and panicked breathing dominate the recording. One final involuntary glance backwards catches its enormous wing sweeping across the dusty sky. Abrupt tape breakup, then cut to black.\nMOVEMENT AND PHYSICS: Give the creature tremendous weight: deliberate foot placement, shifting shoulders, heavy wing membranes and tentacles that lag behind head movements. Buildings break only where struck, with debris falling naturally. Maintain the street layout and accumulating damage throughout the continuous take.\nSOUND: Full camcorder audio: deep ground-shaking footsteps, layered animalistic roars, tearing metal, cracking masonry, falling bricks, shattering glass, wing buffets, rushing water and distant emergency sirens.Include microphone wind distortion during the pressure wave, handling bumps, the operator's breathing and shoes scraping the pavement. Loud impacts briefly overload the microphone. No intelligible dialogue. No music The raw recorded destruction carries the entire scene.",
+  "tags": [
+   "Cinematic",
+   "Characters"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "program_es",
+  "post_url": "https://x.com/program_es/status/2114015470747546108",
+  "posted_date": "2026-10-24",
+  "model": "Claude Code + Remotion",
+  "title": "Fragua: Claude Code skill for vertical video editing",
+  "prompt_text": "https://github.com/pedrovelasquez9/fragua",
+  "tags": [
+   "remotion",
+   "claude-code",
+   "ffmpeg"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "guilhermebrasil",
+  "post_url": "https://x.com/guilhermebrasil/status/2114026094764720587",
+  "posted_date": "2026-10-24",
+  "model": "Claude Code + ffmpeg",
+  "title": "ffmpeg-skill: Claude video editing skill",
+  "prompt_text": "https://github.com/kajisho5/ffmpeg-skill",
+  "tags": [
+   "claude-code",
+   "ffmpeg",
+   "video-editing"
+  ],
+  "type": "skill"
  }
 ]
