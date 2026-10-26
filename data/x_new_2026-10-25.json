@@ -173,5 +173,21 @@
    "skill"
   ],
   "type": "skill"
+ },
+ {
+  "handle": "chasen_liao",
+  "post_url": "https://x.com/chasen_liao/status/2114177604987355581",
+  "posted_date": "2026-10-25",
+  "model": "Claude Code / Codex + Remotion",
+  "title": "video-shotcraft: agent skill for cinematic product videos with Remotion",
+  "prompt_text": "https://github.com/Vincentwei1021/video-shotcraft",
+  "skill": "https://github.com/Vincentwei1021/video-shotcraft",
+  "repo": "https://github.com/Vincentwei1021/video-shotcraft",
+  "tags": [
+   "Product UI",
+   "Remotion",
+   "skill"
+  ],
+  "type": "skill"
  }
 ]
