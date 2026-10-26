@@ -233,5 +233,52 @@
    "Motion Graphics"
   ],
   "type": "skill"
+ },
+ {
+  "handle": "Manojkumar2257",
+  "post_url": "https://x.com/Manojkumar2257/status/2114546497228546331",
+  "posted_date": "2026-10-26",
+  "model": "Claude Code + Codex + Remotion",
+  "title": "Remotion official Agent Skills: create, markup, captions, maps, studio, render",
+  "prompt_text": "npx skills add remotion-dev/skills",
+  "skill": "npx skills add remotion-dev/skills",
+  "tags": [
+   "remotion",
+   "claude-code",
+   "codex",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "XunDavid80270",
+  "post_url": "https://x.com/XunDavid80270/status/2114547971329061025",
+  "posted_date": "2026-10-26",
+  "model": "Seedance / Jimeng / Kling / Veo",
+  "title": "Per-second AI video storyboard system prompt (character card, timeline, 10s draft)",
+  "prompt_text": "AI Video Prompt\n\nCreate a 30-second ultra-realistic cinematic fantasy video set in a rustic medieval village kitchen, featuring a young blonde woman with braided hair, wearing a cream blouse and a dark brown apron, alongside a magnificent white dragon with pale pink spikes, glowing amber eyes, and highly detailed scales.\n\nScene 1 (0–5 seconds): A wide establishing shot of the woman preparing food at a rustic wooden table outside a medieval cottage. A giant white dragon slowly approaches her from behind, curiously observing the food. Warm golden sunlight streams through the village, creating a magical atmosphere.\n\nScene 2 (5–10 seconds): Close-up of the dragon's glowing amber eye as it opens its mouth and breathes a powerful burst of fire toward the cooking area. The woman reacts with shock and quickly moves away from the flames. Sparks, smoke, and realistic fire effects fill the scene.\n\nScene 3 (10–15 seconds): The woman uses a metal pan to control the cooking fire while the dragon watches with curiosity. Smoke rises dramatically as the dragon lowers its enormous head beside her, creating a funny yet cinematic moment.\n\nScene 4 (15–20 seconds): Inside a cozy medieval kitchen illuminated by flickering candlelight, the woman carefully prepares a piece of roasted meat on a wooden table. The giant white dragon rests its head beside her, watching every movement with intense curiosity. Use intimate close-ups and warm amber lighting.\n\nScene 5 (20–25 seconds): The woman holds a small flame near the dragon's snout. Capture an extreme close-up of its beautiful golden eye reflecting the firelight. She tastes the freshly cooked meat, smiles, and gestures approvingly toward the dragon.\n\nScene 6 (25–30 seconds): The woman and the dragon share a playful, heartwarming moment beside the dinner table. The dragon gently lowers its enormous head toward her while she continues eating. End with a wide cinematic shot of the medieval kitchen, warm candlelight, rustic wooden furniture, and the dragon curling around the room.\n\nVisual Style: Photorealistic fantasy, Hollywood-level CGI, cinematic composition, realistic dragon anatomy, highly detailed skin and scales, natural facial expressions, physically accurate fire and smoke, volumetric lighting, shallow depth of field, smooth camera movements, dramatic close-ups, warm golden color grading, realistic textures, 4K quality.\n\nCamera: Smooth tracking shots, wide establishing shots, extreme close-ups, slow cinematic push-ins, and seamless transitions.\n\nAudio: Natural kitchen ambience, crackling fire, subtle dragon breathing and growls, sizzling meat, and cinematic fantasy background music.\n\nFormat: 16:9 widescreen, 30 seconds, 24 FPS, consistent character design, consistent dragon appearance, no text, no subtitles, no logos, no watermarks.",
+  "tags": [
+   "Storyboard",
+   "Framework",
+   "Seedance",
+   "Template"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "mr_spyboy",
+  "post_url": "https://x.com/mr_spyboy/status/2114545019621450099",
+  "posted_date": "2026-10-26",
+  "model": "OpenAI-compatible API",
+  "title": "Infinite Canvas: open-source canvas for AI images, video and a prompt library",
+  "prompt_text": "https://github.com/basketikun/infinite-canvas",
+  "skill": "https://github.com/basketikun/infinite-canvas",
+  "tags": [
+   "open-source",
+   "prompt-library",
+   "video-generation",
+   "repo"
+  ],
+  "type": "skill"
  }
 ]
