@@ -7792,5 +7792,51 @@
   "duration": 20.053,
   "w": 1080,
   "h": 1334
+ },
+ {
+  "handle": "arctic_hare_",
+  "post_url": "https://x.com/arctic_hare_/status/2114886437141348479",
+  "posted_date": "2026-10-27",
+  "model": "Claude Code",
+  "title": "30-second studio showreel in Remotion",
+  "prompt_text": "Make a short video analyze my studio, no voice-over, just music, boiled down to a general description of a studio that makes apps born from everyday-life ideas. Don't name the apps, only the studio's name. Style: bold geometric animations, stunning fluid visuals, futuristic animated dashboards, smooth cinematic transitions, a Claude-inspired motion design reel.Build a 30-second motion design showreel as code (Remotion + React, TypeScript), rendered to MP4 at 1920\u00d71080, 60fps, with a music track synced at 128 BPM. Theme: \"ARCTIC HARE STUDIO\", a showreel for the studio. Every scene must feel hand-animated: real easing, squash & stretch, overshoot, motion blur on fast moves \u2014 no linear tweens. Make the dynamic 30-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. Go all out.",
+  "skill": "git clone https://github.com/lemomo-ai/lemo-opuscar.git && cd lemo-opuscar && claude",
+  "repo": "https://github.com/lemomo-ai/lemo-opuscar",
+  "tags": [
+   "Code",
+   "Product UI",
+   "Kinetic type"
+  ],
+  "type": "prompt",
+  "id": "arctic-hare-5a3895",
+  "image_url": "",
+  "likes": 1,
+  "display_name": "Arctic Hare Studio",
+  "added": "2026-10-27",
+  "source": "x"
+ },
+ {
+  "handle": "OlatundeAI",
+  "post_url": "https://x.com/OlatundeAI/status/2114797143789634010",
+  "posted_date": "2026-10-27",
+  "model": "Veo 3",
+  "title": "2D documentary-cartoon animation style",
+  "prompt_text": "Stylized 2D animation still frame in the style of a modern documentary cartoon, clean flat colors with soft cel shading, expressive character design, cinematic framing.",
+  "tags": [
+   "Characters"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "olatundeai-c97f07",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2114796810648580096/img/wolldSBezUUQZODa.jpg",
+  "likes": 39,
+  "display_name": "Olatunde AI",
+  "added": "2026-10-26",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2114796810648580096/vid/avc1/640x360/vyqvrdd9aB_ysz-v.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2114796810648580096/vid/avc1/1280x720/dYrKnoFSzZ2LbQA-.mp4?tag=29",
+  "duration": 8,
+  "w": 1280,
+  "h": 720
  }
 ]
