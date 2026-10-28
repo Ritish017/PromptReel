@@ -1,0 +1,43 @@
+[
+ {
+  "handle": "SeeratFatima112",
+  "post_url": "https://x.com/SeeratFatima112/status/2114914501858574592",
+  "posted_date": "2026-10-27",
+  "model": "Seedance 2.5",
+  "title": "Mother and baby white dragon: cinematic 3D fantasy (Seedance 2.5)",
+  "prompt_text": "Create a beautiful, cinematic 3D animated fantasy story about courage, love, and protection. A majestic white dragon with elegant curved horns, shimmering white scales, expressive eyes, and enormous translucent wings stands protectively behind its adorable baby dragon. The baby dragon has soft white scales, tiny wings, big innocent eyes, and a cute, curious expression. They are standing together in a magical forest surrounded by lush green plants, red berries, colorful flowers, and distant mountains under a bright blue sky. Warm golden sunlight shines through the dragon's wings, creating a magical glow and soft cinematic shadows. Scene & Animation: The baby dragon looks around curiously, then steps closer to its mother. Suddenly, a mysterious sound comes from the forest. The baby dragon becomes frightened, and the adult dragon gently lowers its head toward the baby before spreading its enormous wings protectively. The baby dragon gains confidence and stands proudly beside its mother. End with both dragons looking toward the horizon as the sunlight illuminates their beautiful wings. Visual Style: Ultra-realistic 3D animation, high-quality Pixar-inspired fantasy aesthetic, detailed scales and feathers, soft natural lighting, realistic wing movement, expressive facial animation, cinematic depth of field, smooth character movements, vibrant colors, emotional storytelling, 4K quality. Camera Movement: Begin with a wide establishing shot of the magical forest, slowly dolly toward the two dragons, capture close-ups of their expressive faces, then gently pull back to reveal the adult dragon's enormous outstretched wings. Format: Vertical 9:16, smooth cinematic motion, consistent character designs, professional animated film quality, no flickering, no distorted anatomy, no extra limbs, no watermark, no subtitles, no on-screen text.",
+  "tags": [
+   "fantasy",
+   "3d",
+   "character"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "janm_uiux",
+  "post_url": "https://x.com/janm_uiux/status/2115123458308747290",
+  "posted_date": "2026-10-28",
+  "model": "",
+  "title": "Brand motion-graphics showreel in 15 seconds",
+  "prompt_text": "For this brand - enter your BRAND Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out. Use the information and visual language from the website above.",
+  "tags": [
+   "motion graphics",
+   "branding"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "le0xet",
+  "post_url": "https://x.com/le0xet/status/2115184381228920928",
+  "posted_date": "2026-10-28",
+  "model": "Claude Opus 5.5",
+  "title": "Blender MCP + Remotion animation studio stack",
+  "prompt_text": "claude mcp add blender uvx mcp-for-blender\nuvx mcp-for-blender install-addon\nRepo: https://github.com/ahujasid/mcp-for-blender\nRemotion skills: https://remotion.dev/docs/ai/skills",
+  "tags": [
+   "blender",
+   "remotion",
+   "claude code"
+  ],
+  "type": "skill"
+ }
+]

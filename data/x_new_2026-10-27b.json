@@ -1,0 +1,48 @@
+[
+ {
+  "handle": "SeeratFatima112",
+  "post_url": "https://x.com/SeeratFatima112/status/2114914501858574592",
+  "posted_date": "2026-10-27",
+  "model": "Seedance 2.5 (implied by parent post; no model named in prompt post itself)",
+  "title": "AI Video Prompt: cinematic 3D animated fantasy story \u2014 mother and baby white dragon",
+  "prompt_text": "AI Video Prompt:\n\nCreate a beautiful, cinematic 3D animated fantasy story about courage, love, and protection. A majestic white dragon with elegant curved horns, shimmering white scales, expressive eyes, and enormous translucent wings stands protectively behind its adorable baby dragon. The baby dragon has soft white scales, tiny wings, big innocent eyes, and a cute, curious expression. They are standing together in a magical forest surrounded by lush green plants, red berries, colorful flowers, and distant mountains under a bright blue sky. Warm golden sunlight shines through the dragon's wings, creating a magical glow and soft cinematic shadows. Scene & Animation: The baby dragon looks around curiously, then steps closer to its mother. Suddenly, a mysterious sound comes from the forest. The baby dragon becomes frightened, and the adult dragon gently lowers its head toward the baby before spreading its enormous wings protectively. The baby dragon gains confidence and stands proudly beside its mother. End with both dragons looking toward the horizon as the sunlight illuminates their beautiful wings. Visual Style: Ultra-realistic 3D animation, high-quality Pixar-inspired fantasy aesthetic, detailed scales and feathers, soft natural lighting, realistic wing movement, expressive facial animation, cinematic depth of field, smooth character movements, vibrant colors, emotional storytelling, 4K quality. Camera Movement: Begin with a wide establishing shot of the magical forest, slowly dolly toward the two dragons, capture close-ups of their expressive faces, then gently pull back to reveal the adult dragon's enormous outstretched wings. Format: Vertical 9:16, smooth cinematic motion, consistent character designs, professional animated film quality, no flickering, no distorted anatomy, no extra limbs, no watermark, no subtitles, no on-screen text.",
+  "tags": [
+   "Seedance 2.5",
+   "3D animation",
+   "fantasy",
+   "dragon",
+   "cinematic",
+   "vertical 9:16"
+  ],
+  "type": "ai_video_prompt"
+ },
+ {
+  "handle": "AiWithSaira",
+  "post_url": "https://x.com/AiWithSaira/status/2114918816178381014",
+  "parent_video_post_url": "https://x.com/AiWithSaira/status/2114918398068973737",
+  "posted_date": "2026-10-27",
+  "posted_at_local": "08:45 IST Oct 27, 2026",
+  "model": "Seedance 2.5 (via Higgsfield)",
+  "title": "Life With Dragon Ep 02 \u2014 photorealistic medieval fantasy, heroine + young dragon",
+  "type": "full_prompt",
+  "engagement": {
+   "views": 66,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "parent_video_views": 372,
+   "parent_video_likes": 8,
+   "parent_video_replies": 7
+  },
+  "prompt_text_exact": "Photorealistic medieval fantasy film. Warm golden-hour sunlight, green countryside meadow, stone cottage in the distance, old wooden table with an antique oval silver mirror, wooden bowl, hairbrush and scissors. Playful young dragon with pale pink-white scales, pink spines and frills, curved brown horns and golden slit eyes. Heroine in her early 20s with dark brown hair, cream linen blouse and olive leather vest. Realistic hair and fabric physics, natural skin and scale textures. 0-5s: Heroine snips a lock off her ponytail with scissors, annoyed. Dragon's horn and tongue sneak into frame. She smirks: \"Fine! Take it, you big baby!\" Macro shot: the dark lock of hair is tied around the dragon's horn, glowing in the sunlight. 5-10s: Now with a short bob, she sits at the table. Dragon leans in curiously. She squeezes her eyes shut and winces. Extreme close-up: dragon's golden eye blinks slowly, with a sly smirk. 10-17s: She pins hair rollers into her hair while dragon watches, then dozes off. Macro: wooden rollers wrapped in dark hair, sunlight rim-lighting her smile. She whispers: \"Hold still, this takes time.\" 17-23s: She removes the rollers, soft curls fall. She touches her cheeks in disbelief: \"Wow... is this really me?\" Dragon opens one eye, proud and amused. 23-30s: She twirls across the meadow, curls bouncing in the breeze. She hugs dragon's snout, and dragon closes its eyes happily. Wide sunset shot: dragon sleeping in front of the stone cottage, warm and healing. Cinematic anamorphic lighting, shallow depth of field, detailed scales, expressive acting, consistent characters in every shot. No subtitles, narration, logos or watermark.",
+  "tags": [
+   "seedance-2.5",
+   "higgsfield",
+   "medieval-fantasy",
+   "dragon",
+   "character-animation",
+   "shot-by-shot",
+   "30s"
+  ]
+ }
+]

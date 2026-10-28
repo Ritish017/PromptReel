@@ -1,2 +1,44 @@
-[{"handle":"arctic_hare_","post_url":"https://x.com/arctic_hare_/status/2114886437141348479","posted_date":"2026-10-27","model":"Claude Code","title":"30-second studio showreel in Remotion","prompt_text":"Make a short video analyze my studio, no voice-over, just music, boiled down to a general description of a studio that makes apps born from everyday-life ideas. Don't name the apps, only the studio's name. Style: bold geometric animations, stunning fluid visuals, futuristic animated dashboards, smooth cinematic transitions, a Claude-inspired motion design reel.Build a 30-second motion design showreel as code (Remotion + React, TypeScript), rendered to MP4 at 1920×1080, 60fps, with a music track synced at 128 BPM. Theme: \"ARCTIC HARE STUDIO\", a showreel for the studio. Every scene must feel hand-animated: real easing, squash & stretch, overshoot, motion blur on fast moves — no linear tweens. Make the dynamic 30-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out.","skill":"git clone https://github.com/lemomo-ai/lemo-opuscar.git && cd lemo-opuscar && claude","repo":"https://github.com/lemomo-ai/lemo-opuscar","tags":["Code","Product UI","Kinetic type"],"type":"prompt"},
-{"handle":"OlatundeAI","post_url":"https://x.com/OlatundeAI/status/2114797143789634010","posted_date":"2026-10-27","model":"Veo 3","title":"2D documentary-cartoon animation style","prompt_text":"Stylized 2D animation still frame in the style of a modern documentary cartoon, clean flat colors with soft cel shading, expressive character design, cinematic framing.","tags":["Characters"],"type":"prompt"}]
+[
+ {
+  "handle": "Manojkumar2257",
+  "post_url": "https://github.com/DojoCodingLabs/remotion-superpowers",
+  "posted_date": "2026-10-27",
+  "model": "Claude Code",
+  "title": "Remotion Superpowers: video studio plugin for Claude Code",
+  "prompt_text": "/plugin marketplace add DojoCodingLabs/remotion-superpowers  then /setup, /create-short, /review-video",
+  "tags": [
+   "remotion",
+   "claude-code",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "TheArthiAI",
+  "post_url": "https://github.com/EL4CTEO/blender-skills",
+  "posted_date": "2026-10-27",
+  "model": "Claude Code",
+  "title": "blender-skills: Blender 3D workflows as agent skills",
+  "prompt_text": "https://github.com/EL4CTEO/blender-skills",
+  "tags": [
+   "blender",
+   "3d",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Alin_Reaper05",
+  "post_url": "https://x.com/Alin_Reaper05/status/2115004381942718696",
+  "posted_date": "2026-10-27",
+  "model": "Kling 4.0",
+  "title": "Sci-fi exploration ship in a gas storm",
+  "prompt_text": "An exploration ship maneuvers through a vast cloud of charged gas and floating debris. Inside the cockpit, the pilot moves the controls while the captain braces against the console and an alien crew member monitors the storm. The camera moves from the crew toward the forward window, cinematic tension, realistic motion.",
+  "tags": [
+   "kling",
+   "sci-fi",
+   "cinematic"
+  ],
+  "type": "prompt"
+ }
+]

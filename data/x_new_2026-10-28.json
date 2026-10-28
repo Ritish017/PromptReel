@@ -1,0 +1,30 @@
+[
+ {
+  "handle": "sebatheepan",
+  "post_url": "https://x.com/sebatheepan/status/2115157399850176800",
+  "posted_date": "2026-10-28",
+  "model": "Seedance 2.5",
+  "title": "The Silent Storm: character reveal trailer",
+  "prompt_text": "Created a master prompt to make motion graphics with seedance 2.5 an explosive, bespoke 16:9 character reveal trailer at 24fps (15.0s) built entirely around the attached character reference image. midjourney -> character reference 15s @ 720p",
+  "tags": [
+   "seedance",
+   "higgsfield",
+   "motion-graphics"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "nisha_jhait",
+  "post_url": "https://x.com/nisha_jhait/status/2115126321370255799",
+  "posted_date": "2026-10-28",
+  "model": "Claude Opus 5.5",
+  "title": "awesome-opus5-5-videos: 700+ video projects",
+  "prompt_text": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "claude",
+   "repo",
+   "motion-graphics"
+  ],
+  "type": "skill"
+ }
+]
