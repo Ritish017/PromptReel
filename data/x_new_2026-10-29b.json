@@ -1,0 +1,41 @@
+[
+ {
+  "handle": "bonnyxen",
+  "post_url": "https://x.com/bonnyxen/status/2115588194230292890",
+  "posted_date": "2026-10-29",
+  "model": "Claude Code",
+  "title": "10 open source repos that turn Claude Code into a motion studio",
+  "prompt_text": "HyperFrames, Remotion, Remotion Skills, GSAP, anime.js, Motion, Motion Canvas, MCP for Blender, three.js, After Effects MCP. Easiest start: HyperFrames or Remotion with its skills, GSAP for easing. Prompt animation principles: anticipation before the jump, squash on landing, follow-through on the ears.",
+  "tags": [
+   "claude-code",
+   "remotion",
+   "motion-graphics"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "BasquiatAndYe",
+  "post_url": "https://x.com/BasquiatAndYe/status/2115368160215867485",
+  "posted_date": "2026-10-29",
+  "model": "Model-agnostic",
+  "title": "AI video prompt recipe: subject, action, setting, camera, light",
+  "prompt_text": "Recipe: subject + action + setting + camera + light. Example prompt: \"A ceramic cup on a rainy cafe window ledge. Steam rises. Slow push-in. Soft morning light.\" Change one detail per test.",
+  "tags": [
+   "prompt-recipe"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "nick_raddon",
+  "post_url": "https://x.com/nick_raddon/status/2115587293629305083",
+  "posted_date": "2026-10-29",
+  "model": "Claude",
+  "title": "6-second looping HTML animation with style variants",
+  "prompt_text": "make a 6 second looping animation in html with a replay button. Then add one style: maps, paper cut, blueprint, kinetic type, liquid morph (e.g. \"melt a circle into a star and back\").",
+  "tags": [
+   "motion-graphics",
+   "html"
+  ],
+  "type": "prompt"
+ }
+]

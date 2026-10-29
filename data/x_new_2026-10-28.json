@@ -26,5 +26,19 @@
    "motion-graphics"
   ],
   "type": "skill"
+ },
+ {
+  "handle": "le0xet",
+  "post_url": "https://x.com/le0xet/status/2115184381228920928",
+  "posted_date": "2026-10-28",
+  "model": "Claude Opus 5.5",
+  "title": "Opus 5.5 + Blender one-person animation studio",
+  "prompt_text": "claude mcp add blender uvx mcp-for-blender\nuvx mcp-for-blender install-addon\nStack: Opus 5.5 + Blender MCP (github.com/ahujasid/mcp-for-blender), Blender simulation, Remotion + FFmpeg. Harness: brief -> event graph -> scene -> preview -> fix -> checkpoint -> export. All event timings live in one file; after every approved change, save the editable scene.",
+  "tags": [
+   "claude-code",
+   "blender",
+   "remotion"
+  ],
+  "type": "skill"
  }
 ]

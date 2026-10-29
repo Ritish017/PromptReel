@@ -1,0 +1,29 @@
+[
+ {
+  "handle": "janm_uiux",
+  "post_url": "https://x.com/janm_uiux/status/2115123458308747290",
+  "posted_date": "2026-10-28",
+  "model": "Claude",
+  "title": "Motion designer showreel for any brand",
+  "prompt_text": "For this brand - enter your BRAND Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. Go all out. Use the information and visual language from the website above.",
+  "tags": [
+   "motion-graphics",
+   "claude"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "nisha_jhait",
+  "post_url": "https://x.com/nisha_jhait/status/2115126321370255799",
+  "posted_date": "2026-10-28",
+  "model": "Claude Opus 5.5",
+  "title": "awesome-opus5-5-videos: 700+ video projects with prompts",
+  "prompt_text": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "repo",
+   "claude",
+   "motion-graphics"
+  ],
+  "type": "skill"
+ }
+]
