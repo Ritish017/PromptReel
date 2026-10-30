@@ -1,0 +1,44 @@
+[
+ {
+  "handle": "jagu_builds",
+  "post_url": "https://x.com/jagu_builds/status/2115647509817381237",
+  "posted_date": "2026-10-29",
+  "model": "Claude Code",
+  "title": "Motion graphics is now a code problem: HyperFrames, Remotion, Anime.js",
+  "prompt_text": "npx hyperframes skills update\nnpx hyperframes render -o ad.mp4\nRepos: github.com/remotion-dev/remotion, github.com/heygen-com/hyperframes, github.com/juliangarnier/anime, github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "hyperframes",
+   "remotion",
+   "skill",
+   "claude-code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "trenchplanet",
+  "post_url": "https://x.com/trenchplanet/status/2115432279048671441",
+  "posted_date": "2026-10-28",
+  "model": "ComfyUI",
+  "title": "Mogfield: open-source Higgsfield-style film studio",
+  "prompt_text": "https://github.com/Trenchplanet/mogfield",
+  "tags": [
+   "higgsfield",
+   "comfyui",
+   "open-source"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "ayjaystyle",
+  "post_url": "https://x.com/ayjaystyle/status/2115425113109659923",
+  "posted_date": "2026-10-28",
+  "model": "GPT 6.1",
+  "title": "Codex 30-sec motion graphics showreel",
+  "prompt_text": "create a 30-sec motion graphics showreel showcasing your skills as a motion designer. go all out",
+  "tags": [
+   "motion-graphics",
+   "codex"
+  ],
+  "type": "prompt"
+ }
+]

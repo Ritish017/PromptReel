@@ -1,0 +1,46 @@
+[
+ {
+  "handle": "Arzoo12sh",
+  "post_url": "https://x.com/Arzoo12sh/status/2115760512667619418",
+  "posted_date": "2026-10-29",
+  "model": "Seedance 2.5",
+  "title": "30-second cinematic wildlife adventure: girl and lion in golden-hour forest",
+  "prompt_text": "**AI Video Prompt \u2014 Seedance 2.5 | 30 Seconds | Cinematic 16:9** Create a 30-second ultra-realistic cinematic wildlife adventure film set in a lush, mysterious forest during golden hour. The main character is a young Asian girl with straight black hair, wearing a beige outdoor vest and earthy green adventure clothing. Maintain the same character appearance throughout every scene. **Scene 1 (0\u20134 seconds):** Close-up of the girl's hand gently touching crystal-clear water in a shallow forest stream. Sunlight reflects on the ripples, with soft cinematic depth of field and natural water sounds. **Scene 2 (4\u20138 seconds):** A curious lion cub approaches the girl's hand beside the stream. She carefully offers a small object while the cub sniffs it. Detailed fur, realistic animal movement, lush ferns and moss-covered rocks. **Scene 3 (8\u201313 seconds):** Close-up portrait of the lion cub looking directly into the camera. Transition to the girl's hands holding a transparent handled water container in warm orange sunlight, followed by a cooler green forest lighting variation. **Scene 4 (13\u201319 seconds):** Wide cinematic tracking shot through a dense forest. The girl walks carefully between towering trees, ferns, and mossy rocks as the light fades into a dramatic forest atmosphere. **Scene 5 (19\u201324 seconds):** The girl stands in a forest clearing at sunset beside a majestic adult male lion with a full golden mane. A wild boar moves naturally in the background. The girl and lion share a calm, magical moment. **Scene 6 (24\u201330 seconds):** Emotional close-up of the girl facing the lion. She gently places her hand on its mane while the lion calmly looks at her. Warm golden sunlight illuminates their faces, creating a beautiful and powerful wildlife connection. End with a cinematic close-up of both faces. **Visual Style:** Photorealistic wildlife cinematography, premium nature documentary quality, realistic animal anatomy and behavior, natural skin texture, detailed fur, volumetric sun rays, shallow depth of field, smooth camera movements, cinematic color grading, subtle film grain, realistic lighting, emotional storytelling, 4K detail. **Audio:** Natural forest ambience, flowing water, soft birdsong, gentle cinematic orchestral music that builds emotionally toward the final scene. **Continuity:** Keep the same girl's face, hairstyle, clothing, and age consistent across all shots. Maintain consistent lion appearance and realistic scale. Smooth transitions between scenes, no sudden character changes. **Negative Prompt:** Cartoon, animation, distorted faces, extra fingers, deformed animals, unrealistic lion anatomy, flickering, abrupt transitions, blurry footage, text, subtitles, logos, watermarks. **Format:** 16:9 landscape, 30 seconds, 24 fps, cinematic realism.",
+  "tags": [
+   "seedance",
+   "cinematic",
+   "wildlife"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "pratoshdwivedi",
+  "post_url": "https://x.com/pratoshdwivedi/status/2115890964501856603",
+  "posted_date": "2026-10-29",
+  "model": "Claude Code",
+  "title": "vvv: editable Remotion templates + skill for Claude Code",
+  "prompt_text": "/plugin install vvv --marketplace actionow-ai/vvv",
+  "tags": [
+   "remotion",
+   "skill",
+   "claude-code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "spuicey",
+  "post_url": "https://x.com/spuicey/status/2115925730685063540",
+  "posted_date": "2026-10-30",
+  "model": "Claude Code / Codex",
+  "title": "Loopcut: 3D toolbox plugin for AI agents (text to animation)",
+  "prompt_text": "Add the Loopcut plugin from https://loopcut.org.",
+  "tags": [
+   "claude-code",
+   "codex",
+   "3d",
+   "animation",
+   "skill"
+  ],
+  "type": "skill"
+ }
+]

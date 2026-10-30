@@ -7990,5 +7990,81 @@
   "duration": 0,
   "w": 640,
   "h": 360
+ },
+ {
+  "handle": "zer0point_eth",
+  "post_url": "https://x.com/zer0point_eth/status/2115807487911661886",
+  "posted_date": "2026-10-29",
+  "model": "Claude Opus 5.5",
+  "title": "Claude Opus 5.5 coded a full 3D cinematic movie inside Blender from one prompt",
+  "prompt_text": "Make a one-minute video about the Dodaios mascot (image attached). Research the Dodaios story yourself and tell it. Recreate the mascot from the image and animate it yourself. Build everything from scratch: no skills, no Remotion, no templates. Render 3D objects: terminals, nature, whatever fits, and make it as good as you can. I don't want any text, just animation, and I mean a real video, not just motion graphics. Think of crazy ideas I would never come up with, and make every scene look phenomenal: clean and detailed. I want people to watch it and think \"yo, this is crazy, how did AI make this?\" You can take inspiration from things online, but don't copy anything. Invent your own stuff. For the sound, no sounds made in code. Only use free, professional sounds and assets from online. Make it satisfying and high quality. Don't create slop, I want to see art and creativity. No fonts, no text, only clean animations of the Dodaios mascot. ultracode",
+  "tags": [
+   "3D",
+   "Characters"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "zer0point-eth-6fa640",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2115807387449769984/img/DgEOhlCPadav3J3Z.jpg",
+  "likes": 47,
+  "display_name": "Zero",
+  "added": "2026-10-29",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2115807387449769984/vid/avc1/640x360/qxNuHbR-fJnbHZvh.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2115807387449769984/vid/avc1/1280x720/IFf-OdjlHOT4C-nl.mp4?tag=29",
+  "duration": 60.053,
+  "w": 1920,
+  "h": 1080
+ },
+ {
+  "handle": "leo114119",
+  "post_url": "https://x.com/leo114119/status/2115823149849714738",
+  "posted_date": "2026-10-29",
+  "model": "Gemini 4 Carbon vs Claude Opus 5.5",
+  "title": "Gemini 4 vs Opus 5.5: 15-second motion graphics showreel",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it\u2019s your showreel for a r\u00e9sum\u00e9. go all out",
+  "tags": [
+   "Kinetic type",
+   "Product UI",
+   "Shapes"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "leo114119-8fbd31",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2115822951257808896/img/Y-JnZ6gRcdarxhgz.jpg",
+  "likes": 29,
+  "display_name": "Leo \u00b7 Building w/ AI",
+  "added": "2026-10-29",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2115822951257808896/vid/avc1/640x360/jzoTh0rHqHuksmvR.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2115822951257808896/vid/avc1/1280x720/3hIn1NJ3MlR_kGo_.mp4?tag=29",
+  "duration": 14.933,
+  "w": 2048,
+  "h": 1152
+ },
+ {
+  "handle": "nateherk",
+  "post_url": "https://x.com/nateherk/status/2115963759906709829",
+  "posted_date": "2026-10-30",
+  "model": "Claude Code (Sonnet 5.5 vs Opus 5.5)",
+  "title": "Claude Code redesigns a hideous coffee shop site 100 times in a row",
+  "prompt_text": "look at the site, innovate, make one bold change, use any tool you have, and ship something every round.",
+  "tags": [
+   "Product UI",
+   "Code"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "nateherk-ee6d55",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2115963520005099520/img/Megf3rt_sL5klxq7.jpg",
+  "likes": 26,
+  "display_name": "Nate Herk",
+  "added": "2026-10-30",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2115963520005099520/vid/avc1/640x360/ASAE8E89rvp5Swnp.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2115963520005099520/vid/avc1/1280x720/T3E6AAp5EgA936vp.mp4?tag=29",
+  "duration": 131.266,
+  "w": 1920,
+  "h": 1080
  }
 ]
