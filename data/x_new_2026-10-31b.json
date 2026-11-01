@@ -1,0 +1,53 @@
+[
+ {
+  "handle": "JohnSmith5912",
+  "post_url": "https://x.com/JohnSmith5912/status/2115736986170655086",
+  "posted_date": "2026-10-29",
+  "model": "Sora / Runway Gen-2 / Pika / Veo (generic \u2014 author lists multiple)",
+  "title": "Custom AI video and image generation prompts for a close-up portrait clip",
+  "prompt_text": "A vertical, high-definition cinematic close-up video of a young woman with long blonde hair, delicate freckles, and soft green eyes. She starts with her eyes closed, then opens them slowly, looking directly at the camera with a soft expression and playfully licking her lips. Bright outdoor natural lighting with a soft green foliage background, hyper-realistic skin texture and smooth motion, 4k resolution.",
+  "tags": [
+   "ai-video-prompt",
+   "portrait",
+   "cinematic",
+   "sora",
+   "runway-gen2",
+   "pika",
+   "veo"
+  ],
+  "type": "ai_video_prompt"
+ },
+ {
+  "handle": "Manojkumar2257",
+  "post_url": "https://x.com/Manojkumar2257/status/2116343468499022100",
+  "posted_date": "2026-10-31",
+  "model": "Claude Code (skill) \u2014 builds with HTML/Canvas/Three.js/GSAP/Remotion, renders to MP4",
+  "title": "video-director: A Claude skill for directing, building and verifying code-rendered videos",
+  "prompt_text": "Your AI promo videos look cheap because nobody checks them before posting. This free Claude Code skill makes Claude plan, build, render and then QA its own video before you ever see it. github.com/win4r/video-director\n\nWhat it does:\n- You ask in plain words, like \"Make a 15 second looping launch video for our CLI\"\n- It plans the film in numbers first, and check_timeline.py validates the plan before any code is written\n- It builds the video as code (HTML, Canvas, Three.js, GSAP or Remotion), rendered frame by frame to MP4\n- qa_video.py then measures the render: hook text size and contrast, black first frame, flashes, freezes, loudness, silences\n- Hook and call to action land on screen by 3 seconds, readable with sound off\n\nIn the author's small test, runs with the skill passed 28/28 checks vs 25/28 without it. They say treat it as a direction, not proof.\n\nInstall:\n  git clone github.com/win4r/video-director\n  cp -R video-director/video-director ~/.claude/skills/\n\nNeeds ffmpeg, Python 3 with numpy and Pillow, and Node with Playwright. MIT licence.\n\nMoney angle: SaaS founders and local brands need a short launch or promo video every time they ship something. Sell it as a fixed-price video, and let the QA step catch mistakes before the client does.\n\nWhat would you make first with it, a launch video or an explainer?",
+  "tags": [
+   "claude-code-skill",
+   "motion-video",
+   "video-director",
+   "qa",
+   "remotion",
+   "three-js",
+   "gsap"
+  ],
+  "type": "agent_skill_github_repo"
+ },
+ {
+  "handle": "Manojkumar2257",
+  "post_url": "https://x.com/Manojkumar2257/status/2116359889442275811",
+  "posted_date": "2026-10-31",
+  "model": "Claude Code",
+  "title": "YouTube-AI-Motion-Graphics: 74 animated explainer boards that sync to voice and export MP4",
+  "prompt_text": "Your explainer videos are just your face talking. That is why people scroll past. This free repo gives Claude Code 74 animated explainer boards that sync to your voice, word by word, and export to MP4. github.com/sirioberati/YouTube-AI-Motion-Graphics\n\nThe playbook: 1. Install git clone github.com/sirioberati/YouTube-AI-Motion-Graphics ... (post truncated on X; 'Show more' needed for full playbook).",
+  "tags": [
+   "claude-code",
+   "motion-graphics",
+   "explainer-video",
+   "youtube"
+  ],
+  "type": "github_repo"
+ }
+]
