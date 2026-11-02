@@ -1,0 +1,119 @@
+[
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "pixelfx: 244 pixel effects Claude skill",
+  "prompt_text": "https://github.com/patch-gg/pixelfx",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "huashu-motion: script + music motion video skill",
+  "prompt_text": "https://github.com/alchaincyf/huashu-motion",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "mg-styles-15: 15 motion graphics styles with prompts",
+  "prompt_text": "https://github.com/Vincentwei1021/mg-styles-15",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "motion-prompt: 192 motion effects phrase dictionary",
+  "prompt_text": "https://github.com/showheyohtaki/motion-prompt",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "animate: 7 animation styles skill",
+  "prompt_text": "https://github.com/cth9191/animate",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "vibe-knowledge-film: educational short video skill",
+  "prompt_text": "https://github.com/HeyChengC/vibe-knowledge-film",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "story-studio: narrative videos skill",
+  "prompt_text": "https://github.com/konlu/story-studio",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Yarad_ai",
+  "post_url": "https://x.com/Yarad_ai/status/2116987783663292454",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "video-editor-skills: DaVinci Resolve editing skills",
+  "prompt_text": "https://github.com/appariciojunior/video-editor-skills",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "zhuolinnn",
+  "post_url": "https://github.com/derek-zhuolin/motion-skill",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "motion-skill: Motion skill for Remotion",
+  "prompt_text": "https://github.com/derek-zhuolin/motion-skill",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ }
+]

@@ -33,11 +33,25 @@
   "posted_date": "2026-11-01",
   "model": "Seedance 2.5",
   "title": "24s action-thriller rooftop escape (Seedance 2.5)",
-  "prompt_text": "Video prompt Cinematic 24-second action-thriller, 16:9, 30fps, realistic, high-detail, dynamic handheld camera, dramatic daylight, slightly desaturated blockbuster color grade. Character: a young woman with long dark hair (purple-magenta highlights), white double-breasted short coat with red ribbon bow collar, black mini skirt, black knee-high boots. Panicked, determined expression. Setting: a dense modern Asian city, huge skyscrapers, a massive crowd filling the streets far below, clear blue sky. Shot 1 (0-2s): Wide shot on a skyscraper rooftop with a glass skylight. A swarm of frenzied, zombie-like people crawls over the glass behind her. She runs toward the roof edge, a yellow rope tied off beside her. Shot 2 (2-4s): Side angle. She leaps off the edge, gripping the thick yellow rope, boots kicking off the concrete wall. Shot 3 (4-8s): Dizzying top-down shot. Her fingers grip a rusted, cracked metal ledge, with the packed street far below. She then rappels down the building face, rope taut, dust falling, her hair whipping in the wind. Shot 4 (8-11s): Side view as she swings toward a window on the building wall, still holding the rope. Shot 5 (11-13s): Interior, empty office floor with glass shards on the ground. She crashes in and slides on her knees, hair flying, city skyline visible through the windows. Shot 6 (13-18s): Front tracking shot, she sprints down a long office corridor. The horde chases her, motion-blurred, just behind. Shaky cam, tense and fast. Shot 7 (18-20s): Rear shot, she runs toward a huge open window leading to a rooftop terrace, her hair flying. Shot 8 (20-24s): Exterior shot of a glass facade, the horde pressing at the window. She climbs onto the neighboring rooftop and keeps running as the city and crowd spread out below. Mood: survival, adrenaline, vertigo. Fast cuts, strong motion blur, wind and debris, realistic physics.",
+  "prompt_text": "Cinematic 24-second action-thriller, 16:9, 30fps, realistic, high-detail, dynamic handheld camera, dramatic daylight, slightly desaturated blockbuster color grade. Character: a young woman with long dark hair (purple-magenta highlights), white double-breasted short coat with red ribbon bow collar, black mini skirt, black knee-high boots. Panicked, determined expression. Setting: a dense modern Asian city, huge skyscrapers, a massive crowd filling the streets far below, clear blue sky. Shot 1 (0-2s): Wide shot on a skyscraper rooftop with a glass skylight. A swarm of frenzied, zombie-like people crawls over the glass behind her. She runs toward the roof edge, a yellow rope tied off beside her. Shot 2 (2-4s): Side angle. She leaps off the edge, gripping the thick yellow rope, boots kicking off the concrete wall. Shot 3 (4-8s): Dizzying top-down shot. Her fingers grip a rusted, cracked metal ledge, with the packed street far below. She then rappels down the building face, rope taut, dust falling, her hair whipping in the wind. Shot 4 (8-11s): Side view as she swings toward a window on the building wall, still holding the rope. Shot 5 (11-13s): Interior, empty office floor with glass shards on the ground. She crashes in and slides on her knees, hair flying, city skyline visible through the windows. Shot 6 (13-18s): Front tracking shot, she sprints down a long office corridor. The horde chases her, motion-blurred, just behind. Shaky cam, tense and fast. Shot 7 (18-20s): Rear shot, she runs toward a huge open window leading to a rooftop terrace, her hair flying. Shot 8 (20-24s): Exterior shot of a glass facade, the horde pressing at the window. She climbs onto the neighboring rooftop and keeps running as the city and crowd spread out below. Mood: survival, adrenaline, vertigo. Fast cuts, strong motion blur, wind and debris, realistic physics.",
   "tags": [
    "action",
    "seedance"
   ],
   "type": "prompt"
+ },
+ {
+  "handle": "zhuolinnn",
+  "post_url": "https://x.com/zhuolinnn/status/2117080016915976473",
+  "posted_date": "2026-11-02",
+  "model": "Remotion",
+  "title": "Motion Skill + Remotion",
+  "prompt_text": "https://github.com/derek-zhuolin/motion-skill",
+  "tags": [
+   "remotion",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
  }
 ]
