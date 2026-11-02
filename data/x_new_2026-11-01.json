@@ -1,108 +1,146 @@
 [
  {
-  "handle": "kloss_xyz",
-  "post_url": "https://x.com/kloss_xyz/status/2116612471880610054",
-  "posted_date": "2026-11-01",
-  "model": "Claude Opus 5.5",
-  "title": "Y3K liquid chrome motion graphics showreel",
-  "prompt_text": "Create a stunning state of the art beautifully premium 1.5 minute motion graphics video that shows the world what a truly remarkable and incredible motion designer, animator, artist, sound engineer, video editor, and creative director you are, like it's a video you're sending it to land the job of your dreams but without those labels in the video. It should be this style: Y3K liquid chrome and mercury surfaces, iridescent oil-slick reflections on deep black, inflated 3D blob typography, wireframe holographic UI overlays, ultra-thin monospaced HUD metadata, caustic light refractions, high-gloss product-render lighting, extreme negative space, graded for HDR with luminous specular highlights that exceed paper white, deep clean blacks, rich but controlled saturation, glowing light sources and reflections, and cinematic color separation. Go all out creatively and blow me and the audience away with something that will go viral on X/Twitter. No cheaply generated synth sounds, only organic premium natural sounding effects: poured water and mercury drips, glass resonance, struck metal bowls, slow breath, and cloth movement. Make me feel it emotionally because it's so mesmerizing stunning and beautiful and premium. Final export it as 1080p 10-bit HDR HEVC mp4 in Rec.2020.",
+  "handle": "iamsofiaijaz",
+  "display_name": "Aijaz",
+  "post_url": "https://x.com/iamsofiaijaz/status/2116747624913002716",
+  "posted_date": "2026-11-01T09:52:00+05:30",
+  "model": "Seedance 2.5 (Higgsfield; mentions @lovart_ai)",
+  "title": "Seoul Han River zombie-apocalypse chase (7 shots)",
+  "prompt_text": "Cinematic live-action zombie-apocalypse chase across a broken Han River bridge in Seoul \u2014 Korean schoolgirl in pink Nike dress. Shot 1\u20137 breakdown; style line 'photorealistic, high-octane action, handheld dynamic camera, slow-motion jumps\u2026 Train to Busan style, 4K'; explicit negative (cartoon, anime, blurry, distorted faces, extra limbs, text, watermark, low quality); settings 16:9, 20 seconds, Seedance 2.5.",
   "tags": [
-   "claude",
-   "motion-graphics",
-   "showreel"
+   "seedance-2.5",
+   "higgsfield",
+   "live-action",
+   "zombie-apocalypse",
+   "multi-shot",
+   "negative-prompt",
+   "seoul"
   ],
   "type": "prompt"
  },
  {
-  "handle": "abs_crea8or",
-  "post_url": "https://x.com/abs_crea8or/status/2116564702314512806",
-  "posted_date": "2026-11-01",
-  "model": "Google Veo",
-  "title": "Ghibli-style honey into tea, 15s",
-  "prompt_text": "Create a 15-second cinematic hand-drawn anime video in a Studio Ghibli-inspired style showing honey being harvested from a hive and stirred into tea, entirely from the text description below. STYLE Studio Ghibli-inspired hand-painted anime style, lush watercolor-and-gouache backgrounds, soft cel-shaded animation, painterly glowing honey, warm golden late-afternoon sunlight. TIMELINE 0-2s smoke; 2-4s open the hive; 4-6s the frame; 6-8s uncap; 8-10s extract; 10-12s the spoon; 12-15s hero reveal, honey stirred into steaming tea, camera arcs around the cup. AUDIO warm acoustic ukulele, soft piano, chimes, 90-100 BPM. NEGATIVE no photorealism, no 3D CGI, no text overlays. (Abridged; see the original post for the full text.)",
-  "tags": [
-   "veo",
-   "anime",
-   "ghibli"
-  ],
-  "type": "prompt"
- },
- {
-  "handle": "mehwishkiran07",
-  "post_url": "https://x.com/mehwishkiran07/status/2116476266056757725",
-  "posted_date": "2026-10-31",
+  "handle": "AiWithSaira",
+  "display_name": "Saira",
+  "post_url": "https://x.com/AiWithSaira/status/2116735569103659014",
+  "prompt_reply_parent_url": "https://x.com/AiWithSaira/status/2116735363524002270",
+  "posted_date": "2026-11-01T09:04:00+05:30",
   "model": "Seedance 2.5",
-  "title": "Baby dragon sneeze fantasy marketplace",
-  "prompt_text": "AI Video Prompt\n\nCreate a hyper-realistic, cinematic fantasy short film in 16:9 widescreen format, approximately 30 seconds long. Set the scene in a beautiful medieval European village marketplace with traditional stone buildings, wooden houses, colorful flower stalls, warm sunlight, and a magical fantasy atmosphere.\n\nScene 1 (0\u20134 seconds): The Magical Dragon\nExtreme close-up of a cute, adorable baby dragon with pale pink and white scales, tiny horns, delicate facial spikes, and beautiful glowing golden eyes. A colorful butterfly gently lands on the dragon's nose. The dragon looks curious and slightly cross-eyed, watching the butterfly.\n\nScene 2 (4\u20139 seconds): The Curious Girl\nCut to a beautiful young woman with long dark hair, wearing a simple medieval-style outfit. She stands close to the dragon, looking at it with curiosity and a gentle smile. The dragon's nose begins twitching as it prepares to sneeze. Show an extreme close-up of its large nostrils and funny facial expression.\n\nScene 3 (9\u201315 seconds): The Unexpected Sneeze\nThe girl reaches toward the dragon, but suddenly the dragon releases an enormous, powerful sneeze. A magical burst of warm air and glowing particles blasts toward her. Her hair flies wildly backward, her expression changes to complete shock, and her face becomes covered in dark soot and dust. Create a hilarious yet visually spectacular moment with realistic wind physics and detailed facial expressions.\n\nScene 4 (15\u201321 seconds): The Dragon at the Fountain\nShow the adorable pink dragon standing beside an old stone fountain in the medieval marketplace. The dragon looks innocent and slightly embarrassed. The girl stands nearby, completely messy from the sneeze. Villagers in the background react with surprise and amusement. The dragon lowers its head toward the fountain.\n\nScene 5 (21\u201326 seconds): A Magical Moment\nThe dragon gently approaches the girl. Show the contrast between its enormous cute face and the girl's surprised expression. The dragon behaves playfully and affectionately, creating a charming fantasy moment.\n\nScene 6 (26\u201330 seconds): The Sweet Ending\nExtreme close-up of the girl's face. She has wet, messy dark hair and a tiny glowing heart-shaped magical mark on her forehead. She looks directly ahead with a surprised but adorable expression. Soft golden sunlight illuminates her face. End with a cinematic close-up and a magical fantasy atmosphere.\n\nVisual Style & Quality:\n- Ultra-realistic cinematic fantasy filmmaking.\n- Highly detailed dragon skin, scales, eyes, and facial expressions.\n- Realistic human facial expressions and natural movements.\n- Beautiful medieval European village environment.\n- Warm golden-hour lighting.\n- Professional cinematic camera angles and smooth transitions.\n- Realistic wind, dust, smoke, and magical particle effects.\n- Shallow depth of field and professional color grading.\n- Consistent character appearance throughout all scenes.\n- High-end CGI blended with photorealistic live-action visuals.\n- 4K ultra-detailed rendering.\n\nImportant: Maintain perfect character consistency. The pink baby dragon and the young woman must look identical throughout the entire video. Ensure smooth scene transitions, natural physics, expressive reactions, and visually coherent storytelling.",
+  "title": "Medieval-village dragon fantasy film (reference-lock)",
+  "prompt_text": "Ultra-realistic live-action fantasy film \u2014 village girl plus a huge black dragon and a pearl-white baby dragon; explicit reference-lock rules ('the village girl matches her reference\u2026 both dragons must always be shown with full body in wide or medium-wide shots'); multi-beat sequence: meadow, aerial chase through clouds, fireball exchange, black dragon snatches the girl, baby dragon dive-rescue; ending emotional close-up/wide golden shot; 'No text, no subtitles, no watermark.'",
   "tags": [
+   "seedance-2.5",
+   "higgsfield",
    "fantasy",
-   "cinematic"
-  ],
-  "type": "prompt"
- },
- {
-  "handle": "SeeratFatima112",
-  "post_url": "https://x.com/SeeratFatima112/status/2116450369530380391",
-  "posted_date": "2026-10-31",
-  "model": "Seedance 2.5",
-  "title": "Korean street food market action scene",
-  "prompt_text": "AI Video Prompt\nCinematic Korean Street Food Market Action Scene | 9:16 | 4K | Ultra Realistic\n\nCreate a realistic cinematic action-comedy video set in a busy Korean street food market at night. Colorful Korean signs, glowing hanging lights, steaming food stalls, and people walking in the background. A beautiful young woman wearing a fitted black outfit suddenly performs a playful martial arts move toward a muscular man wearing a maroon bomber jacket and black pants. The man reacts with surprise, quickly turns around, and tries to dodge her unexpected move. The woman maintains her balance and continues with a fast, dramatic action movement.\n\nCamera & Motion:\nStart with a handheld cinematic camera behind the woman. Follow the action smoothly as she moves. Capture the man's surprised reaction. Add realistic body movements and natural clothing physics. Use a slight slow-motion effect during the action. Finish with a dynamic cinematic camera movement.\n\nVisual Quality:\nUltra-realistic human movements. Authentic Korean street market atmosphere. Natural facial expressions. Cinematic night lighting. Professional action movie cinematography. Realistic physics and smooth motion. No face distortion, no extra limbs, no flickering. No text, subtitles, logos, or watermark",
-  "tags": [
-   "action",
-   "cinematic"
+   "dragon",
+   "reference-locking",
+   "multi-beat",
+   "image-to-video"
   ],
   "type": "prompt"
  },
  {
   "handle": "ItsMaryamAi",
-  "post_url": "https://x.com/ItsMaryamAi/status/2116482724001145039",
-  "posted_date": "2026-10-31",
-  "model": "Seedance 2.5",
-  "title": "Korean sci-fi rooftop mech chase",
-  "prompt_text": "Video prompt:Cinematic Korean sci-fi action short, live-action look, 24fps, handheld tracking camera, shallow depth of field, hazy daylight.\n\nShot 1: Rooftop of a worn-out high-rise, cracked concrete, rusty orange railings, scattered rubble, a city skyline in the distance. A Korean high school girl (navy blazer, pleated skirt, black knee socks, long dark wavy hair) sprints away from a group of men in black suits. Rear tracking shot, her hair whipping, her shadow on the ground.\n\nShot 2: One suited man lunges at her, she dodges. She leaps onto the rusty railing, runs along it, then jumps high into the air in slow motion, with the skyline and sky behind her.\n\nShot 3: She lands, turns, and faces the camera. Close-up, wind in her hair, cold confident stare, one hand raised in a small finger-heart gesture, suited men blurred in the background.\n\nShot 4: A giant white-and-grey mech with glowing blue eyes and chest core, battle-worn armor, company logo on the shoulder plates, steps in through a cloud of dust. Low-angle hero shot, the girl tiny in front of it, seen from behind.\n\nShot 5: Close-up of the girl's face as she shouts back at the robot, then a quick blurred swing of the mech's fist, then a calm closing shot of her smiling gently, uniform neat, with the skyline behind her.\n\nStyle: blockbuster Korean action, realistic VFX, cool blue and teal tones, glowing blue accents, sharp motion blur, dramatic lighting. Korean dialogue with English subtitles.",
+  "display_name": "Maryam",
+  "post_url": "https://x.com/ItsMaryamAi/status/2116483052889072018",
+  "prompt_reply_parent_url": "https://x.com/ItsMaryamAi/status/2116482724001145039",
+  "posted_date": "2026-10-31T16:20:00+05:30",
+  "model": "Seedance 2.5 (Higgsfield; implied by parent)",
+  "title": "Korean sci-fi action short with giant mech and finger-heart close-up",
+  "prompt_text": "'Cinematic Korean sci-fi action short' \u2014 5 numbered shots: rooftop chase of a Korean high-school girl in navy blazer by suited men; slow-motion railing leap; finger-heart close-up (Shot 3); giant white-and-grey mech with glowing blue eyes stepping through dust; calm closing smile. Style line specifies Korean dialogue with English subtitles.",
   "tags": [
-   "sci-fi",
-   "action"
+   "seedance-2.5",
+   "higgsfield",
+   "korean-sci-fi",
+   "mech",
+   "multi-shot",
+   "finger-heart",
+   "numbered-shots"
   ],
   "type": "prompt"
  },
  {
-  "handle": "X1Kafadzhy",
-  "post_url": "https://x.com/X1Kafadzhy/status/2116662313600098331",
-  "posted_date": "2026-10-31",
-  "model": "Claude Code + Remotion",
-  "title": "Remotion video from one Claude Code prompt",
-  "prompt_text": "make a 10s 1080x1080 Remotion video about [your idea]. render it to mp4 and check 5 frames before you finish",
+  "handle": "mehwishkiran07",
+  "display_name": "Mehwish kiran",
+  "post_url": "https://x.com/mehwishkiran07/status/2116732169150456068",
+  "prompt_reply_parent_url": "https://x.com/mehwishkiran07/status/2116732163836244023",
+  "posted_date": "2026-11-01T08:50:00+05:30",
+  "model": "Seedance 2.5 (Higgsfield)",
+  "title": "Flying-sports-car desert supernatural chase",
+  "prompt_text": "Video Prompt \u2014 Duration: 30 Seconds; Aspect Ratio: 16:9; Resolution: 4K Ultra HD; Frame Rate: 24 FPS. Style: Ultra-realistic photorealistic live-action Hollywood action comedy with supernatural fantasy elements. SCENE & ENVIRONMENT: vast deserted desert highway, two black-and-white police cars, cinematic sunlight. MAIN CHARACTERS: (1) young East Asian female police officer in dark navy uniform/black skirt/tactical belt; (2) mysterious blonde-haired woman with dark purple magical energy. SHOT-BY-SHOT SEQUENCE SHOT 1 (0\u20133s) wide shot beside police car; SHOT 2 (3\u20137s) speeding car + flying donut slow-motion + drift; SHOT 3 (7\u201312s) interior jump-in; SHOT 4 (12\u201318s) supernatural transformation, purple smoke/lightning on roof; SHOT 5 (18\u201322s) upside-down over windshield; SHOT 6 (22\u201326s) cars stop, confrontation; SHOT 7 (26\u201330s) takedown kneeling. VISUAL QUALITY & CAMERA DIRECTION (photorealistic humans, Hollywood choreography, dynamic tracking, slow-motion, wind/hair/dust, purple VFX, cinematic color grading). IMPORTANT: maintain same faces/hair/clothing/vehicles; realistic anatomy and choreography.",
   "tags": [
-   "remotion",
-   "claude-code"
+   "seedance-2.5",
+   "higgsfield",
+   "supernatural",
+   "desert-highway-chase",
+   "shot-by-shot",
+   "multi-shot",
+   "4K"
   ],
-  "type": "prompt"
+  "type": "prompt",
+  "note_author_flag": "Bio: 'Paid Collabs DM mehwishkiran7029@gmail.com HIGGS-2OC8R' \u2014 Higgsfield creator-program code. Post itself is an organic prompt share."
  },
  {
-  "handle": "openclipsai",
-  "post_url": "https://x.com/openclipsai/status/2116544975207108798",
-  "posted_date": "2026-10-31",
-  "model": "Seedance 2.5",
-  "title": "Cyberpunk rooftop chase, 4 shots",
-  "prompt_text": "Prompt:\n\nCinematic cyberpunk action sequence, 16:9, four shots, night, heavy rain, neon city.\n\nShot 1 (0-2s): Low-angle tracking shot. A young woman in a glossy black techwear jacket with glowing cyan seams, short silver bob hair, sprints straight toward the camera across a wet rooftop, splashing through puddles that reflect pink and cyan neon signs, the camera dollying backward fast in front of her.\n\nShot 2 (2-5s): Side tracking shot, camera running alongside her. She leaps off the roof edge across a wide gap between two skyscrapers, body fully stretched mid-air, giant holographic billboards glowing behind her, a flying car with red taillights streaking past far below.\n\nShot 3 (5-7s): Close-up from the front as she lands on a metal walkway, rolls over her shoulder and springs back up in one fluid motion, rain droplets flying off her jacket, her eyes flashing with a thin cyan glow.\n\nShot 4 (7-10s): The camera rises fast into a sweeping drone shot, pulling up and away as she runs and slides under a low glowing pipe, revealing an endless vertical megacity of neon towers, holograms and fog. Fast, dynamic camera movement, motion blur, realistic physics, volumetric neon light, Blade Runner color grade, highly detailed.\n\nSound: heavy rain, splashing footsteps, distant sirens, deep pulsing synth bass.",
+  "handle": "Rizi_ru",
+  "display_name": "Rizi",
+  "post_url": "https://x.com/Rizi_ru/status/2116701930160607265",
+  "posted_date": "2026-11-01T06:50:00+05:30",
+  "model": "Pixverse",
+  "title": "10-SECOND HAPPY DANCE VIDEO PROMPT",
+  "prompt_text": "10-SECOND HAPPY DANCE VIDEO PROMPT \u2014 Create a realistic 10-second video of the woman in her black dress dancing happily on the balcony. She smiles beautifully, moves her hips and shoulders naturally, performs graceful hand movements and gentle turns. Her long ponytail and dress move naturally with every step. Use cheerful romantic music with a matching dance beat. Ensure perfect music synchronization, smooth realistic movements, and a joyful expression. Keep her face and full body visible throughout. Made by Pixverse.",
   "tags": [
-   "cyberpunk",
-   "action"
+   "pixverse",
+   "dance",
+   "balcony",
+   "music-sync",
+   "10-second",
+   "single-post"
   ],
-  "type": "prompt"
+  "type": "prompt",
+  "note_author_flag": "Bio: 'Open for Projects & Collabs' (collab-solicitation signal; no Higgsfield CPP code on this post)."
  },
  {
-  "handle": "hiwise_aigc",
-  "post_url": "https://x.com/hiwise_aigc/status/2116025042064777465",
-  "posted_date": "2026-10-31",
-  "model": "Claude Code / Codex skill",
-  "title": "Motion Prompt skill",
-  "prompt_text": "npx skills add showheyohtaki/motion-prompt  (https://showheyohtaki.github.io/motion-prompt/)",
+  "handle": "AIwithkhan",
+  "display_name": "Smiling Khan",
+  "post_url": "https://x.com/AIwithkhan/status/2116736193404780665",
+  "posted_date": "2026-11-01T09:06:00+05:30",
+  "model": "Seedance 2.5 (Higgsfield)",
+  "title": "A Baddie's Sunday Routine \ud83c\udf3d \u2014 early-2000s DV Seoul home-video",
+  "prompt_text": "A Baddie's Sunday Routine \ud83c\udf3d \u2014 Seedance 2.5. Prompt: Create a 30-second, 1080p ultra-realistic early-2000s DV home video of a stylish young Korean woman enjoying a peaceful Sunday afternoon in an older Seoul neighborhood. Main Character: young Korean woman in her early 20s, realistic skin, minimal makeup, long black wavy hair in messy side ponytail, fitted pastel-blue cropped top, loose cream pajama-style pants, black sneakers, simple silver necklace; maintain identity/face/hair/outfit/proportions. SCENE 1 \u2013 Greeting the Neighbours (0\u20136s): narrow residential street, reusable shopping bag, waves to three neighbours outside a convenience store, dialogue 'Hey girls! Happy Sunday!'. SCENE 2 \u2013 The Kite Moment (6\u201313s): frees a little Korean girl's colourful kite from a low tree branch, 'Thank you, unnie!' / 'You're welcome! Be careful!'. SCENE 3 \u2013 Street Corn Stop (13\u201321s): traditional Korean street-food cart, steamed yellow corn in paper sleeve, natural close-up of her enjoying it. SCENE 4 \u2013 Walking Home (21\u201330s): casual stroll eating corn, 'Honestly, Sundays like this are the best!', glance-back wave, accidental zoom-in, cut to black. CAMERA & VISUAL STYLE: raw handheld early-2000s DV camcorder, 2000\u20132005 home-video aesthetic, slight shake, imperfect autofocus, occasional exposure shifts, faded warm colours, soft digital sharpness, natural motion blur, accidental zooms, no polished cinematic moves. AUDIO: natural Seoul neighbourhood ambience, birds, distant conversations, bicycles, footsteps, street vendor, paper wrapping, wind, authentic dialogue; no background music. CONTINUITY: same woman/face/hair/clothing/proportions; kite stays with girl; shopping bag retained throughout; corn stays in hand; realistic hand interactions and seamless transitions.",
   "tags": [
-   "skill",
-   "animation"
+   "seedance-2.5",
+   "higgsfield",
+   "early-2000s-DV",
+   "seoul",
+   "home-video",
+   "multi-scene",
+   "continuity",
+   "authentic-dialogue",
+   "no-music",
+   "nostalgic"
   ],
-  "type": "skill"
+  "type": "prompt",
+  "note_author_flag": "Bio explicit: 'CPP @higgsfield' \u2014 Higgsfield creator-partner attribution (strongest CPP signal in this pass). Post itself is NOT labeled paid-partnership by X.",
+  "note_highest_craft_signal": "Thread includes \u67f1\u5b50 AGI @wuzhu_ (35 likes) Seedance technique reply on shared-prefix identity locking across cuts, restyling risk, and separating handheld-shake constraints."
+ },
+ {
+  "handle": "SeeratFatima112",
+  "display_name": "Seerat Fatima",
+  "post_url": "https://x.com/SeeratFatima112/status/2116792384420012297",
+  "prompt_reply_parent_url": "https://x.com/SeeratFatima112/status/2116792378103345437",
+  "posted_date": "2026-11-01T12:50:00+05:30",
+  "model": "Seedance 2.5 (inferred from parent; not explicit in prompt)",
+  "title": "Cinematic university-campus walk (image-to-video, vertical 9:16)",
+  "prompt_text": "\ud83c\udfac AI Video Generation Prompt \u2014 Use the uploaded image as the first frame and visual reference. Create a highly realistic, cinematic university campus scene. A young woman with long, straight brown hair, wearing a dark brown leather jacket and black pants, walks confidently toward two young men sitting on a wooden bench beside a beautiful swimming pool. One man in a red varsity jacket smiles and waves; the other in a black hoodie smiles and laughs. Camera Movement: smooth cinematic follow shot from behind the woman, subtle handheld. Visual Style: ultra-realistic cinematic Hollywood movie look, natural expressions, sunny daylight, soft shadows, 4K. Important Instructions: consistent faces and clothing, same background, natural human movements, no face distortion/body deformation, no extra people, no text/subtitles/watermark. Vertical 9:16 video.",
+  "tags": [
+   "seedance-2.5",
+   "higgsfield",
+   "image-to-video",
+   "image-as-first-frame",
+   "campus",
+   "vertical-9-16",
+   "4K"
+  ],
+  "type": "prompt",
+  "note_lower_tier": "Low engagement on the prompt reply (30 views, 0 replies/likes/reposts); model only inferred from parent; bio 'Open to collabs'. Kept as a backup."
  }
 ]

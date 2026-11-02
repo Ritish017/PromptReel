@@ -8140,5 +8140,55 @@
   "duration": 20.566,
   "w": 1920,
   "h": 1080
+ },
+ {
+  "handle": "kairo_leg",
+  "post_url": "https://x.com/kairo_leg/status/2117046992262095007",
+  "posted_date": "2026-10-31",
+  "model": "Claude, Gemini, ChatGPT, DeepSeek",
+  "title": "Recursive p5.js fractal tree, same prompt on four models",
+  "prompt_text": "recursive p5.js fractal tree animated branch angles with sin(millis()) branches get thinner color shift brown \u2192 green limited depth",
+  "tags": [
+   "Shapes",
+   "Code"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "kairo-leg-6239b6",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2117046856815439872/img/kLbvji-PQu2fIANF.jpg",
+  "likes": 1,
+  "display_name": "Kairo",
+  "added": "2026-11-02",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2117046856815439872/vid/avc1/320x568/t-WA4z8PrJdRoMA4.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2117046856815439872/vid/avc1/720x1280/QfmyEkK62PpSY2Ih.mp4?tag=29",
+  "duration": 6.153,
+  "w": 1080,
+  "h": 1920
+ },
+ {
+  "handle": "codedusting",
+  "post_url": "https://x.com/codedusting/status/2116987079171448913",
+  "posted_date": "2026-11-02",
+  "model": "Claude Opus 5.5",
+  "title": "Single page HTML + CSS water motion graphics",
+  "prompt_text": "I would like you to build me a single page html + css water motion graphics. It should look extremely real and should be as performant as possible to not destroy my ram and vram while I open that page.",
+  "tags": [
+   "Shapes",
+   "Code"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "codedusting-eea101",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2116981991019249664/img/QSh_Qcvu5cX9cJd_.jpg",
+  "likes": 1,
+  "display_name": "codedusting",
+  "added": "2026-11-01",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2116981991019249664/vid/avc1/644x360/SzNckIAVzPgyiFz-.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2116981991019249664/vid/avc1/1288x720/hpDa7TZJGip2CLpS.mp4?tag=29",
+  "duration": 10.866,
+  "w": 2552,
+  "h": 1426
  }
 ]

@@ -1,0 +1,43 @@
+[
+ {
+  "handle": "va1enti_ai",
+  "post_url": "https://x.com/va1enti_ai/status/2116894270216872348",
+  "posted_date": "2026-11-01",
+  "model": "Veo 3.1",
+  "title": "Macro freeze transition: frost on a mountain brook (Veo 3.1)",
+  "prompt_text": "8s cinematic nature macro video, 16:9, 24fps, slow smooth probe lens tracking shot. Autumn-to-winter transition: extreme close-up of a delicate, crystalline sheet of morning frost and thin clear ice forming along the dark wet granite edge of a mountain brook. A solitary golden-amber oak leaf sits trapped under the fragile frost layer, sparkling with sharp micro-ice needles. Soft low-angle dawn sunlight casts warm golden flares, slowly melting micro-droplets that drip into the rushing clear water below. Intense optical refractions, authentic 35mm film grain, razor-sharp textures. Exclude: people, hands, cartoon, 3D CGI gloss, rubber ice, digital noise, text, watermark. Model: Google Flow / Veo 3.1 Ratio: 16:9 Save for your next macro nature benchmark",
+  "tags": [
+   "nature",
+   "macro",
+   "veo"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "codedusting",
+  "post_url": "https://x.com/codedusting/status/2116987079171448913",
+  "posted_date": "2026-11-02",
+  "model": "Claude Opus",
+  "title": "Single-page HTML+CSS water motion graphics",
+  "prompt_text": "Prompt: I would like you to build me a single page html + css water motion graphics. It should look extremely real and should be as performant as possible to not destroy my ram and vram while I open that page.",
+  "tags": [
+   "html",
+   "css",
+   "motion-graphics"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "ItsMaryamAi",
+  "post_url": "https://x.com/ItsMaryamAi/status/2116869259582382335",
+  "posted_date": "2026-11-01",
+  "model": "Seedance 2.5",
+  "title": "24s action-thriller rooftop escape (Seedance 2.5)",
+  "prompt_text": "Video prompt Cinematic 24-second action-thriller, 16:9, 30fps, realistic, high-detail, dynamic handheld camera, dramatic daylight, slightly desaturated blockbuster color grade. Character: a young woman with long dark hair (purple-magenta highlights), white double-breasted short coat with red ribbon bow collar, black mini skirt, black knee-high boots. Panicked, determined expression. Setting: a dense modern Asian city, huge skyscrapers, a massive crowd filling the streets far below, clear blue sky. Shot 1 (0-2s): Wide shot on a skyscraper rooftop with a glass skylight. A swarm of frenzied, zombie-like people crawls over the glass behind her. She runs toward the roof edge, a yellow rope tied off beside her. Shot 2 (2-4s): Side angle. She leaps off the edge, gripping the thick yellow rope, boots kicking off the concrete wall. Shot 3 (4-8s): Dizzying top-down shot. Her fingers grip a rusted, cracked metal ledge, with the packed street far below. She then rappels down the building face, rope taut, dust falling, her hair whipping in the wind. Shot 4 (8-11s): Side view as she swings toward a window on the building wall, still holding the rope. Shot 5 (11-13s): Interior, empty office floor with glass shards on the ground. She crashes in and slides on her knees, hair flying, city skyline visible through the windows. Shot 6 (13-18s): Front tracking shot, she sprints down a long office corridor. The horde chases her, motion-blurred, just behind. Shaky cam, tense and fast. Shot 7 (18-20s): Rear shot, she runs toward a huge open window leading to a rooftop terrace, her hair flying. Shot 8 (20-24s): Exterior shot of a glass facade, the horde pressing at the window. She climbs onto the neighboring rooftop and keeps running as the city and crowd spread out below. Mood: survival, adrenaline, vertigo. Fast cuts, strong motion blur, wind and debris, realistic physics.",
+  "tags": [
+   "action",
+   "seedance"
+  ],
+  "type": "prompt"
+ }
+]

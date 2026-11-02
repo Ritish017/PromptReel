@@ -1,0 +1,87 @@
+[
+ {
+  "handle": "cellcogai",
+  "post_url": "https://x.com/cellcogai/status/2116893947880472998",
+  "posted_date": "2026-11-01",
+  "model": "Kling 4.0 / Seedance 2.5",
+  "title": "Coastal cliff road convertible: same prompt on Seedance 2.5 vs Kling 4.0",
+  "prompt_text": "@Image1 is the scene: a winding coastal cliff road at golden hour, dramatic sea cliffs, turquoise water, low warm sun. A single vintage dark-green convertible drives along the road. Action: the convertible drives toward the camera around the bend, then past it along the cliff edge; waves break white against the rocks below; long shadows; dust lifts slightly behind the tyres. Camera: slow aerial drone shot tracking alongside the car, anamorphic cinematic look, 21:9. Sound: the engine note, wind, waves crashing below. No music.",
+  "tags": [
+   "seedance",
+   "kling",
+   "comparison",
+   "cinematic"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "charliejhills",
+  "post_url": "https://x.com/charliejhills/status/2116936969251164475",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "motion-prompt: motion video skill",
+  "prompt_text": "https://github.com/showheyohtaki/motion-prompt\nA dictionary of 192 motion, camera and web effects; each has a live example and the exact words to prompt it.",
+  "tags": [
+   "claude-code",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "charliejhills",
+  "post_url": "https://x.com/charliejhills/status/2116936969251164475",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "mg-styles-15: motion video skill",
+  "prompt_text": "https://github.com/Vincentwei1021/mg-styles-15\n15 motion graphics styles, each with a 10-second demo built by Opus 5.5, prompts and source code included.",
+  "tags": [
+   "claude-code",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "charliejhills",
+  "post_url": "https://x.com/charliejhills/status/2116936969251164475",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "huashu-motion: motion video skill",
+  "prompt_text": "https://github.com/alchaincyf/huashu-motion\nClaude skill: ask for a 30-second launch video; it writes the script, picks music and fixes only the clicked spot.",
+  "tags": [
+   "claude-code",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "charliejhills",
+  "post_url": "https://x.com/charliejhills/status/2116936969251164475",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "animate: motion video skill",
+  "prompt_text": "https://github.com/cth9191/animate\nExplainer shorts and mini stories in pure code; 7 built-in styles, learns new ones from a reference image.",
+  "tags": [
+   "claude-code",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "charliejhills",
+  "post_url": "https://x.com/charliejhills/status/2116936969251164475",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "pixelfx: motion video skill",
+  "prompt_text": "https://github.com/patch-gg/pixelfx\n244 hand-coded pixel effects (fire, explosions, magic, weather) as a Claude skill.",
+  "tags": [
+   "claude-code",
+   "skill",
+   "motion"
+  ],
+  "type": "skill"
+ }
+]
