@@ -8190,5 +8190,58 @@
   "duration": 10.866,
   "w": 2552,
   "h": 1426
+ },
+ {
+  "handle": "Y0urDumble",
+  "post_url": "https://x.com/Y0urDumble/status/2117396633889427646",
+  "posted_date": "2026-11-03",
+  "model": "Claude Opus",
+  "title": "Blender motion studio skill stack for Claude",
+  "prompt_text": "Skill stack from the post: edge-tts, whisperX, kokoro, freemocap, mpfb2, elevenlabs skills, remotion skills, hyperframes, blender mcp. Video: one Blender file Claude wrote: low-poly chests, wooden stage, bokeh, haze; scrolls unroll, cards burst out with a flash; every sound generated in python.",
+  "repo": "https://github.com/ahujasid/mcp-for-blender",
+  "tags": [
+   "3D",
+   "Characters",
+   "Code"
+  ],
+  "type": "skill",
+  "skill": null,
+  "id": "y0urdumble-216460",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2117395431420243968/img/f_I0DWqEaTT7fzK7.jpg",
+  "likes": 26,
+  "display_name": "Dumble",
+  "added": "2026-11-02",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2117395431420243968/vid/avc1/320x400/nGWWsE8K-6nRqsYA.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2117395431420243968/vid/avc1/720x900/8mJK5DvHDGvQs7rO.mp4?tag=29",
+  "duration": 22,
+  "w": 1440,
+  "h": 1800
+ },
+ {
+  "handle": "sorenxet",
+  "post_url": "https://x.com/sorenxet/status/2117338696831865248",
+  "posted_date": "2026-11-02",
+  "model": "Claude Opus",
+  "title": "Full office in 3ds Max with Claude",
+  "prompt_text": "rebuild this office in 3ds Max. use the reference images, preserve the layout, clutter and daylight",
+  "repo": "https://github.com/maxpkg-dev/max-ultra-mcp",
+  "tags": [
+   "3D",
+   "Code"
+  ],
+  "type": "prompt",
+  "skill": null,
+  "id": "sorenxet-189912",
+  "image_url": "https://pbs.twimg.com/amplify_video_thumb/2117307956484087808/img/Upsbt8QF-NAGlyL-.jpg",
+  "likes": 71,
+  "display_name": "sorenxet",
+  "added": "2026-11-02",
+  "source": "x",
+  "video_preview": "https://video.twimg.com/amplify_video/2117307956484087808/vid/avc1/640x360/GfBTgbmgcqUBCeNj.mp4?tag=29",
+  "video_full": "https://video.twimg.com/amplify_video/2117307956484087808/vid/avc1/1280x720/oU9DMO-QU7g_uwHD.mp4?tag=29",
+  "duration": 40.042,
+  "w": 1920,
+  "h": 1080
  }
 ]

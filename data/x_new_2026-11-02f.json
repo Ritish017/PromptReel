@@ -1,0 +1,40 @@
+[
+ {
+  "handle": "benjitaylor",
+  "post_url": "https://x.com/eltc9584/status/2117070550082453548",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "Stageshow: faux-UI demo animation skill",
+  "prompt_text": "npx skills add benjitaylor/skills --skill stageshow",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "Y0urDumble",
+  "post_url": "https://x.com/Y0urDumble/status/2117030430507401326",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "2.5D animation studio stack: Claude + Blender MCP + Remotion",
+  "prompt_text": "https://github.com/ahujasid/mcp-for-blender",
+  "tags": [
+   "Skill",
+   "Claude"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "leo114119",
+  "post_url": "https://x.com/leo114119/status/2117142662100754825",
+  "posted_date": "2026-11-02",
+  "model": "Gemini",
+  "title": "15-second motion graphics showreel",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a r\u00e9sum\u00e9. go all out",
+  "tags": [
+   "Motion"
+  ],
+  "type": "prompt"
+ }
+]

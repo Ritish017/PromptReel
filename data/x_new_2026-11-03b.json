@@ -1,0 +1,28 @@
+[
+ {
+  "handle": "airina_xyz",
+  "post_url": "https://x.com/airina_xyz/status/2117368741155799502",
+  "posted_date": "2026-11-03",
+  "model": "Kling 4.0",
+  "title": "The Wedding Exit: 20s action-comedy chase",
+  "prompt_text": "Prompt:\n\nSTYLE: Stylish 1988 Mediterranean action-comedy movie. Glamorous Italian coastal wedding, bright azure sea, sunlit limestone terraces, expensive 1980s fashion, elegant practical stunt choreography, warm 35mm film photography.\n\nCHARACTERS: VICTORIA, a sophisticated 32-year-old undercover intelligence agent wearing an elegant ivory wedding dress, short bridal veil and comfortable flat bridal shoes. TWO SECURITY AGENTS wearing black tuxedos. THE BOAT DRIVER, Victoria's relaxed male partner in a white linen shirt.\n\nGEOGRAPHY: Beautiful cliffside wedding terrace above a small private jetty. A broad stone staircase descends from the terrace to the jetty. A sleek white speedboat is moored at the end. Victoria begins beside the wedding table. The two agents approach from the terrace entrance behind her.\n\n0:00\u20130:02 \u2014 EXTREME CLOSE-UP: Victoria sees the reflection of a security agent approaching with handcuffs in a polished silver champagne bucket. Her expression hardens. She whispers, \"Not now.\"\n\n0:02\u20130:04 \u2014 MEDIUM WIDE: As the agent reaches for her wrist, Victoria swings a large silver serving tray into his hands, knocking the handcuffs away. She turns and runs toward the terrace staircase.\n\n0:04\u20130:06.5 \u2014 LOW TRACKING SHOT: Victoria sprints between startled wedding guests. Her white dress swirls around her legs. A waiter jumps aside, barely saving his tray of champagne glasses.\n\n0:06.5\u20130:09 \u2014 OVERHEAD SHOT: Both agents chase her across the terrace. Victoria cuts around a long wedding table and reaches the top of the staircase, forcing the pursuers to follow the same narrow route.\n\n0:09\u20130:11.5 \u2014 DYNAMIC FRONT-FACING SHOT: Victoria runs down the stone steps directly toward the camera. Her short veil becomes caught on an overhanging branch. She pulls free, leaving the veil hanging behind.\n\n0:11.5\u20130:14 \u2014 LOW ANGLE FROM JETTY: The white speedboat starts pulling away from the dock. Victoria reaches the last step, spots the opening passenger compartment and accelerates toward it.\n\n0:14\u20130:17 \u2014 WIDE SIDE SHOT: The speedboat is still only one meter from the jetty. Victoria makes a single clean jump into the open rear passenger seat. The driver catches her shoulder to steady her and immediately accelerates away.\n\n0:17\u20130:20 \u2014 MEDIUM TWO-SHOT INSIDE MOVING BOAT: The driver glances at her extravagant wedding dress and asks, \"How was the wedding?\" Victoria straightens her hair, catches her breath and replies deadpan, \"Short.\" Behind them, the furious agents reach the empty jetty.\n\nCAMERA: Distinct overhead, tracking, front-facing, low-angle and boat-mounted shots. Fast, elegant continuity editing. Realistic running, believable jumping distance, consistent costume and boat placement.\n\nPERFORMANCE: Natural action, precise comic timing, subtle facial expressions. Victoria remains composed even during a chaotic escape. The final joke should be dry, not exaggerated.\n\nAUDIO: Running footsteps, guests gasping, falling metal handcuffs, sea breeze, boat engine, waves, natural English dialogue. No music, subtitles or narration.",
+  "tags": [
+   "kling",
+   "cinematic"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "JohnSmith5912",
+  "post_url": "https://x.com/JohnSmith5912/status/2117271189920096280",
+  "posted_date": "2026-11-02",
+  "model": "Veo",
+  "title": "Photorealistic campus portrait prompt",
+  "prompt_text": "Here is a detailed video generation prompt designed to recreate this scene in tools like Veo, Sora, or Stable Diffusion, along with a social media caption.\nVideo Generation Prompt\n> Prompt: Medium shot of a young woman with long blonde hair, wearing round gold-rimmed glasses, a light blue short-sleeve collared crop shirt, a striped maroon tie, and a gray pleated skirt, standing outdoors on a pathway with green foliage in the background. She gently touches the back of her neck with her hand, playfully bites her lower lip, and then smiles warmly at the camera with a soft expression. Bright daylight, shallow depth of field, photorealistic 8k resolution, cinematic portrait style.\n> Social Media Caption\n> Embracing the campus aesthetic and good vibes today.\n> #CampusVibes#PortraitMood#VisualStorytelling#AIArt#OOTD",
+  "tags": [
+   "veo",
+   "portrait"
+  ],
+  "type": "prompt"
+ }
+]

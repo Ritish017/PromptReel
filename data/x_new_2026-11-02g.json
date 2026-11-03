@@ -1,0 +1,41 @@
+[
+ {
+  "handle": "leo114119",
+  "post_url": "https://x.com/leo114119/status/2117142662100754825",
+  "posted_date": "2026-11-02",
+  "model": "Gemini 4 Carbon-H",
+  "title": "15-second SVG motion showreel (Gemini 4 Carbon-H)",
+  "prompt_text": "make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out",
+  "tags": [
+   "motion-graphics",
+   "svg"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "JohnSmith5912",
+  "post_url": "https://x.com/JohnSmith5912/status/2117063595523727520",
+  "posted_date": "2026-11-02",
+  "model": "Veo / Sora",
+  "title": "Serene close-up portrait video prompt (Veo/Sora)",
+  "prompt_text": "Close-up portrait video of a young woman with blonde hair styled in an updo with loose strands framing her face, standing indoors near a staircase. She has flushed cheeks, delicate freckles, and a light sheen of sweat on her skin and collarbone, wearing a black top and cardigan with delicate gold layered necklaces. She takes slow, deep breaths with her eyes closed, exhaling calmly with a relaxed and peaceful expression. Soft indoor ambient lighting, shallow depth of field, photorealistic 8k resolution, serene and mindful mood.",
+  "tags": [
+   "portrait",
+   "veo"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "humzaakhalid",
+  "post_url": "https://x.com/humzaakhalid/status/2117150029735747974",
+  "posted_date": "2026-11-02",
+  "model": "Claude Code",
+  "title": "Remotion skill for Claude Code",
+  "prompt_text": "/plugin marketplace add remotion-dev/claude-code-plugin\n/plugin install remotion@remotion",
+  "tags": [
+   "remotion",
+   "claude-code"
+  ],
+  "type": "skill"
+ }
+]
