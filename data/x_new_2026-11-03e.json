@@ -1,0 +1,30 @@
+[
+ {
+  "handle": "hurricodes",
+  "post_url": "https://x.com/hurricodes/status/2117365603828650391",
+  "posted_date": "2026-11-03",
+  "model": "Claude Opus 5.5",
+  "title": "awesome-opus5-5-videos: 475 Claude demos with original prompts",
+  "prompt_text": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "claude",
+   "motion-graphics",
+   "repo"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "jagu_builds",
+  "post_url": "https://x.com/jagu_builds/status/2117498144246444240",
+  "posted_date": "2026-11-03",
+  "model": "Claude Code",
+  "title": "claude-code-video-toolkit: one sentence to rendered MP4",
+  "prompt_text": "https://github.com/digitalsamba/claude-code-video-toolkit",
+  "tags": [
+   "claude-code",
+   "video",
+   "repo"
+  ],
+  "type": "skill"
+ }
+]

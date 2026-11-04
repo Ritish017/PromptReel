@@ -1,0 +1,15 @@
+[
+ {
+  "handle": "kaido_xr",
+  "post_url": "https://x.com/kaido_xr/status/2117678320078684218",
+  "posted_date": "2026-11-04",
+  "model": "Code (repos)",
+  "title": "Code-rendered motion graphics repos",
+  "prompt_text": "https://github.com/mexicat/pdoom-video\nhttps://github.com/JohnHeibel/PDoomVideo",
+  "tags": [
+   "repo",
+   "motion-graphics"
+  ],
+  "type": "skill"
+ }
+]

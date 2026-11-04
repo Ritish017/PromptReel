@@ -1,2 +1,58 @@
-[{"handle":"Y0urDumble","post_url":"https://x.com/Y0urDumble/status/2117396633889427646","posted_date":"2026-11-03","model":"Claude Opus","title":"Blender motion studio skill stack for Claude","prompt_text":"Skill stack from the post: edge-tts, whisperX, kokoro, freemocap, mpfb2, elevenlabs skills, remotion skills, hyperframes, blender mcp. Video: one Blender file Claude wrote: low-poly chests, wooden stage, bokeh, haze; scrolls unroll, cards burst out with a flash; every sound generated in python.","repo":"https://github.com/ahujasid/mcp-for-blender","tags":["3D","Characters","Code"],"type":"skill"},
-{"handle":"sorenxet","post_url":"https://x.com/sorenxet/status/2117338696831865248","posted_date":"2026-11-02","model":"Claude Opus","title":"Full office in 3ds Max with Claude","prompt_text":"rebuild this office in 3ds Max. use the reference images, preserve the layout, clutter and daylight","repo":"https://github.com/maxpkg-dev/max-ultra-mcp","tags":["3D","Code"],"type":"prompt"}]
+[
+ {
+  "handle": "Y0urDumble",
+  "post_url": "https://x.com/Y0urDumble/status/2117396633889427646",
+  "posted_date": "2026-11-03",
+  "model": "Claude Opus",
+  "title": "Blender motion studio skill stack for Claude",
+  "prompt_text": "Skill stack from the post: edge-tts, whisperX, kokoro, freemocap, mpfb2, elevenlabs skills, remotion skills, hyperframes, blender mcp. Video: one Blender file Claude wrote: low-poly chests, wooden stage, bokeh, haze; scrolls unroll, cards burst out with a flash; every sound generated in python.",
+  "repo": "https://github.com/ahujasid/mcp-for-blender",
+  "tags": [
+   "3D",
+   "Characters",
+   "Code"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "sorenxet",
+  "post_url": "https://x.com/sorenxet/status/2117338696831865248",
+  "posted_date": "2026-11-02",
+  "model": "Claude Opus",
+  "title": "Full office in 3ds Max with Claude",
+  "prompt_text": "rebuild this office in 3ds Max. use the reference images, preserve the layout, clutter and daylight",
+  "repo": "https://github.com/maxpkg-dev/max-ultra-mcp",
+  "tags": [
+   "3D",
+   "Code"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "daodao166888",
+  "post_url": "https://x.com/daodao166888/status/2117471725650595930",
+  "posted_date": "2026-11-03",
+  "model": "Kling/Runway/Luma",
+  "title": "Ghibli elderly woman and cat: reference prompts + 4 scene prompts",
+  "prompt_text": "Image-to-Video: [reference image] + 'Ghibli style hand-drawn animation, elderly woman in red headscarf and yellow sweater stirring a pot of soup over a stone fireplace, steam rising, rain visible on the window, small orange and white cat sitting nearby watching, warm firelight, cozy rustic kitchen, slow gentle movement, cinematic, highly detailed, 8k --ar 9:16'",
+  "tags": [
+   "ghibli",
+   "kling",
+   "image-to-video"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "JohnSmith5912",
+  "post_url": "https://x.com/JohnSmith5912/status/2117271189920096280",
+  "posted_date": "2026-11-02",
+  "model": "Veo/Sora",
+  "title": "Campus portrait cinematic prompt",
+  "prompt_text": "Medium shot of a young woman with long blonde hair, wearing round gold-rimmed glasses, a light blue short-sleeve collared crop shirt, a striped maroon tie, and a gray pleated skirt, standing outdoors on a pathway with green foliage in the background. She gently touches the back of her neck with her hand, playfully bites her lower lip, and then smiles warmly at the camera with a soft expression. Bright daylight, shallow depth of field, photorealistic 8k resolution, cinematic portrait style.",
+  "tags": [
+   "veo",
+   "portrait"
+  ],
+  "type": "prompt"
+ }
+]
