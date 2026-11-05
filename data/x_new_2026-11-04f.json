@@ -1,0 +1,42 @@
+[
+ {
+  "handle": "0xForce_",
+  "post_url": "https://x.com/0xForce_/status/2117802514640695386",
+  "posted_date": "2026-11-04",
+  "model": "Claude Opus 5.5",
+  "title": "Headless render studio for motion graphics",
+  "prompt_text": "Build the headless render engine with Claude Opus 5.5 (extra high): Node.js + FFmpeg + Playwright. Claude writes code that paints every single frame (it doesn't generate video). Playwright captures every frame in Chrome. FFmpeg stitches the frames into the final MP4. Feed it real asset references so it stops defaulting to centered all caps text on gradients. Ban basic CSS and force closed form spring physics so the motion actually looks good. Synthesize the audio in code and lock every cut to the beat. Make Claude watch its own frames, critique them, hunt dead frames, and re render until every scene scores 8/10.",
+  "tags": [
+   "Motion graphics",
+   "Code"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "sebatheepan",
+  "post_url": "https://x.com/sebatheepan/status/2117788067494760809",
+  "posted_date": "2026-11-04",
+  "model": "Gemini / Google Flow",
+  "title": "Flat vector morph chain motion graphics",
+  "prompt_text": "Flat vector motion graphics video seamlessly morphing through abstract colorful geometric shapes. Starts with a minimalist coffee cup icon, smoothly deconstructs and morphs into a glowing vector sun, transitions into a clean flat-design sunset over calm sea waves, folds into a sharp paper airplane gliding across the frame, drops down and pinpoints as a location pin icon, pulses into a geometric pumping heart, and finishes with clean white kinetic typography displaying the brand name 'GOOGLE FLOW' against a solid bold background. Vibrant primary color palette, vector art style, smooth graphic animation curves, modern tech aesthetic. 16:9.",
+  "tags": [
+   "Motion graphics",
+   "Vector"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "xoyif63862452",
+  "post_url": "https://x.com/xoyif63862452/status/2117786537849159876",
+  "posted_date": "2026-11-04",
+  "model": "Claude Opus 5.5",
+  "title": "awesome-opus5-5-videos: ~301 Opus effect templates",
+  "prompt_text": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "repo": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+  "tags": [
+   "Motion graphics",
+   "Code"
+  ],
+  "type": "skill"
+ }
+]

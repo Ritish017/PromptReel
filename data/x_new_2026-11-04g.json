@@ -1,0 +1,30 @@
+[
+ {
+  "handle": "mromidev",
+  "post_url": "https://github.com/mromidev/claude-animated-shorts",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "claude-animated-shorts: Claude skill for animated story shorts (three.js + Remotion)",
+  "prompt_text": "https://github.com/mromidev/claude-animated-shorts",
+  "tags": [
+   "claude",
+   "remotion",
+   "skill"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "alexgreensh",
+  "post_url": "https://github.com/alexgreensh/anidoodle",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "anidoodle: Claude skill turning illustrations into animation",
+  "prompt_text": "https://github.com/alexgreensh/anidoodle",
+  "tags": [
+   "claude",
+   "animation",
+   "skill"
+  ],
+  "type": "skill"
+ }
+]

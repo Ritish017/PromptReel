@@ -1,0 +1,16 @@
+[
+ {
+  "handle": "alexgreensh",
+  "post_url": "https://github.com/alexgreensh/anidoodle",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "anidoodle: turn hand-drawn doodles and animations into code with coding agents",
+  "prompt_text": "https://github.com/alexgreensh/anidoodle",
+  "tags": [
+   "claude",
+   "skill",
+   "animation"
+  ],
+  "type": "skill"
+ }
+]

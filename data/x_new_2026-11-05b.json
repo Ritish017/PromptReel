@@ -1,0 +1,57 @@
+[
+  {
+    "handle": "@AIwithkhan",
+    "post_url": "https://x.com/AIwithkhan/status/2117967112832438766",
+    "posted_date": "2026-11-04",
+    "model": "Seedance 2.5 via Frameo",
+    "title": "Seedance 2.5 live-action Seoul petrol station scene (#MadeWithFrameo)",
+    "prompt_text": "30-second, 1080p ultra-realistic live-action Korean revenge-comedy scene at a busy Seoul petrol station at golden hour. A young man in a wrinkled grey button-down and dark jeans, mid-30s, tired eyes, stands next to a silver Hyundai with the rear trunk open. A woman in a cream cardigan and jeans walks past him toward a convenience store, glancing over her shoulder with a slight smile. The man reaches into his trunk, pulls out a dented red metal toolbox, and starts loosening the gas pump nozzle with a worn flathead screwdriver. The pump sputters. He looks up, locks eyes with the woman, and gives a small nod. She stops, crosses the parking lot, and stands beside him. Without a word, she produces a silver pipe wrench and slots it over his flathead. Together they crank the nozzle loose. Fuel sprays, then levels out. A line of impatient cars beeps and flashes behind them. The man wipes his hands on a rag, closes the pump lid, and opens the trunk fully — revealing a wall of neatly stacked identical red toolboxes, each stamped with the same faded logo. He takes the top one, hands it to the woman. She accepts it, turns to walk away, then pauses, looks back at him, mouths something like \"see you,\" and disappears into the convenience store. He watches her go, then shuts the trunk, gets into the driver's seat, and drives off as the camera pushes in on the remaining stack of red toolboxes in the open trunk.\n\nACTION SEQUENCE:\n0–5s: Wide establishing shot of the petrol station at golden hour. Silver Hyundai with open trunk on the left, convenience store in the right background. Man in grey button-down leaning on the trunk, looking exhausted. Woman in cream cardigan walks past frame-right toward the store, glances back over her shoulder with a faint smile.\n5–9s: Medium shot. Man reaches into the trunk, pulls out a dented red metal toolbox, drops it on the ground with a heavy clank. Opens it, takes out a worn flathead screwdriver. Walks to the gas pump nozzle and starts turning it. The pump sputters, drips fuel.\n9–14s: Close-up on the man's face — tired eyes, jaw tight. He looks up and across the lot. The woman has stopped outside the convenience store and is watching him. He gives a small, almost imperceptible nod.\n14–20s: The woman crosses the parking lot. Cars beeps echo. She reaches the man's side and produces a silver pipe wrench from her cardigan. Slots it over the screwdriver on the nozzle. They grip together. Close-up on their hands, wrench turning, metal groaning.\n20–25s: Fuel sprays, then stabilizes. They both step back. Wide shot shows the line of impatient cars behind them, horns honking, brake lights flashing. The man wipes his hands on a cloth rag, pats the pump, shuts the lid with a click.\n25–30s: He opens the trunk fully. Camera reveals a wall of identical red metal toolboxes, stacked floor to ceiling, each stamped with the same faded circular logo. He lifts the top one, hands it to the woman. She takes it, turns to leave, pauses, looks back at him, mouths \"see you,\" and walks into the convenience store's sliding doors. He watches her go, then opens the driver's door, slides in, and pulls away. Final push-in on the remaining red toolboxes in the open trunk.\n\nAUDIO:\nNaturalistic petrol station ambience throughout — low rumble of idling engines, distant traffic hiss, the metallic clank of the toolbox hitting the tarmac, the pump's sputter and drip, the groan of wrench-on-metal, the spray and settle of fuel, car horns and beeps from the queue behind, the sharp click of the pump lid closing, the convenience store's sliding-door chime as she enters. No score. Underlying tension carried by breath, metal, and distance. At the final beat, the car's engine turns over and the wipers thwack once as he pulls out.\n\nREQUIREMENTS:\nPhotorealistic 1080p, natural golden-hour light with warm highlights and soft blue fill in the shadows. Consistent characters across every shot: the man's face, stubble, and grey button-down must not change between frames; the woman's cream cardigan, hair, and face must remain identical in the wide and the close-ups. No cartoon or stylized elements. Natural skin texture and micro-details (oil on the wrench, scuff on the toolbox, dust on the tarmac).\n\nNEGATIVE PROMPT: No fire, sparks, explosions, fuel spills, serious injuries, blood, cartoon physics, face changes, outfit changes, distorted anatomy, random cuts, subtitles, logos, or watermarks.",
+    "skill_install_or_repo": "",
+    "tags": ["Characters", "Photos", "Kinetic type"],
+    "type": "prompt"
+  },
+  {
+    "handle": "@finnardley",
+    "post_url": "https://x.com/finnardley/status/2118149077842133334",
+    "posted_date": "2026-11-05",
+    "model": "Claude Opus 5.5 (full code, $0 in AI video gens; downstream uses an image model + ElevenLabs or free Kokoro)",
+    "title": "Full-code 'most disturbing animal' vertical Short — entire prompt with XML sections",
+    "prompt_text": "<inputs>\nAsk me for my animal or topic ('Why is the X the most disturbing animal in the ocean?', 'Why is X terrifying?'), or pitch 3, each with 5 true facts that get worse as they go. Ask which image model I have (GPT Image 2 or any model that takes a reference image at 4K, about $0.03 an image) and which voice I have (ElevenLabs, or Kokoro for free). Then write the script and the shot list with seconds, and show me both before anything costs money.\n</inputs>\n\n<direction>\nMatch the exact art style of the reference image: flat 2D cartoon, thick dark brown outlines, flat colours with simple cel shading, big expressive googly eyes, clean vector look. Vertical 1080x1920, 60fps, 30–35 seconds. Flat lay, no camera move, no 3D. One hoodie host on a pale background with a faint grid. The host lip-syncs the narration and introduces each fact. Behind the host a large key visual appears for each fact, built from the cast art sheet.\n</direction>\n\n<structure>\n0–2s cold open with the question as bold title.\n2–6s host on-screen introduces the animal.\n6–26s facts 1–5, each ~4s: host gestures, a key visual pops in with a named easing, fact title and a short caption below.\n26–31s host wraps.\n31–35s end card with subscribe / follow CTA.\n</structure>\n\n<build>\nCast sheet: 9 poses of the animal (front, 3/4, back, surprised, scared, aggressive, swimming, injured, tiny) plus 3 expressions of the hoodie host (neutral, wide-eyed, hand-on-head). All on a transparent PNG, same outline width and stroke colour.\nBackground: pale off-white with a very faint grid (1px, 10% opacity). No gradients.\nTitle and fact titles use the same heavy rounded sans, title colour on a slightly darker tinted pill behind the text. Caption below each title in the same font at smaller size.\nKey visuals are built from the cast sheet, composited on the grid. Use named easings for each entrance: 'pop' for the first, 'pose-swap kick' for the second, 'shake' for the most disturbing fact, and simple scale-up for the rest.\nHost lip-sync: draw the mouth track at 60fps from the voice. Open when it is over (70th percentile in dB - 15) and over 0.55x the loudest frame within ±0.1 s. Close otherwise. Hold the open shape 1 frame longer on plosives.\nVoice: ElevenLabs eleven_v4 with timestamps endpoint, or Kokoro+whisper for free. Pace the script to land at 28–30s of speech so the whole video is 30–35s with the title and end card.\nColour pairs used for the key titles: #ffd21f/#c27a10 (yellow), #ff4a3d/#8e1a14 (red), #ffffff/#9aa6b4 (white/grey), #ff7ab8/#a8336d (pink), #7dff6a/#2e9a2a (green). Each title colour on a pill of its darker tint.\nFilm loop is an HTML canvas that steps through frames, applying the named easing to each key visual's entrance and the mouth track to the host. Tools: Python, Playwright with Chromium/Edge, FFmpeg, OpenCV, Pillow, numpy, soundfile.\n</build>\n\n<gotchas>\nA plain hue tint for the red alarm turned blue water green. Sepia first, then hue-rotate.\n</gotchas>\n\n<start>\nGiven my animal/topic, image model, and voice, output:\n1. A 5-fact script with seconds for each line.\n2. A shot list with seconds, on-screen text, and which cast pose / easing is used.\n3. The exact hex title colour you will use for each of the 5 facts.\nShow all three before generating images or audio.\n</start>",
+    "skill_install_or_repo": "",
+    "tags": ["Kinetic type", "Characters", "Diagrams"],
+    "type": "prompt"
+  },
+  {
+    "handle": "@isagi1000x",
+    "post_url": "https://x.com/isagi1000x/status/2118148244962435357",
+    "posted_date": "2026-11-05",
+    "model": "Claude Opus 5.5",
+    "title": "Claude Opus 5.5 15-second motion-graphics showreel from one sentence",
+    "prompt_text": "Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out.",
+    "skill_install_or_repo": "",
+    "tags": ["Kinetic type", "Shapes", "3D"],
+    "type": "prompt"
+  },
+  {
+    "handle": "@_HIT_SZ_",
+    "post_url": "https://x.com/_HIT_SZ_/status/2118152851348472138",
+    "posted_date": "2026-11-05",
+    "model": "Claude Code / Codex + Remotion (React+SVG code-rendered; author notes Opus 5.5 can also output directly)",
+    "title": "手把手教你做 Vibecoding 知识大赏 — two code-rendered knowledge films + a Codex Skill",
+    "prompt_text": "使用 $codex-knowledge-film，为我制作一条中文知识短片。 选题：【你的知识点，例如：为什么任务排得越满，做完的反而越少？】 规格：16:9，1080p，30fps，使用百灵 Ming-3.0 音频（音色：灵小锋）。 制作要求： 1. 先梳理一句话核心论点与分镜脚本，提炼生活中看得见、摸得着的视觉隐喻； 2. 先跑通 30 秒原型镜头，用同一时刻截图对比进行画面微调； 3. 配音使用百灵 API 先做样音，按实测音频时长反向锁定镜头与字幕时间轴； 4. 严格核对编码画面和台词边界，确保声画精准对齐。",
+    "skill_install_or_repo": "Skill: codex-knowledge-film. Scaffold: python3 ~/.codex/skills/codex-knowledge-film/scripts/new_film.py ~/Movies/my-knowledge-film --example queue && cd ~/Movies/my-knowledge-film && npm ci; preview: npm run studio; render: npm run render. GitHub repo: github.com/siuserxiaowei/knowledge-film-article-20261103 (full video source, Skill pack, prompt templates).",
+    "tags": ["Kinetic type", "Diagrams", "Charts"],
+    "type": "skill"
+  },
+  {
+    "handle": "@WaterrrMiao",
+    "post_url": "https://x.com/WaterrrMiao/status/2118064243803340823",
+    "posted_date": "2026-11-05",
+    "model": "HyperFrames (open-source skill) + Claude Code / any agent with skills",
+    "title": "Every video you see is now a template — /reverse-any-video, one prompt, no human edits",
+    "prompt_text": "1. npx hyperframes skills update  2. Open Claude Code (or any agent with skills)  3. /reverse-any-video + paste a link or file  It watches frame by frame, rebuilds every layer as a @HyperFrames_ project, then checks its render against the original.",
+    "skill_install_or_repo": "HyperFrames OSS skills; install/update via: npx hyperframes skills update. Skill command in Claude Code (or any agent with skills): /reverse-any-video (paste a link or file).",
+    "tags": ["Kinetic type", "Code", "3D"],
+    "type": "skill"
+  }
+]

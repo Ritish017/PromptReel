@@ -1,0 +1,44 @@
+[
+ {
+  "handle": "rakib_hossen_ai",
+  "post_url": "https://x.com/rakib_hossen_ai/status/2118088915039170602",
+  "posted_date": "2026-11-05",
+  "model": "Claude Opus",
+  "title": "8 GitHub repos for Opus 5.5 videos",
+  "prompt_text": "github.com/yihui-dev/awesome-opus5-5-videos\ngithub.com/lemomo-ai/lemo-opuscar\ngithub.com/Vincentwei1021/mg-styles-15\ngithub.com/athemeroy/awesome-claude-5-5-videos\ngithub.com/joeseesun/opus-video-prompts\ngithub.com/JohnHeibel/ClaudeAnimationBase",
+  "tags": [
+   "repos",
+   "claude",
+   "motion-graphics"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "isagi1000x",
+  "post_url": "https://x.com/isagi1000x/status/2118148244962435357",
+  "posted_date": "2026-11-05",
+  "model": "Claude Opus",
+  "title": "One-sentence motion graphics showreel in Claude",
+  "prompt_text": "Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out.",
+  "tags": [
+   "motion-graphics",
+   "claude",
+   "showreel"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "sonuv_dev",
+  "post_url": "https://x.com/sonuv_dev/status/2118140211125510300",
+  "posted_date": "2026-11-05",
+  "model": "Claude Code",
+  "title": "28 Blender agent skills",
+  "prompt_text": "https://github.com/EL4CTEO/blender-skills",
+  "tags": [
+   "blender",
+   "3d",
+   "skills"
+  ],
+  "type": "skill"
+ }
+]

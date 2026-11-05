@@ -1,15 +1,76 @@
 [
  {
-  "handle": "kaido_xr",
-  "post_url": "https://x.com/kaido_xr/status/2117678320078684218",
+  "handle": "Ryrenz",
+  "post_url": "https://x.com/Ryrenz/status/2117891108294308109",
   "posted_date": "2026-11-04",
-  "model": "Code (repos)",
-  "title": "Code-rendered motion graphics repos",
-  "prompt_text": "https://github.com/mexicat/pdoom-video\nhttps://github.com/JohnHeibel/PDoomVideo",
+  "model": "Claude Code",
+  "title": "claude-animated-shorts: Claude makes 1-min animated shorts without a video generator",
+  "prompt_text": "https://github.com/mromidev/claude-animated-shorts",
+  "skill": "https://github.com/mromidev/claude-animated-shorts",
   "tags": [
+   "claude-code",
    "repo",
-   "motion-graphics"
+   "video"
   ],
   "type": "skill"
+ },
+ {
+  "handle": "Manojkumar2257",
+  "post_url": "https://x.com/Manojkumar2257/status/2117882684290847044",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "make-video skill: topic in, narrated code-animated video out",
+  "prompt_text": "https://github.com/SiuZheng/make-video-skill",
+  "skill": "https://github.com/SiuZheng/make-video-skill",
+  "tags": [
+   "claude-code",
+   "repo",
+   "video"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "dextune",
+  "post_url": "https://github.com/browser-use/video-use",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "video-use: Claude Code edits video (Remotion/Manim support)",
+  "prompt_text": "https://github.com/browser-use/video-use",
+  "skill": "https://github.com/browser-use/video-use",
+  "tags": [
+   "claude-code",
+   "repo",
+   "video"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "so_ainsight",
+  "post_url": "https://x.com/so_ainsight/status/2117816624015376649",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "claude-animation-skills: six Claude Code skills that make animations",
+  "prompt_text": "https://github.com/artemnovitckii/claude-animation-skills",
+  "skill": "https://github.com/artemnovitckii/claude-animation-skills",
+  "tags": [
+   "claude-code",
+   "repo",
+   "animation"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "iamsofiaijaz",
+  "post_url": "https://x.com/iamsofiaijaz/status/2117859327000338583",
+  "posted_date": "2026-11-04",
+  "model": "Seedance 2.5",
+  "title": "Zombie apocalypse chase on a broken Seoul bridge (7 shots, 20s)",
+  "prompt_text": "Cinematic live-action zombie apocalypse scene, bright sunny daytime, Seoul, South Korea. A broken Han River bridge with a huge collapsed gap, twisted rebar and cracked concrete sticking out. A young Korean schoolgirl (long dark brown hair, wearing a pink Nike dress, white knee socks, sunglasses pushed up on her head) is being chased by a huge horde of zombies across the bridge. Shot 1: Wide shot, the girl leaps mid-air across the collapsed bridge gap over the river, hair flying, zombies at the broken edge behind her. Shot 2: Close-up, she barely grabs the rusty rebar at the edge and hangs over the dark river water, a terrified, desperate face, zombie hand reaching from above. Shot 3: She pulls herself up and sprints down the bridge road, a massive zombie crowd running after her, a white sedan and a green city bus on the road, Seoul apartment skyline in the background. Shot 4: She climbs onto the roof of the green bus while zombies pack the windows and reach out with their arms. Shot 5: Extreme close-up of her shocked, wide-eyed face, wind blowing her hair. Shot 6: She jumps across the tilted bus and wrecked cars at the second broken section, the zombie horde charging behind. Shot 7: Final dramatic leap over the river gap, two men reaching out from the edge, with a black military Black Hawk helicopter hovering at the bridge pier with a rescue rope hanging down. Style: photorealistic, high-octane action, handheld dynamic camera, slow-motion jumps, dramatic wide-angle and low-angle shots, realistic motion blur, sharp detail, cinematic color grading, blockbuster zombie movie look (Train to Busan style), 4K. Negative: cartoon, anime, blurry, distorted faces, extra limbs, text, watermark, low quality. Settings: 16:9, 20 seconds, Seedance 2.5.",
+  "tags": [
+   "seedance",
+   "cinematic",
+   "action"
+  ],
+  "type": "prompt"
  }
 ]

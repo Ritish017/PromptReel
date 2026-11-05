@@ -1,0 +1,45 @@
+[
+ {
+  "handle": "michaelaubry",
+  "post_url": "https://x.com/michaelaubry/status/2117798140204167308",
+  "posted_date": "2026-11-04",
+  "model": "Kling 4 Edit",
+  "title": "Webcam clip restyled into a cinematic intro (Kling 4 Edit)",
+  "prompt_text": "Edit @Video1. Keep the [man]'s real face exactly as filmed: same face shape, same [dark brown] eyes, same [beard], same words, same mouth movement, same head motion, eye movement, framing and timing. Change his look to match @Image1: [remove the black cap and give him the short, clean haircut and real hairline from @Image1], dress him in the [cream cable-knit Aran sweater] from @Image1, and put him in the [Lake Tahoe house] from @Image1, [with the tall black steel windows, pine trees, the lake at golden hour, the stone fireplace with a fire and the warm lamp], softly out of focus behind him. @Image2 is the last frame of the previous shot in this same video: match it exactly for the room, the background layout, the light, the color temperature, the exposure, his hair and his [sweater], so the cut between the shots is invisible. His eyes stay a deep [dark brown]. Real, unretouched skin with visible pores, no smoothing, no text.",
+  "tags": [
+   "kling",
+   "video-to-video",
+   "restyle"
+  ],
+  "type": "prompt"
+ },
+ {
+  "handle": "GreatCreations_",
+  "post_url": "https://x.com/GreatCreations_/status/2117799931037802567",
+  "posted_date": "2026-11-04",
+  "model": "Claude Code",
+  "title": "claude-animation-skills: six Claude Code skills for 3D explainers, line art, map routes",
+  "prompt_text": "https://github.com/artemnovitckii/claude-animation-skills",
+  "tags": [
+   "claude-code",
+   "skills",
+   "animation"
+  ],
+  "type": "skill"
+ },
+ {
+  "handle": "CreativeAiNinja",
+  "post_url": "https://github.com/mromidev/claude-animated-shorts",
+  "posted_date": "2026-11-04",
+  "model": "Claude + Remotion",
+  "title": "claude-animated-shorts: Claude skill for 55-70s vertical animated shorts (three.js in Remotion)",
+  "prompt_text": "https://github.com/mromidev/claude-animated-shorts",
+  "tags": [
+   "remotion",
+   "claude",
+   "skills",
+   "three.js"
+  ],
+  "type": "skill"
+ }
+]
